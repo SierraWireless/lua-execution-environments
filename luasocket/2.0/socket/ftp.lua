@@ -25,7 +25,7 @@
  - _PORT_: default port used for the control connection;
  - _TIMEOUT_: sets the timeout for all I/O operations;
  - _USER_: default anonymous user;
- @module ftp
+ @module socket.ftp
  @usage
   -- loads the FTP module and any libraries it requires
   local ftp = require("socket.ftp")
@@ -54,7 +54,7 @@
       [create = function]
     }
 
- @function [parent=#ftp] get
+ @function [parent=#socket.ftp] get
  @param url URL of content to download as a _#string_ or if the argument of the
   get function is a _#table_, the function expects at least the fields _host,
   sink,_ and one of _argument_ or _path_ (_argument_ takes precedence). _Host_
@@ -107,7 +107,7 @@ end
 --[[----------------------------------------------------------------------------
  Uploads a string of content into a URL.
 
- @function [parent=#ftp] put
+ @function [parent=#socket.ftp] put
  @param #string url Where to upload content.
  @param #string content Content to upload.
  @return #number 1 If successful
@@ -127,7 +127,7 @@ f, e = ftp.put("ftp://fulano:silva@ftp.example.com/README",
 --[[----------------------------------------------------------------------------
  Uploads a string of content into a URL.
 
- @function [parent=#ftp] put
+ @function [parent=#socket.ftp] put
  @param #table table The function expects at least the fields _host, source_,
   and one of _argument_ or _path_ (_argument_ takes precedence). _Host_ is the
   server to connect to. _Source_ is the simple

@@ -12,7 +12,7 @@
 	<authority> ::= [<userinfo>@]<host>[:<port>]
 	<userinfo> ::= <user>[:<password>]
 	<path> ::= {<segment>/}<segment>
- @module url
+ @module socket.url
 ]]
 
 --[[----------------------------------------------------------------------------
@@ -49,7 +49,7 @@
 	../../   =  http://a/
 	../../g  =  http://a/g
 
- @function [parent=#url] absolute
+ @function [parent=#socket.url] absolute
  @param #string base The base URL or a parsed URL table.
  @param #string relative The relative URL.
  @return #string The absolute URL. 
@@ -58,10 +58,10 @@
 --[[----------------------------------------------------------------------------
  Rebuilds an URL from its parts.
 
- @function [parent=#url] build
- @param #table parsed_url With same components returned by @{#url.parse}.
-  Lower level components, if specified, take precedence over high level
-  components of the URL grammar.
+ @function [parent=#socket.url] build
+ @param #table parsed_url With same components returned by
+ @{#(socket.url).parse}. Lower level components, if specified, take precedence
+  over high level components of the URL grammar.
  @return #string The built URL.
 ]]
 
@@ -71,7 +71,7 @@
  Before composition, any reserved characters found in a segment are escaped into
  their protected form, so that the resulting path is a valid URL path component.
 
- @function [parent=#url] build_path
+ @function [parent=#socket.url] build_path
  @param #table segments A list of strings with the _<segment>_ parts.
  @param unsafe If is anything but nil, reserved characters are left untouched.
  @return #string With the built _<path>_ component. 
@@ -80,7 +80,7 @@
 --[[----------------------------------------------------------------------------
  Applies the URL escaping content coding to a string each byte is encoded as a percent character followed by the two byte hexadecimal representation of its integer value.
 
- @function [parent=#url] escape
+ @function [parent=#socket.url] escape
  @param #string content The _#string_ to be encoded.
  @return #string The encoded string.
  @usage
@@ -94,7 +94,7 @@ code = url.escape("/#?;")
 --[[----------------------------------------------------------------------------
  Parses an URL given as a string into a Lua table with its components.
 
- @function [parent=#url] parse
+ @function [parent=#socket.url] parse
  @param #string url The URL to be parsed.
  @param #table default If present, it is used to store the parsed fields. Only
   fields present in the URL are overwritten. Therefore, this table can be used
@@ -144,7 +144,7 @@ parsed_url = url.parse("ftp://root:passwd@unsafe.org/pub/virus.exe;type=i")
 --[[----------------------------------------------------------------------------
  Breaks a _<path>_ URL component into all its _<segment>_ parts.
 
- @function [parent=#url] parse_path
+ @function [parent=#socket.url] parse_path
  @param #string path With the path to be parsed.
  @return Since some characters are reserved in URLs, they must be escaped
   whenever present in a <path> component. Therefore, before returning a list
@@ -154,7 +154,7 @@ parsed_url = url.parse("ftp://root:passwd@unsafe.org/pub/virus.exe;type=i")
 --[[----------------------------------------------------------------------------
  Removes the URL escaping content coding from a string.
 
- @function [parent=#url] unescape
+ @function [parent=#socket.url] unescape
  @param #string content The string to be decoded.
  @return #string The decoded string. 
 ]]

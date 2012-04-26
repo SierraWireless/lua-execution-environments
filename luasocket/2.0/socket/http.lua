@@ -38,7 +38,7 @@
  - _TIMEOUT_: sets the timeout for all I/O operations;
  - _USERAGENT_: default user agent reported to server.
 
- @module http
+ @module socket.http
  @usage
 -- loads the HTTP module and any libraries it requires
 local http = require("socket.http")
@@ -87,7 +87,7 @@ local http = require("socket.http")
 	  headers = { authentication = "Basic " .. (mime.b64("fulano:silva")) }
 	}
 
- @function [parent=#http] request
+ @function [parent=#socket.http] request
  @param  url If the first argument of the request function is a _#string_,
   it should be an url. If the first argument is instead a _#table_, the most
   important fields are the url and the simple

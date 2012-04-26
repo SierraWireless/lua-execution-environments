@@ -49,7 +49,7 @@
 - _TIMEOUT_: default timeout for all I/O operations;
 - _ZONE_: default time zone.
 
- @module smtp
+ @module socket.smtp
 ]]
 
 --[[----------------------------------------------------------------------------
@@ -57,7 +57,7 @@
 
  Since sending messages is not as simple as downloading an URL from a FTP or
  HTTP server, this function doesn't have a simple interface. However, see the
- @{#smtp.message} source factory for a very powerful way to define the message
+ @{#(socket.smtp).message} source factory for a very powerful way to define the message
  contents.
 	smtp.send{
 	  from = string,
@@ -124,7 +124,7 @@
  [RFC 2821](http://www.ietf.org/rfc/rfc2821.txt) and
  [RFC 2822](http://www.ietf.org/rfc/rfc2822.txt).
 
- @function [parent=#smtp] send
+ @function [parent=#socket.smtp] send
  @param #table arguments The sender is given by the e-mail address in the
   _from_ field. _Rcpt_ is a Lua table with one entry for each recipient e-mail
   address, or a string in case there is just one recipient. The contents of the
@@ -184,7 +184,7 @@ r, e = smtp.send{
 --[[----------------------------------------------------------------------------
  Provides a simple [LTN12](http://lua-users.org/wiki/FiltersSourcesAndSinks) source that sends an SMTP message body, possibly multipart (arbitrarily deep).
 
- @function [parent=#smtp] message
+ @function [parent=#socket.smtp] message
  @param #table mesgt The only parameter of the function is describing the
   message. Mesgt has the following form (notice the recursive structure):
 	mesgt = {
