@@ -33,7 +33,7 @@ local ltn12 = require("ltn12")
  doesn't do anything but return the data that was passed to it, unaltered.
  
  @function [parent=#filter] chain
- @param vararg Simple filters.
+ @param ... Simple filters.
  @return The chained filter.
  @usage
 -- load required modules
@@ -188,7 +188,7 @@ end
  Creates a new source that produces the concatenation of the data produced by a number of sources.
 
  @function [parent=#source] cat
- @param vararg The original sources.
+ @param ... The original sources.
  @return #source The new @{#source}.
 ]]
 

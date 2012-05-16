@@ -169,7 +169,7 @@
 
  @function [parent=#socket] skip
  @param d The number of arguments to drop. 
- @param vararg The arguments.
+ @param ... The arguments.
  @return  ret<sub>d+1</sub> to ret<sub>n</sub>.
 ]]
 
@@ -213,8 +213,8 @@ Creates an [LTN12](http://lua-users.org/wiki/FiltersSourcesAndSinks) source from
  c = socket.try(socket.connect("localhost", 80))
 
  @function [parent=#socket] try
- @param vararg Can be arbitrary arguments, but are usually the return values of a function call nested with try.
- @returns vararg arguments form arg<sub>1</sub> to arg<sub>N</sub>, if arg<sub>1</sub> is not nil. Otherwise, it calls error passing arg<sub>2</sub>.
+ @param ... Can be arbitrary arguments, but are usually the return values of a function call nested with try.
+ @returns ... arguments form arg<sub>1</sub> to arg<sub>N</sub>, if arg<sub>1</sub> is not nil. Otherwise, it calls error passing arg<sub>2</sub>.
 ]]
 
 --[[------------------------------------------------------------------------------
