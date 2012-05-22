@@ -227,7 +227,7 @@ Creates an [LTN12](http://lua-users.org/wiki/FiltersSourcesAndSinks) source from
  Creates and returns a TCP master object. A master object can be transformed into a server object with the method listen (after a call to bind) or into a client object with the method connect. The only other method supported by a master object is the close method.
 
  @function [parent=#socket] tcp
- @return @{#master} In case of success.
+ @return #master In case of success.
  @return #nil, #string In error cases, error string is provided.
 ]]
 
@@ -243,7 +243,7 @@ Creates an [LTN12](http://lua-users.org/wiki/FiltersSourcesAndSinks) source from
 
  @function [parent=#server] accept
  @param self
- @return @{#client}  If a connection is successfully initiated.
+ @return #client  If a connection is successfully initiated.
  @return #nil, #string  Given error string can be:
  
  - **'timeout'**: If a timeout condition is met.
@@ -373,7 +373,7 @@ Closes a TCP object.
 ]]
 
 --[[------------------------------------------------------------------------------
- As in @{#server.bind}.
+ As in @{#server.close}.
 
  @function [parent=#master] close
  @param self
@@ -455,7 +455,7 @@ Closes a TCP object.
 ]]
 
 --[[------------------------------------------------------------------------------
- As in @{#server.bind}.
+ As in @{#server.close}.
 
  @function [parent=#client] close
  @param self
@@ -592,7 +592,7 @@ Closes a TCP object.
 --[[----------------------------------------------------------------------------
  Creates and returns an unconnected UDP object.
 
- @{#unconnected} objects support the @{#unconnected.sendto},
+ All @{#unconnected} objects support the @{#unconnected.sendto},
  @{#unconnected.receive}, @{#unconnected.receivefrom},
  @{#unconnected.getsockname}, @{#unconnected.setoption},
  @{#unconnected.settimeout}, @{#unconnected.setpeername},
@@ -880,7 +880,7 @@ Note that the alias list can be empty.
 ]]
 
 --[[----------------------------------------------------------------------------
- The standard host name 
+ The standard host name.
 
  @function [parent=#dns] gethostname
  @return #string The standard host name for the machine.
