@@ -15,10 +15,6 @@ To obtain the mime namespace, run:
  @module mime
 ]]
 
---
--- High-level filters
---
-
 --[[----------------------------------------------------------------------------
  Converts most common end-of-line markers to a specific given marker.
 
@@ -100,10 +96,6 @@ To obtain the mime namespace, run:
  @param #number length (optional) Available when _style_ is _"text"_, defaults
   76. 
 ]]
-
---
--- Low-level filters
---
 
 --[[----------------------------------------------------------------------------
  Low-level filter to perform Base64 encoding.
@@ -267,4 +259,5 @@ unix = mime.eol(0, dos, "\n")
  76). _'n'_ should tell how many bytes are left for the first line of _B_ and
  _'m'_ returns the number of bytes left in the last line of _A_. 
 ]]
+
 return nil

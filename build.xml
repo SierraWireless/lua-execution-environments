@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+    Copyright (c) 2012 Sierra Wireless and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+
+    Contributors:
+        Sierra Wireless - initial API and implementation
+ -->
+<project name="librariesBuilder" default="build">
+
+	<!-- base folder -->
+	<property name="baseDestinationFolder" value="output" />
+	<property name="workingdir" value="${baseDestinationFolder}/workingdir" />
+
+	<target name="createEEArchives">
+		<!-- clean working dir -->
+		<delete dir="${workingdir}" />
+
+		<!-- create output dir -->
+		<mkdir dir="${workingdir}" />
+
+		<!-- zip api lua in working dir -->
+		<zip destfile="${workingdir}/api.zip">
+			<fileset dir="${eeid}/${eeversion}/api" />
+		</zip>
+
+		<!-- copy rockspec -->
+		<copy todir="${workingdir}/">
+			<fileset dir="${eeid}/${eeversion}" includes="${eeid}-${eeversion}.rockspec" />
+		</copy>
+
+		<!-- copy LICENSE -->
+		<copy todir="${workingdir}/">
+			<fileset dir="${eeid}/${eeversion}" includes="LICENSE" />
+		</copy>
+
+		<!-- copy docs directory -->
+		<copy todir="${workingdir}/docs">
+			<fileset dir="${eeid}/${eeversion}/docs" />
+		</copy>
+
+		<!-- zip api lua in working dir -->
+		<zip destfile="${baseDestinationFolder}/${eeid}-${eeversion}.zip">
+			<fileset dir="${workingdir}" />
+		</zip>
+
+		<!-- clean working dir -->
+		<delete dir="${workingdir}" />
+	</target>
+
+	<!-- Build all execution Environement -->
+	<target name="build">
+		<!-- create output dir -->
+		<mkdir dir="${baseDestinationFolder}" />
+
+		<!-- clean destinationLuaFolder -->
+		<delete includeEmptyDirs="true">
+			<fileset dir="${baseDestinationFolder}" />
+		</delete>
+
+		<!-- create EE archives -->
+		<antcall target="createEEArchives">
+			<param name="eeid" value="lua" />
+			<param name="eeversion" value="5.1" />
+		</antcall>
+
+		<antcall target="createEEArchives">
+			<param name="eeid" value="gideros" />
+			<param name="eeversion" value="2012.2.2.1" />
+		</antcall>
+	</target>
+</project>

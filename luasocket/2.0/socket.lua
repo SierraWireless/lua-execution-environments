@@ -5,7 +5,6 @@
     -- loads the socket module 
     local socket = require("socket")
 @module socket
------------------------------------------------------------------------------
 ]]
 
 --[[------------------------------------------------------------------------------
@@ -22,7 +21,6 @@
  @return TCP server object
  @usage socket.bind("someaddress", 4242, function hook(...) end)
  @usage socket.bind("someaddress", 4242, 32,function hook(...) end)
-
 ]]
 
 --[[------------------------------------------------------------------------------
@@ -38,13 +36,11 @@
  @param locaddr optional local address to bind
  @param locport optional local port to bind
  @return TCP client object
-
 ]]
 
 --[[------------------------------------------------------------------------------
  This constant is set to `true` if the library was compiled with debug support.
  @field [parent=#socket] #boolean _DEBUG
-
 ]]
 
 --[[------------------------------------------------------------------------------
@@ -74,7 +70,6 @@
  @function [parent=#socket] newtry
  @param finalizer function that will be called before try throws the exception.
  @return a customized @{#socket.try} function
-
 ]]
 
 --[[------------------------------------------------------------------------------
@@ -97,7 +92,6 @@
   to throw exceptions.
  @return an equivalent function that instead of throwing exceptions, 
   returns `nil` followed by an error message
- 
 ]]
 
 --[[------------------------------------------------------------------------------
@@ -144,7 +138,6 @@
   A nil, negative or omitted timeout value allows the function to block indefinitely. 
  @return a list with the sockets ready for reading,
  a list with the sockets ready for writing and an error message.
-
 ]]
 
 --[[------------------------------------------------------------------------------
@@ -169,7 +162,7 @@
 
  @function [parent=#socket] skip
  @param d The number of arguments to drop. 
- @param ... The arguments.
+ @param vararg The arguments.
  @return  ret<sub>d+1</sub> to ret<sub>n</sub>.
 ]]
 
@@ -220,7 +213,6 @@ Creates an [LTN12](http://lua-users.org/wiki/FiltersSourcesAndSinks) source from
 --[[------------------------------------------------------------------------------
  This constant has a string describing the current LuaSocket version.
  @field [parent=#socket] #string _VERSION
-
 ]]
 
 --[[------------------------------------------------------------------------------
@@ -282,7 +274,7 @@ Closes a TCP object.
  @param self
  @return #number, #number, #number The _number_ of bytes received, the _number_
  of bytes sent, and the _age of the socket_ object in seconds.
- ]]
+]]
 
 --[[----------------------------------------------------------------------------
  Sets options for the TCP object.
@@ -373,7 +365,7 @@ Closes a TCP object.
 ]]
 
 --[[------------------------------------------------------------------------------
- As in @{#server.close}.
+ As in @{#server.bind}.
 
  @function [parent=#master] close
  @param self
@@ -455,7 +447,7 @@ Closes a TCP object.
 ]]
 
 --[[------------------------------------------------------------------------------
- As in @{#server.close}.
+ As in @{#server.bind}.
 
  @function [parent=#client] close
  @param self
@@ -477,6 +469,7 @@ Closes a TCP object.
  
  @function [parent=#client] getsockname
  @param self 
+
 ]]
 
 --[[------------------------------------------------------------------------------
@@ -546,7 +539,6 @@ Closes a TCP object.
  - **'timeout'**: In case there was a timeout during the operation.
 ]]
 
-
 --[[----------------------------------------------------------------------------
  As in @{#server.setoption}.
 
@@ -592,7 +584,7 @@ Closes a TCP object.
 --[[----------------------------------------------------------------------------
  Creates and returns an unconnected UDP object.
 
- All @{#unconnected} objects support the @{#unconnected.sendto},
+ @{#unconnected} objects support the @{#unconnected.sendto},
  @{#unconnected.receive}, @{#unconnected.receivefrom},
  @{#unconnected.getsockname}, @{#unconnected.setoption},
  @{#unconnected.settimeout}, @{#unconnected.setpeername},
@@ -723,7 +715,6 @@ Closes a TCP object.
  @param self
 ]]
 
-
 --[[----------------------------------------------------------------------------
  Returns the local address information associated to the object.
 
@@ -787,7 +778,6 @@ Closes a TCP object.
  @return #number 1, in case of success.
  @return #nil, #string In error cases, error string is provided.
 ]]
-
 
 --[[----------------------------------------------------------------------------
  As in @{#connected.setpeername}.
@@ -880,7 +870,7 @@ Note that the alias list can be empty.
 ]]
 
 --[[----------------------------------------------------------------------------
- The standard host name.
+ The standard host name 
 
  @function [parent=#dns] gethostname
  @return #string The standard host name for the machine.
@@ -905,4 +895,5 @@ Note that the alias list can be empty.
   table with all information returned by the resolver.
  @return #nil, #string In error cases, error string is provided.
 ]]
+
 return nil

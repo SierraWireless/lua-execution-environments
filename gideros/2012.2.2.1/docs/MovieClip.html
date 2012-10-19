@@ -1,0 +1,1293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+	</head>
+<body>
+<div id="container">
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div>
+<div id="main">
+	<div id="navigation">
+		<h2>Modules</h2>
+			<ul><li>
+				<a href="index.html">index</a>
+			</li></ul>
+		<ul>
+					<li><a href="Accelerometer.html">Accelerometer</a></li>
+					<li><a href="Application.html">Application</a></li>
+					<li><a href="Bitmap.html">Bitmap</a></li>
+					<li><a href="Body.html">Body</a></li>
+					<li><a href="ChainShape.html">ChainShape</a></li>
+					<li><a href="CircleShape.html">CircleShape</a></li>
+					<li><a href="DistanceJoint.html">DistanceJoint</a></li>
+					<li><a href="EdgeShape.html">EdgeShape</a></li>
+					<li><a href="Event.html">Event</a></li>
+					<li><a href="EventDispatcher.html">EventDispatcher</a></li>
+					<li><a href="Fixture.html">Fixture</a></li>
+					<li><a href="Font.html">Font</a></li>
+					<li><a href="FontBase.html">FontBase</a></li>
+					<li><a href="FrictionJoint.html">FrictionJoint</a></li>
+					<li><a href="Geolocation.html">Geolocation</a></li>
+					<li><a href="Gyroscope.html">Gyroscope</a></li>
+					<li><a href="Joint.html">Joint</a></li>
+					<li><a href="Matrix.html">Matrix</a></li>
+					<li><a href="MouseJoint.html">MouseJoint</a></li>
+					<li>MovieClip</li>
+					<li><a href="PolygonShape.html">PolygonShape</a></li>
+					<li><a href="PrismaticJoint.html">PrismaticJoint</a></li>
+					<li><a href="PulleyJoint.html">PulleyJoint</a></li>
+					<li><a href="RevoluteJoint.html">RevoluteJoint</a></li>
+					<li><a href="Shape.html">Shape</a></li>
+					<li><a href="Sound.html">Sound</a></li>
+					<li><a href="SoundChannel.html">SoundChannel</a></li>
+					<li><a href="Sprite.html">Sprite</a></li>
+					<li><a href="Stage.html">Stage</a></li>
+					<li><a href="TTFont.html">TTFont</a></li>
+					<li><a href="TextField.html">TextField</a></li>
+					<li><a href="Texture.html">Texture</a></li>
+					<li><a href="TextureBase.html">TextureBase</a></li>
+					<li><a href="TexturePack.html">TexturePack</a></li>
+					<li><a href="TextureRegion.html">TextureRegion</a></li>
+					<li><a href="TileMap.html">TileMap</a></li>
+					<li><a href="Timer.html">Timer</a></li>
+					<li><a href="WeldJoint.html">WeldJoint</a></li>
+					<li><a href="WheelJoint.html">WheelJoint</a></li>
+					<li><a href="World.html">World</a></li>
+					<li><a href="b2.html">b2</a></li>
+					<li><a href="b2.DebugDraw.html">b2.DebugDraw</a></li>
+					<li><a href="b2.GearJoint.html">b2.GearJoint</a></li>
+					<li><a href="coroutine.html">coroutine</a></li>
+					<li><a href="debug.html">debug</a></li>
+					<li><a href="flurry.html">flurry</a></li>
+					<li><a href="global.html">global</a></li>
+					<li><a href="io.html">io</a></li>
+					<li><a href="math.html">math</a></li>
+					<li><a href="os.html">os</a></li>
+					<li><a href="package.html">package</a></li>
+					<li><a href="string.html">string</a></li>
+					<li><a href="table.html">table</a></li>
+		</ul>
+	</div>
+	<div id="content">
+   <h1>Module <code>MovieClip</code></h1>
+    The <code>MovieClip</code> class inherits from the following classes: <code>Sprite</code> > <code>EventDispatcher</code>.
+   <br/>
+<p>The <code>MovieClip</code> class is used create static timedlined animations. The timeline parameters are given as an array. 
+ Each array element specifies one timeline element and consists of the starting frame, ending frame, sprite and 
+ optional tweening parameters. Frame numbers start from 1.</p>
+
+<p> When a <code>MovieClip</code> object finishes it playing (by reaching its final frame or a frame with stop action), 
+ it dispatches an <code>Event.COMPLETE</code> event.</p>
+
+<p> The following properties can be tweened:</p>
+
+<ul>
+    <li><code>x</code></li>
+    <li><code>y</code></li>
+    <li><code>rotation</code></li>
+    <li><code>scale</code></li>
+    <li><code>scaleX</code></li>
+    <li><code>scaleY</code></li>
+    <li><code>alpha</code></li>
+</ul>
+
+<p> The following easing functions can be used:</p>
+
+<ul>
+    <li><code>"inBack"</code></li>
+    <li><code>"outBack"</code></li>
+    <li><code>"inOutBack"</code></li>
+    <li><code>"inBounce"</code></li>
+    <li><code>"outBounce"</code></li>
+    <li><code>"inOutBounce"</code></li>
+    <li><code>"inCircular"</code></li>
+    <li><code>"outCircular"</code></li>
+    <li><code>"inOutCircular"</code></li>
+    <li><code>"inCubic"</code></li>
+    <li><code>"outCubic"</code></li>
+    <li><code>"inOutCubic"</code></li>
+    <li><code>"inElastic"</code></li>
+    <li><code>"outElastic"</code></li>
+    <li><code>"inOutElastic"</code></li>
+    <li><code>"inExponential"</code></li>
+    <li><code>"outExponential"</code></li>
+    <li><code>"inOutExponential"</code></li>
+    <li><code>"linear"</code></li>
+    <li><code>"inQuadratic"</code></li>
+    <li><code>"outQuadratic"</code></li>
+    <li><code>"inOutQuadratic"</code></li>
+    <li><code>"inQuartic"</code></li>
+    <li><code>"outQuartic"</code></li>
+    <li><code>"inOutQuartic"</code></li>
+    <li><code>"inQuintic"</code></li>
+    <li><code>"outQuintic"</code></li>
+    <li><code>"inOutQuintic"</code></li>
+    <li><code>"inSine"</code></li>
+    <li><code>"outSine"</code></li>
+    <li><code>"inOutSine"</code></li>
+</ul>
+
+<p> Following examples demonstrates the possible uses of MovieClip class.</p>
+
+
+<h2> Examples</h2>
+
+<pre><code>-- construct a 100 frame animation where x coordinate of sprite tweens from 0 to 200 linearly
+local mc = MovieClip.new{
+    {1, 100, sprite, {x = {0, 200, "linear"}}}
+}
+
+-- construct a 100 frame animation where x coordinate of sprite is 50 (constant) and 
+-- y coordinate of sprite tweens from 50 to 150 by using inBounce function
+local mc = MovieClip.new{
+    {1, 100, sprite, {x = 50, y = {50, 150, "inBounce"}}}
+}
+
+-- construct a 200 frame animation where sprite1 and sprite2 tweens differently
+-- here sprite1 is visible between frames [1, 150]
+-- and sprite2 is visible between frames [100, 200]
+local mc = MovieClip.new{
+    {1, 100, sprite1, {x = {0, 200, "linear"}}},
+    {50, 150, sprite1, {y = {0, 100, "linear"}}, {alpha = {0, 1, "easeOut"}}},
+    {100, 200, sprite2, {x = {0, 200, "linear"}}},
+}
+
+-- construct a looping 6 frame animation where each frame is a different sprite
+local mc = MovieClip.new{
+    {1, 1, frame1}, 
+    {2, 2, frame2}, 
+    {3, 3, frame3}, 
+    {4, 4, frame4}, 
+    {5, 5, frame5}, 
+    {6, 6, frame6},
+}
+mc:setGotoAction(6, 1)  -- if the animation reaches frame 6 then go to frame 1
+
+-- construct a looping 6 frame animation playing 5 times slower than the previous example
+local mc = MovieClip.new{
+    {1, 5, frame1}, 
+    {5, 10, frame2},    
+    {11, 15, frame3},   
+    {16, 20, frame4},   
+    {21, 25, frame5},   
+    {26, 30, frame6},
+}
+mc:setGotoAction(30, 1) -- if the animation reaches frame 30 then go to frame 1
+</code></pre>
+
+			<h2><a id="#(MovieClip)">Type <code>MovieClip</code></a></h2>
+				<table class="function_list">
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).addChild">MovieClip:addChild(child)</a></td>
+		<td class="summary"> Adds a sprite as a child to this sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).addChildAt">MovieClip:addChildAt(child, index)</a></td>
+		<td class="summary"> Adds a sprite as a child to this sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).clearAction">MovieClip:clearAction(frame)</a></td>
+		<td class="summary"> Clears the action (goto or stop) at the specified frame.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).clearBlendMode">MovieClip:clearBlendMode()</a></td>
+		<td class="summary"> Clears the blending mode.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).contains">MovieClip:contains(child)</a></td>
+		<td class="summary"> Determines whether the specified sprite is contained in the subtree of
+ this <code>Sprite</code> instance.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).get">MovieClip:get()</a></td>
+		<td class="summary"> Returns the specified property of this sprite instance by its name.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getAlpha">MovieClip:getAlpha()</a></td>
+		<td class="summary"> Returns the alpha transparency of this sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getChildAt">MovieClip:getChildAt(index)</a></td>
+		<td class="summary"> Returns the child <code>Sprite</code> instance that exists at the specified index.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getChildIndex">MovieClip:getChildIndex(child)</a></td>
+		<td class="summary"> Returns the index of the specified child sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getColorTransform">MovieClip:getColorTransform()</a></td>
+		<td class="summary"> Returns the red, green, blue and alpha channel multipliers.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getHeight">MovieClip:getHeight()</a></td>
+		<td class="summary"> Returns the height of the sprite, in pixels.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getMatrix">MovieClip:getMatrix()</a></td>
+		<td class="summary"> Returns the transformation matrix of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getNumChildren">MovieClip:getNumChildren()</a></td>
+		<td class="summary"> Returns the number of children of this sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getParent">MovieClip:getParent()</a></td>
+		<td class="summary"> Returns the <code>Sprite</code> object that contains this <code>Sprite</code> object.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getPosition">MovieClip:getPosition()</a></td>
+		<td class="summary"> Returns the x and y coordinates of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getRotation">MovieClip:getRotation()</a></td>
+		<td class="summary"> Returns the rotation of the sprite in degrees.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getScale">MovieClip:getScale()</a></td>
+		<td class="summary"> Returns the horizontal and vertical scales of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getScaleX">MovieClip:getScaleX()</a></td>
+		<td class="summary"> Returns the horizontal scale of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getScaleY">MovieClip:getScaleY()</a></td>
+		<td class="summary"> Returns the vertical scale of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getWidth">MovieClip:getWidth()</a></td>
+		<td class="summary"> Returns the width of the sprite, in pixels.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getX">MovieClip:getX()</a></td>
+		<td class="summary"> Returns the x coordinate of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).getY">MovieClip:getY()</a></td>
+		<td class="summary"> Returns the y coordinate of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).globalToLocal">MovieClip:globalToLocal(x, y)</a></td>
+		<td class="summary"> Converts the x,y coordinates from the global to the sprite's (local) coordinates.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).gotoAndPlay">MovieClip:gotoAndPlay(frame)</a></td>
+		<td class="summary"> Goes to the specified frame and starts playing.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).gotoAndStop">MovieClip:gotoAndStop(frame)</a></td>
+		<td class="summary"> Goes to the specified frame and stops.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).hitTestPoint">MovieClip:hitTestPoint(x, y)</a></td>
+		<td class="summary"> Checks whether the given coordinates (in global coordinate system) is in bounds of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).isVisible">MovieClip:isVisible()</a></td>
+		<td class="summary"> Returns whether or not the sprite is visible.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).localToGlobal">MovieClip:localToGlobal(x, y)</a></td>
+		<td class="summary"> Converts the x,y coordinates from the sprites's (local) coordinates to the global coordinates.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).new">MovieClip.new(timeline)</a></td>
+		<td class="summary"> Creates a new <code>MovieClip</code> object.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).play">MovieClip:play()</a></td>
+		<td class="summary"> Starts playing the movie clip.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).removeChild">MovieClip:removeChild(child)</a></td>
+		<td class="summary"> Removes the specified child <code>Sprite</code> instance from the child list of this <code>Sprite</code> instance.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).removeChildAt">MovieClip:removeChildAt(index)</a></td>
+		<td class="summary"> Removes the child <code>Sprite</code> instance at the specifed index.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).removeFromParent">MovieClip:removeFromParent()</a></td>
+		<td class="summary"> If the sprite has a parent, removes the sprite from the child list of its parent sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).set">MovieClip:set(value)</a></td>
+		<td class="summary"> Sets the specified property of this sprite instance by its name.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setAlpha">MovieClip:setAlpha(alpha)</a></td>
+		<td class="summary"> Sets the alpha transparency of this sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setBlendMode">MovieClip:setBlendMode(blendMode)</a></td>
+		<td class="summary"> Sets the blend mode of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setColorTransform">MovieClip:setColorTransform(redMultiplier, greenMultiplier, blueMultiplier, alphaMultiplier)</a></td>
+		<td class="summary"> Sets the red, green, blue and alpha channel multipliers.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setGotoAction">MovieClip:setGotoAction(frame, destframe)</a></td>
+		<td class="summary"> Sets a <em>goto</em> action to the specified frame.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setMatrix">MovieClip:setMatrix(matrix)</a></td>
+		<td class="summary"> Sets the transformation matrix of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setPosition">MovieClip:setPosition(x, y)</a></td>
+		<td class="summary"> Sets the x and y coordinates of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setRotation">MovieClip:setRotation(rotation)</a></td>
+		<td class="summary"> Sets the rotation of the sprite in degrees.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setScale">MovieClip:setScale(scaleX, scaleY)</a></td>
+		<td class="summary"> Sets the horizontal and vertical scales of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setScaleX">MovieClip:setScaleX(scaleX)</a></td>
+		<td class="summary"> Sets the horizontal scale of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setScaleY">MovieClip:setScaleY(scaleY)</a></td>
+		<td class="summary"> Sets the vertical scale of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setStopAction">MovieClip:setStopAction(frame)</a></td>
+		<td class="summary"> Sets a <em>stop</em> action to the specified frame.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setVisible">MovieClip:setVisible(visible)</a></td>
+		<td class="summary"> Sets whether or not the sprite is visible.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setX">MovieClip:setX(x)</a></td>
+		<td class="summary"> Sets the x coordinate of the sprite</p>
+
+<p> </td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).setY">MovieClip:setY(y)</a></td>
+		<td class="summary"> Sets the y coordinate of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="MovieClip.html##(MovieClip).stop">MovieClip:stop()</a></td>
+		<td class="summary"> Stops playing the movie clip.</td>
+		</tr>
+	</table>
+
+			<h2>Type <code>MovieClip</code></h2>
+				<h3>Field(s)</h3>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).addChild" >
+<strong>MovieClip:addChild(child)</strong>
+</a>
+</dt>
+<dd>
+	 Adds a sprite as a child to this sprite.
+	<br/>The child is
+ added as a last child of this <code>Sprite</code> instance.</p>
+
+<p> Sprites can have only one parent. Therefore if you add a child
+ object that already has a different sprite as a parent,
+ the sprite is removed from the child list of the other sprite
+ and then added to this sprite.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				child  </em></code>: (Sprite) The child sprite to add.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).addChildAt" >
+<strong>MovieClip:addChildAt(child, index)</strong>
+</a>
+</dt>
+<dd>
+	 Adds a sprite as a child to this sprite.
+	<br/>The child is
+ added at the index position specified. Indices start from 1.</p>
+
+<p> Sprites can have only one parent. Therefore if you add a child
+ object that already has a different sprite as a parent,
+ the sprite is removed from the child list of the other sprite
+ and then added to this sprite.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				child  </em></code>: (Sprite) The child sprite to add.
+				</li>
+				<li><code><em>
+				index  </em></code>: (number) The index position to which the child is added.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).clearAction" >
+<strong>MovieClip:clearAction(frame)</strong>
+</a>
+</dt>
+<dd>
+	 Clears the action (goto or stop) at the specified frame.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				frame  </em></code>: (int) the frame number
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).clearBlendMode" >
+<strong>MovieClip:clearBlendMode()</strong>
+</a>
+</dt>
+<dd>
+	 Clears the blending mode.
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).contains" >
+<strong>MovieClip:contains(child)</strong>
+</a>
+</dt>
+<dd>
+	 Determines whether the specified sprite is contained in the subtree of
+ this <code>Sprite</code> instance.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				child  </em></code>: (Sprite) The child object to test.
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				<code>true</code> if the child object is contained in the subtree of this <code>Sprite</code> instance, otherwise <code>false</code>.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).get" >
+<strong>MovieClip:get()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the specified property of this sprite instance by its name.
+	<br/>
+<p>These names are supported:</p>
+
+<ul>
+    <li><code>"x"</code></li>
+    <li><code>"y"</code></li>
+    <li><code>"rotation"</code></li>
+    <li><code>"scaleX"</code></li>
+    <li><code>"scaleY"</code></li>
+    <li><code>"alpha"</code></li>
+    <li><code>"redMultiplier"</code></li>
+    <li><code>"greenMultiplier"</code></li>
+    <li><code>"blueMultiplier"</code></li>
+    <li><code>"alphaMultiplier"</code></li>
+</ul>
+
+		<h3>Return value</h3>
+				<p>
+				The value of the parameter
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getAlpha" >
+<strong>MovieClip:getAlpha()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the alpha transparency of this sprite.
+	<br/>0 means fully transparent and 1 means fully opaque.
+		<h3>Return value</h3>
+				<p>
+				The alpha of the sprite
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getChildAt" >
+<strong>MovieClip:getChildAt(index)</strong>
+</a>
+</dt>
+<dd>
+	 Returns the child <code>Sprite</code> instance that exists at the specified index.
+	<br/>First child is at index 1.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				index  </em></code>: (number) The index position of the child object.
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				The child sprite at the specified index position.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getChildIndex" >
+<strong>MovieClip:getChildIndex(child)</strong>
+</a>
+</dt>
+<dd>
+	 Returns the index of the specified child sprite.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				child  </em></code>: (Sprite) The child sprite to identify.
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				The index of the specified child sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getColorTransform" >
+<strong>MovieClip:getColorTransform()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the red, green, blue and alpha channel multipliers.
+		<h3>Return value</h3>
+				<p>
+				4 values: redMultiplier, greenMultiplier, blueMultiplier and alphaMultiplier
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getHeight" >
+<strong>MovieClip:getHeight()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the height of the sprite, in pixels.
+	<br/>The height is calculated based on the
+ bounds of the content of the sprite.
+		<h3>Return value</h3>
+				<p>
+				Height of the sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getMatrix" >
+<strong>MovieClip:getMatrix()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the transformation matrix of the sprite.
+	<br/>Each invocation of this function returns a new <code>Matrix</code> object.
+		<h3>Return value</h3>
+				<p>
+				The transformation matrix of the sprite
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getNumChildren" >
+<strong>MovieClip:getNumChildren()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the number of children of this sprite.
+		<h3>Return value</h3>
+				<p>
+				The number of children of this sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getParent" >
+<strong>MovieClip:getParent()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the <code>Sprite</code> object that contains this <code>Sprite</code> object.
+		<h3>Return value</h3>
+				<p>
+				The parent sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getPosition" >
+<strong>MovieClip:getPosition()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the x and y coordinates of the sprite.
+		<h3>Return value</h3>
+				<p>
+				The x and y coordinates of the sprite
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getRotation" >
+<strong>MovieClip:getRotation()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the rotation of the sprite in degrees.
+		<h3>Return value</h3>
+				<p>
+				Rotation of the sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getScale" >
+<strong>MovieClip:getScale()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the horizontal and vertical scales of the sprite.
+		<h3>Return value</h3>
+				<p>
+				The horizontal and vertical scales of the sprite
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getScaleX" >
+<strong>MovieClip:getScaleX()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the horizontal scale of the sprite.
+		<h3>Return value</h3>
+				<p>
+				The horizontal scale (percentage) of the sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getScaleY" >
+<strong>MovieClip:getScaleY()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the vertical scale of the sprite.
+		<h3>Return value</h3>
+				<p>
+				The vertical scale of the object.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getWidth" >
+<strong>MovieClip:getWidth()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the width of the sprite, in pixels.
+	<br/>The width is calculated based on the
+ bounds of the content of the sprite.
+		<h3>Return value</h3>
+				<p>
+				Width of the sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getX" >
+<strong>MovieClip:getX()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the x coordinate of the sprite.
+		<h3>Return value</h3>
+				<p>
+				The x coordinate of the sprite
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).getY" >
+<strong>MovieClip:getY()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the y coordinate of the sprite.
+		<h3>Return value</h3>
+				<p>
+				The y coordinate of the sprite
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).globalToLocal" >
+<strong>MovieClip:globalToLocal(x, y)</strong>
+</a>
+</dt>
+<dd>
+	 Converts the x,y coordinates from the global to the sprite's (local) coordinates.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number) x coordinate of the global coordinate.
+				</li>
+				<li><code><em>
+				y  </em></code>: (number) y coordinate of the global coordinate.
+				</li>
+		</ul>
+		<h3>Return values</h3>
+			<ol>
+				<li>
+				x coordinate relative to the display object.
+				</li>
+				<li>
+				y coordinate relative to the display object.
+				</li>
+			</ol>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).gotoAndPlay" >
+<strong>MovieClip:gotoAndPlay(frame)</strong>
+</a>
+</dt>
+<dd>
+	 Goes to the specified frame and starts playing.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				frame  </em></code>: (int) the frame number
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).gotoAndStop" >
+<strong>MovieClip:gotoAndStop(frame)</strong>
+</a>
+</dt>
+<dd>
+	 Goes to the specified frame and stops.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				frame  </em></code>: (int) the frame number
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).hitTestPoint" >
+<strong>MovieClip:hitTestPoint(x, y)</strong>
+</a>
+</dt>
+<dd>
+	 Checks whether the given coordinates (in global coordinate system) is in bounds of the sprite.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number)
+				</li>
+				<li><code><em>
+				y  </em></code>: (number)
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				<code>true</code> if the given global coordinates are in bounds of the sprite, <code>false</code> otherwise.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).isVisible" >
+<strong>MovieClip:isVisible()</strong>
+</a>
+</dt>
+<dd>
+	 Returns whether or not the sprite is visible.
+	<br/>Child sprites that are not visible are also taken
+ into consideration while calculating bounds.
+		<h3>Return value</h3>
+				<p>
+				A value of <code>true</code> if sprite is visible; <code>false</code> otherwise.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).localToGlobal" >
+<strong>MovieClip:localToGlobal(x, y)</strong>
+</a>
+</dt>
+<dd>
+	 Converts the x,y coordinates from the sprites's (local) coordinates to the global coordinates.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number) x coordinate of the local coordinate.
+				</li>
+				<li><code><em>
+				y  </em></code>: (number) y coordinate of the local coordinate.
+				</li>
+		</ul>
+		<h3>Return values</h3>
+			<ol>
+				<li>
+				x coordinate relative to the display area.
+				</li>
+				<li>
+				y coordinate relative to the display area.
+				</li>
+			</ol>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).new" >
+<strong>MovieClip.new(timeline)</strong>
+</a>
+</dt>
+<dd>
+	 Creates a new <code>MovieClip</code> object.
+	<br/>After constructing the MovieClip object, it starts playing. You don't need to
+ call <a href="#MovieClip:play">MovieClip:play</a>.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				timeline  </em></code>: (table) array of timeline elements
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				<em><a href="##(MovieClip)">#MovieClip</a>:</em>
+				
+
+
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).play" >
+<strong>MovieClip:play()</strong>
+</a>
+</dt>
+<dd>
+	 Starts playing the movie clip.
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).removeChild" >
+<strong>MovieClip:removeChild(child)</strong>
+</a>
+</dt>
+<dd>
+	 Removes the specified child <code>Sprite</code> instance from the child list of this <code>Sprite</code> instance.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				child  </em></code>: (Sprite) The child sprite to remove.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).removeChildAt" >
+<strong>MovieClip:removeChildAt(index)</strong>
+</a>
+</dt>
+<dd>
+	 Removes the child <code>Sprite</code> instance at the specifed index.
+	<br/>Index of the first child is 1
+ and index of the last child can be get from <code>Sprite:getNumChildren</code> function.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				index  </em></code>: (number) The child index of the sprite to remove.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).removeFromParent" >
+<strong>MovieClip:removeFromParent()</strong>
+</a>
+</dt>
+<dd>
+	 If the sprite has a parent, removes the sprite from the child list of its parent sprite.
+	<br/>
+<p>This function is equilavent to:</p>
+
+<pre><code>function Sprite:removeFromParent()
+    local parent = self:getParent()
+    if parent ~= nil then
+        parent:removeChild(self)
+    end
+end
+</code></pre>
+
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).set" >
+<strong>MovieClip:set(value)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the specified property of this sprite instance by its name.
+	<br/>
+<p>These names are supported:</p>
+
+<ul>
+    <li><code>"x"</code></li>
+    <li><code>"y"</code></li>
+    <li><code>"rotation"</code></li>
+    <li><code>"scaleX"</code></li>
+    <li><code>"scaleY"</code></li>
+    <li><code>"scale"</code></li>
+    <li><code>"alpha"</code></li>
+    <li><code>"redMultiplier"</code></li>
+    <li><code>"greenMultiplier"</code></li>
+    <li><code>"blueMultiplier"</code></li>
+    <li><code>"alphaMultiplier"</code></li>
+</ul>
+
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				value  </em></code>: (number) The new value of the specified parameter
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setAlpha" >
+<strong>MovieClip:setAlpha(alpha)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the alpha transparency of this sprite.
+	<br/>0 means fully transparent and 1 means fully opaque.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				alpha  </em></code>: (number) The new alpha transparency of the sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setBlendMode" >
+<strong>MovieClip:setBlendMode(blendMode)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the blend mode of the sprite.
+	<br/>Currently supported blending modes are:</p>
+
+<ul>
+    <li>Sprite.ALPHA = "alpha" </li>
+    <li>Sprite.NO_ALPHA = "noAlpha"</li>
+    <li>Sprite.ADD = "add"</li>
+    <li>Sprite.MULTIPLY = "multiply"</li>
+    <li>Sprite.SCREEN = "screen"</li>
+</ul>
+
+<p> If a <code>Sprite</code> object doesn't set any blending mode, it takes the blending mode from its parent sprite.</p>
+
+<p> <strong>Note:</strong> The following two lines are completely same:</p>
+<pre><code>sprite:setBlendMode("add")
+sprite:setBlendMode(Sprite.ADD)
+</code></pre>
+<p> It's a matter of taste which one to choose.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				blendMode  </em></code>: (String)
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setColorTransform" >
+<strong>MovieClip:setColorTransform(redMultiplier, greenMultiplier, blueMultiplier, alphaMultiplier)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the red, green, blue and alpha channel multipliers.
+	<br/>This function lets you adjust the color multipliers of a display object.
+ This adjustment also applies to the children of this sprite instance.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				redMultiplier  </em></code>: (number, default = 1) The red multiplier of this sprite
+				</li>
+				<li><code><em>
+				greenMultiplier  </em></code>: (number, default = 1) The green multiplier of this sprite
+				</li>
+				<li><code><em>
+				blueMultiplier  </em></code>: (number, default = 1) The blue multiplier of this sprite
+				</li>
+				<li><code><em>
+				alphaMultiplier  </em></code>: (number, default = 1) The alpha multiplier of this sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setGotoAction" >
+<strong>MovieClip:setGotoAction(frame, destframe)</strong>
+</a>
+</dt>
+<dd>
+	 Sets a <em>goto</em> action to the specified frame.
+	<br/>When the movie clip reaches a frame 
+ with goto action, it jumps to the destination frame and continues to play. 
+ This function is usually used to create looping animations.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				frame  </em></code>: (int) the frame number
+				</li>
+				<li><code><em>
+				destframe  </em></code>: (int) the destination frame number
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setMatrix" >
+<strong>MovieClip:setMatrix(matrix)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the transformation matrix of the sprite.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				matrix  </em></code>: (Matrix)
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setPosition" >
+<strong>MovieClip:setPosition(x, y)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the x and y coordinates of the sprite.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number) The new x coordinate of the sprite
+				</li>
+				<li><code><em>
+				y  </em></code>: (number) The new y coordinate of the sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setRotation" >
+<strong>MovieClip:setRotation(rotation)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the rotation of the sprite in degrees.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				rotation  </em></code>: (number) rotation of the sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setScale" >
+<strong>MovieClip:setScale(scaleX, scaleY)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the horizontal and vertical scales of the sprite.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				scaleX  </em></code>: (number) horizontal scale (percentage) of the object
+				</li>
+				<li><code><em>
+				scaleY  </em></code>: (number, default = scaleX) vertical scale (percentage) of the object
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setScaleX" >
+<strong>MovieClip:setScaleX(scaleX)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the horizontal scale of the sprite.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				scaleX  </em></code>: (number) horizontal scale of the sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setScaleY" >
+<strong>MovieClip:setScaleY(scaleY)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the vertical scale of the sprite.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				scaleY  </em></code>: (number) vertical scale (percentage) of the object
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setStopAction" >
+<strong>MovieClip:setStopAction(frame)</strong>
+</a>
+</dt>
+<dd>
+	 Sets a <em>stop</em> action to the specified frame.
+	<br/>When the movie clip reaches a frame 
+ with stop action, it stops playing. This function is usually used to divide
+ the animation into independent parts.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				frame  </em></code>: (int) the frame number
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setVisible" >
+<strong>MovieClip:setVisible(visible)</strong>
+</a>
+</dt>
+<dd>
+	 Sets whether or not the sprite is visible.
+	<br/>Sprites that are not visible are also taken
+ into consideration while calculating bounds.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				visible  </em></code>: (bool) whether or not the sprite is visible
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setX" >
+<strong>MovieClip:setX(x)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the x coordinate of the sprite</p>
+
+<p> 
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number) The new x coordinate of the sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).setY" >
+<strong>MovieClip:setY(y)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the y coordinate of the sprite.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				y  </em></code>: (number) The new y coordinate of the sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(MovieClip).stop" >
+<strong>MovieClip:stop()</strong>
+</a>
+</dt>
+<dd>
+	 Stops playing the movie clip.
+</dd>
+</dl>
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+	</head>
+<body>
+<div id="container">
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div>
+<div id="main">
+	<div id="navigation">
+		<h2>Modules</h2>
+			<ul><li>
+				<a href="index.html">index</a>
+			</li></ul>
+		<ul>
+					<li><a href="Accelerometer.html">Accelerometer</a></li>
+					<li>Application</li>
+					<li><a href="Bitmap.html">Bitmap</a></li>
+					<li><a href="Body.html">Body</a></li>
+					<li><a href="ChainShape.html">ChainShape</a></li>
+					<li><a href="CircleShape.html">CircleShape</a></li>
+					<li><a href="DistanceJoint.html">DistanceJoint</a></li>
+					<li><a href="EdgeShape.html">EdgeShape</a></li>
+					<li><a href="Event.html">Event</a></li>
+					<li><a href="EventDispatcher.html">EventDispatcher</a></li>
+					<li><a href="Fixture.html">Fixture</a></li>
+					<li><a href="Font.html">Font</a></li>
+					<li><a href="FontBase.html">FontBase</a></li>
+					<li><a href="FrictionJoint.html">FrictionJoint</a></li>
+					<li><a href="Geolocation.html">Geolocation</a></li>
+					<li><a href="Gyroscope.html">Gyroscope</a></li>
+					<li><a href="Joint.html">Joint</a></li>
+					<li><a href="Matrix.html">Matrix</a></li>
+					<li><a href="MouseJoint.html">MouseJoint</a></li>
+					<li><a href="MovieClip.html">MovieClip</a></li>
+					<li><a href="PolygonShape.html">PolygonShape</a></li>
+					<li><a href="PrismaticJoint.html">PrismaticJoint</a></li>
+					<li><a href="PulleyJoint.html">PulleyJoint</a></li>
+					<li><a href="RevoluteJoint.html">RevoluteJoint</a></li>
+					<li><a href="Shape.html">Shape</a></li>
+					<li><a href="Sound.html">Sound</a></li>
+					<li><a href="SoundChannel.html">SoundChannel</a></li>
+					<li><a href="Sprite.html">Sprite</a></li>
+					<li><a href="Stage.html">Stage</a></li>
+					<li><a href="TTFont.html">TTFont</a></li>
+					<li><a href="TextField.html">TextField</a></li>
+					<li><a href="Texture.html">Texture</a></li>
+					<li><a href="TextureBase.html">TextureBase</a></li>
+					<li><a href="TexturePack.html">TexturePack</a></li>
+					<li><a href="TextureRegion.html">TextureRegion</a></li>
+					<li><a href="TileMap.html">TileMap</a></li>
+					<li><a href="Timer.html">Timer</a></li>
+					<li><a href="WeldJoint.html">WeldJoint</a></li>
+					<li><a href="WheelJoint.html">WheelJoint</a></li>
+					<li><a href="World.html">World</a></li>
+					<li><a href="b2.html">b2</a></li>
+					<li><a href="b2.DebugDraw.html">b2.DebugDraw</a></li>
+					<li><a href="b2.GearJoint.html">b2.GearJoint</a></li>
+					<li><a href="coroutine.html">coroutine</a></li>
+					<li><a href="debug.html">debug</a></li>
+					<li><a href="flurry.html">flurry</a></li>
+					<li><a href="global.html">global</a></li>
+					<li><a href="io.html">io</a></li>
+					<li><a href="math.html">math</a></li>
+					<li><a href="os.html">os</a></li>
+					<li><a href="package.html">package</a></li>
+					<li><a href="string.html">string</a></li>
+					<li><a href="table.html">table</a></li>
+		</ul>
+	</div>
+	<div id="content">
+   <h1>Module <code>Application</code></h1>
+    <code>Application</code> class contains the common functions that's 
+ available to the current application.
+   <br/>There is
+ a global variable <code>application</code> of type <code>Application</code>
+ to access these functions.
+			<h2><a id="#(Application)">Type <code>Application</code></a></h2>
+				<table class="function_list">
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).exit">Application:exit()</a></td>
+		<td class="summary"> Terminates the application.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getAccelerometer">Application:getAccelerometer()</a></td>
+		<td class="summary"> **This function is obsolete.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getBackgroundColor">Application:getBackgroundColor()</a></td>
+		<td class="summary"> Returns the background color (or clear color) of the application in hexadecimal format.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getContentHeight">Application:getContentHeight()</a></td>
+		<td class="summary"> If the orientation is portrait, this function returns logical height.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getContentWidth">Application:getContentWidth()</a></td>
+		<td class="summary"> If the orientation is portrait, this function returns logical width.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getDeviceHeight">Application:getDeviceHeight()</a></td>
+		<td class="summary"> Returns the physical height of the device in pixels.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getDeviceInfo">Application:getDeviceInfo()</a></td>
+		<td class="summary"> Returns information about device.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getDeviceWidth">Application:getDeviceWidth()</a></td>
+		<td class="summary"> Returns the physical width of the device in pixels.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getFps">Application:getFps()</a></td>
+		<td class="summary"> Returns the frame rate of the application.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getLanguage">Application:getLanguage()</a></td>
+		<td class="summary"> Returns the user language in ISO 639-1 format.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getLocale">Application:getLocale()</a></td>
+		<td class="summary"> Returns the device locale.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getLogicalHeight">Application:getLogicalHeight()</a></td>
+		<td class="summary"> Returns the logical height of the application that is specified at the project properties.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getLogicalScaleX">Application:getLogicalScaleX()</a></td>
+		<td class="summary"> Returns the scaling of automatic screen scaling on the x-axis.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getLogicalScaleY">Application:getLogicalScaleY()</a></td>
+		<td class="summary"> Returns the scaling of automatic screen scaling on the y-axis.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getLogicalTranslateX">Application:getLogicalTranslateX()</a></td>
+		<td class="summary"> Returns the translation of automatic screen scaling on the x-axis.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getLogicalTranslateY">Application:getLogicalTranslateY()</a></td>
+		<td class="summary"> Returns the translation of automatic screen scaling on the y-axis.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getLogicalWidth">Application:getLogicalWidth()</a></td>
+		<td class="summary"> Returns the logical width of the application that is specified at the project properties.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getOrientation">Application:getOrientation()</a></td>
+		<td class="summary"> Returns the orientation of the application.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).getScaleMode">Application:getScaleMode()</a></td>
+		<td class="summary"> Returns the automatic scale mode of the application.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).openUrl">Application:openUrl()</a></td>
+		<td class="summary"> Opens the given URL (Universal Resource Locator) in the appropriate application.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).setBackgroundColor">Application:setBackgroundColor(color)</a></td>
+		<td class="summary"> Sets the background color (or clear color) of the application in hexadecimal format.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).setFps">Application:setFps(fps)</a></td>
+		<td class="summary"> Sets the frame rate of the application.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).setKeepAwake">Application:setKeepAwake(keepAwake)</a></td>
+		<td class="summary"> Controls the screen dimming and device sleeping of the device.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).setLogicalDimensions">Application:setLogicalDimensions(width, height)</a></td>
+		<td class="summary"> Sets the logical dimensions of the application.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).setOrientation">Application:setOrientation(orientation)</a></td>
+		<td class="summary"> Sets the orientation of the application.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).setScaleMode">Application:setScaleMode(scaleMode)</a></td>
+		<td class="summary"> Sets the automatic scale mode of the application.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Application.html##(Application).vibrate">Application:vibrate()</a></td>
+		<td class="summary"> Vibrates the device.</td>
+		</tr>
+	</table>
+
+			<h2>Type <code>Application</code></h2>
+				<h3>Field(s)</h3>
+		<dl class="function">
+<dt>
+<a id="#(Application).exit" >
+<strong>Application:exit()</strong>
+</a>
+</dt>
+<dd>
+	 Terminates the application.
+	<br/>Although this function is available to all platforms, it should be used on Android only.
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getAccelerometer" >
+<strong>Application:getAccelerometer()</strong>
+</a>
+</dt>
+<dd>
+	 **This function is obsolete.
+	<br/>Use <a href="#Accelerometer">Accelerometer</a> class instead.**</p>
+
+<p> Returns the x, y, z coordinates of the accelerometer.
+		<h3>Return values</h3>
+			<ol>
+				<li>
+				x coordinate of the accelerometer
+				</li>
+				<li>
+				y coordinate of the accelerometer
+				</li>
+				<li>
+				z coordinate of the accelerometer
+				</li>
+			</ol>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getBackgroundColor" >
+<strong>Application:getBackgroundColor()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the background color (or clear color) of the application in hexadecimal format.
+		<h3>Return value</h3>
+				<p>
+				The background color in hexadecimal format.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getContentHeight" >
+<strong>Application:getContentHeight()</strong>
+</a>
+</dt>
+<dd>
+	 If the orientation is portrait, this function returns logical height.
+	<br/>If the orientation is landscape, this function
+ returns logical width.
+		<h3>Return value</h3>
+				<p>
+				Logical width or logical height depending on orientation.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getContentWidth" >
+<strong>Application:getContentWidth()</strong>
+</a>
+</dt>
+<dd>
+	 If the orientation is portrait, this function returns logical width.
+	<br/>If the orientation is landscape, this function
+ returns logical height.
+		<h3>Return value</h3>
+				<p>
+				Logical width or logical height depending on orientation.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getDeviceHeight" >
+<strong>Application:getDeviceHeight()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the physical height of the device in pixels.
+	<br/>For example,
+ for iPhone 3GS this function returns 480 and for iPhone 4 (with retina display enabled) this function returns 960.
+		<h3>Return value</h3>
+				<p>
+				The physical height of the device in pixels
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getDeviceInfo" >
+<strong>Application:getDeviceInfo()</strong>
+</a>
+</dt>
+<dd>
+	 Returns information about device.
+	<br/>
+<ul>
+    <li>For iOS, returns 5 values: "iOS", iOS version, device type, user interface idiom and device model</li>
+    <li>For Android, returns 2 values: "Android", Android version</li>
+    <li>For Windows returns 1 value: "Windows"</li>
+    <li>For Mac OS X returns 1 value: "Mac OS"</li>
+</ul>
+
+		<h3>Return value</h3>
+				<p>
+				Information about device
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getDeviceWidth" >
+<strong>Application:getDeviceWidth()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the physical width of the device in pixels.
+	<br/>For example,
+ for iPhone 3GS this function returns 320 and for iPhone 4 (with retina display enabled) this function returns 640.
+		<h3>Return value</h3>
+				<p>
+				The physical width of the device in pixels
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getFps" >
+<strong>Application:getFps()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the frame rate of the application.
+		<h3>Return value</h3>
+				<p>
+				The frame rate of the application.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getLanguage" >
+<strong>Application:getLanguage()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the user language in ISO 639-1 format.
+		<h3>Return value</h3>
+				<p>
+				The the user language
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getLocale" >
+<strong>Application:getLocale()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the device locale.
+	<br/>The locale string is a combination of ISO 639-1 and ISO 3166-1. For example, en<em>US, ja</em>JP.
+		<h3>Return value</h3>
+				<p>
+				The device locale
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getLogicalHeight" >
+<strong>Application:getLogicalHeight()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the logical height of the application that is specified at the project properties.
+		<h3>Return value</h3>
+				<p>
+				The logical height of the application
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getLogicalScaleX" >
+<strong>Application:getLogicalScaleX()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the scaling of automatic screen scaling on the x-axis.
+		<h3>Return value</h3>
+				<p>
+				The scaling of automatic screen scaling on the x-axis.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getLogicalScaleY" >
+<strong>Application:getLogicalScaleY()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the scaling of automatic screen scaling on the y-axis.
+		<h3>Return value</h3>
+				<p>
+				The scaling of automatic screen scaling on the y-axis.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getLogicalTranslateX" >
+<strong>Application:getLogicalTranslateX()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the translation of automatic screen scaling on the x-axis.
+		<h3>Return value</h3>
+				<p>
+				The translation of automatic screen scaling on the x-axis.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getLogicalTranslateY" >
+<strong>Application:getLogicalTranslateY()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the translation of automatic screen scaling on the y-axis.
+		<h3>Return value</h3>
+				<p>
+				The translation of automatic screen scaling on the y-axis.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getLogicalWidth" >
+<strong>Application:getLogicalWidth()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the logical width of the application that is specified at the project properties.
+		<h3>Return value</h3>
+				<p>
+				The logical width of the application
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getOrientation" >
+<strong>Application:getOrientation()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the orientation of the application.
+		<h3>Return value</h3>
+				<p>
+				The orientation of the application
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).getScaleMode" >
+<strong>Application:getScaleMode()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the automatic scale mode of the application.
+		<h3>Return value</h3>
+				<p>
+				The automatic scale mode of the application
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).openUrl" >
+<strong>Application:openUrl()</strong>
+</a>
+</dt>
+<dd>
+	 Opens the given URL (Universal Resource Locator) in the appropriate application.
+	<br/>
+<p>URL can be one of the <code>http:</code>, <code>https:</code>, <code>tel:</code>, or <code>mailto:</code> schemes.</p>
+
+<p> The following example opens a web page in the browser:</p>
+<pre><code>application:openUrl("http://www.giderosmobile.com")
+</code></pre>
+
+<p> If <code>mailto:</code> scheme is specified, the user's e-mail client will be used to open a composer window containing the options specified in the URL.
+ For example, the following URL contains a recipient (user@foo.com), a subject (Test), and a message body (Just a test):</p>
+<pre><code>application:openUrl("mailto:user@foo.com?subject=Test&amp;body=Just a test")
+</code></pre>
+
+<p> Or to call a number:</p>
+<pre><code>application:openUrl("tel:555-123-4567")
+</code></pre>
+
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).setBackgroundColor" >
+<strong>Application:setBackgroundColor(color)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the background color (or clear color) of the application in hexadecimal format.
+	<br/>Default background color is white (0xffffff).
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				color  </em></code>: (number) background color in hexadecimal format
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).setFps" >
+<strong>Application:setFps(fps)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the frame rate of the application.
+	<br/>Accepted values are <code>30</code> and <code>60</code>.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				fps  </em></code>: (number) the new frame rate of the application
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).setKeepAwake" >
+<strong>Application:setKeepAwake(keepAwake)</strong>
+</a>
+</dt>
+<dd>
+	 Controls the screen dimming and device sleeping of the device.
+	<br/>When the application has no touches as user input for some period,
+ the system puts the device into a sleep state where the screen dims. However some applications have no input and controlled
+ by accelerometer or gyroscope only. For these kind applications, the screen should be kept awake by calling this function
+ with parameter <code>true</code>.</p>
+
+<p> <strong>Note:</strong> This function has no effect on desktop.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				keepAwake  </em></code>: (boolean) if true, screen is kept awake.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).setLogicalDimensions" >
+<strong>Application:setLogicalDimensions(width, height)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the logical dimensions of the application.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				width  </em></code>: (number) logical width
+				</li>
+				<li><code><em>
+				height  </em></code>: (number) logical height
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).setOrientation" >
+<strong>Application:setOrientation(orientation)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the orientation of the application.
+	<br/>
+<p>Accepted values are:</p>
+
+<ul>
+    <li>Application.PORTRAIT = "portrait"</li>
+    <li>Application.PORTRAIT<em>UPSIDE</em>DOWN = "portraitUpsideDown"</li>
+    <li>Application.LANDSCAPE_LEFT = "landscapeLeft"</li>
+    <li>Application.LANDSCAPE_RIGHT = "landscapeRight"</li>
+</ul>
+
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				orientation  </em></code>: (string)
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).setScaleMode" >
+<strong>Application:setScaleMode(scaleMode)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the automatic scale mode of the application.
+	<br/>
+<p>Accepted values are:</p>
+
+<ul>
+    <li>Application.NO_SCALE = "noScale"</li>
+    <li>Application.CENTER = "center"</li>
+    <li>Application.PIXEL_PERFECT = "pixelPerfect"</li>
+    <li>Application.LETTERBOX = "letterbox"</li>
+    <li>Application.CROP = "crop"</li>
+    <li>Application.STRETCH = "stretch"</li>
+    <li>Application.FIT_WIDTH = "fitWidth"</li>
+    <li>Application.FIT_HEIGHT = "fitHeight"</li>
+</ul>
+
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				scaleMode  </em></code>: (string)
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Application).vibrate" >
+<strong>Application:vibrate()</strong>
+</a>
+</dt>
+<dd>
+	 Vibrates the device.
+	<br/>If the device doesn't support vibration, this function has no effect.
+</dd>
+</dl>
+
+</div>
+
+</div>
+</body>
+</html>

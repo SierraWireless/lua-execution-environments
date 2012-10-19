@@ -1,0 +1,419 @@
+
+
+-----------------------------------------------------------	
+-- The `b2.World` class inherits from the following class: `EventDispatcher`.
+-- 
+-- The `b2.World` class manages all physics entities and dynamic simulation. It is possible to create and manage more than one `b2.World` instance.
+-- 
+-- 
+-- @module World
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Creates a new `b2.World` object. You can create more then one `b2.World` object to manage independent worlds.
+-- 
+-- @function [parent=#World] new
+-- @param gravityx (number) the x component the gravity
+-- @param gravityy (number) the y component the gravity
+-- @param doSleep (boolean, default = true) improve performance by not simulating inactive bodies
+-- @return #World A new `b2.World` object.
+
+-----------------------------------------------------------	
+-- 
+-- Creates a rigid body given a definition. The body definition is given as an ordinary table. The fields of the body definition table are:
+-- 
+-- * **type**: (number) The body type: `b2.STATIC_BODY`, `b2.KINEMATIC_BODY`, or `b2.DYNAMIC_BODY`. Note: if a dynamic body would have zero mass, the mass is set to one.
+-- * **position**: (table) The world position of the body (see the example below to understand how this table is set). Avoid creating bodies at the origin since this can lead to many overlapping shapes.
+-- * **angle**: (number) The world angle of the body in radians.
+-- * **linearVelocity**: (table) The linear velocity of the body's origin in world co-ordinates (see the example below to understand how this table is set).
+-- * **angularVelocity**: (number) The angular velocity of the body.
+-- * **linearDamping**: (number) Linear damping is use to reduce the linear velocity. The damping parameter can be larger than 1.0 but the damping effect becomes sensitive to the time step when the damping parameter is large.
+-- * **angularDamping**: (number) Angular damping is use to reduce the angular velocity. The damping parameter can be larger than 1.0 but the damping effect becomes sensitive to the time step when the damping parameter is large.
+-- * **allowSleep**: (boolean) Set this flag to false if this body should never fall asleep. Note that this increases CPU usage.
+-- * **awake**: (boolean) Is this body initially awake or sleeping?
+-- * **fixedRotation**: (boolean) Should this body be prevented from rotating? Useful for characters.
+-- * **bullet**: (boolean) Is this a fast moving body that should be prevented from tunneling through other moving bodies? Note that all bodies are prevented from tunneling through kinematic and static bodies. This setting is only considered on dynamic bodies. **Warning:** You should use this flag sparingly since it increases processing time.
+-- * **active**: (boolean) Does this body start out active?
+-- * **gravityScale**: (number) Scale the gravity applied to this body.
+-- 
+-- The unset fields gets default values.
+-- 
+-- **Warning:** This function is locked during callbacks.
+-- 
+-- @function [parent=#World] createBody
+-- @param self
+-- @param bodyDef (table)
+-- @return Body#Body The created `b2.Body` instance.
+
+-- 
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Destroys a rigid body. This function is locked during callbacks.
+-- 
+-- **Warning:**
+-- 
+-- * This automatically deletes all associated shapes and joints.
+-- * This function is locked during callbacks.
+-- 
+-- @function [parent=#World] destroyBody
+-- @param self
+-- @param body (b2.Body) body to be destroyed
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Take a time step. This performs collision detection, integration, and constraint solution.
+-- 
+-- @function [parent=#World] step
+-- @param self
+-- @param timeStep (number) the amount of time to simulate, this should not vary
+-- @param velocityIterations (number) for the velocity constraint solver
+-- @param positionIterations (number) for the position constraint solver
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Call this after you are done with time steps to clear the forces. You normally call this after each call to `b2.World:step`,
+-- unless you are performing sub-steps. By default, forces will be automatically cleared, so you don't need to call this function.
+-- 
+-- @function [parent=#World] clearForces
+-- @param self
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Sets the gravity vector.
+-- 
+-- @function [parent=#World] setGravity
+-- @param self
+-- @param gravityx (number) the x component the gravity
+-- @param gravityy (number) the y component the gravity
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Returns the gravity vector.
+-- 
+-- @function [parent=#World] getGravity
+-- @param self
+-- @return x and y component of gravity vector.
+
+-- 
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Query the world for all fixtures that potentially overlap the provided AABB.
+-- 
+-- @function [parent=#World] queryAABB
+-- @param self
+-- @param lowerx (number) the lower x coordinate of the query box
+-- @param lowery (number) the lower y coordinate of the query box
+-- @param upperx (number) the upper x coordinate of the query box
+-- @param uppery (number) the upper y coordinate of the query box
+-- @return Array of fixtures that potentially overlaps the provided AABB
+
+-- 
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Ray-cast the world for all fixtures in the path of the ray. Your callback controls whether you get the closest point, any point, or n-points. The ray-cast ignores shapes that contain the starting point. 
+-- 
+-- Listener function is called for each fixture found in the query and accepts 6 parameters (7 if data parameter is provided):
+-- 
+-- 1. the fixture hit by the ray
+-- 2. the x coordinate of the point of initial intersection 
+-- 3. the y coordinate of the point of initial intersection
+-- 4. the x coordinate of the normal vector at the point of intersection 
+-- 5. the y coordinate of the normal vector at the point of intersection 
+-- 6. fraction
+-- 
+-- You control how the ray cast proceeds by returning a number:
+-- 
+-- * return no value or -1: ignore this fixture and continue
+-- * return 0: terminate the ray cast
+-- * return fraction: clip the ray to this point
+-- * return 1: don't clip the ray and continue	
+-- 
+-- 
+-- @function [parent=#World] rayCast
+-- @param self
+-- @param x1 (number) the x coordinate of the ray starting point
+-- @param y1 (number) the y coordinate of the ray starting point
+-- @param x2 (number) the x coordinate of the ray ending point
+-- @param y2 (number) the y coordinate of the ray ending point
+-- @param listener (function) the listener function that processes the results
+-- @param data (optional) an optional data parameter that is passed as a first argument to the listener function
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Creates a joint given a definition. All 9 types of joints is created by using this function:
+-- 
+-- 
+-- ### Revolute Joint
+-- 
+-- Revolute joint definition. This requires defining an anchor point where the bodies are joined. The definition uses
+-- local anchor points so that the initial configuration can violate the constraint slightly. You also need to specify the
+-- initial relative angle for joint limits. This helps when saving and loading a game. The local anchor points are measured from
+-- the body's origin rather than the center of mass because:
+-- 
+-- 1. you might not know where the center of mass will be.
+-- 2. if you add/remove shapes from a body
+-- 
+-- and recompute the mass, the joints will be broken.
+-- 
+-- * **type**: (number) b2.REVOLUTE_JOINT
+-- * **bodyA**: (b2.Body) The first attached body.
+-- * **bodyB**: (b2.Body) The second attached body.
+-- * **collideConnected**: (boolean) Set this flag to true if the attached bodies should collide.
+-- * **localAnchorA**: (table) The local anchor point relative to bodyA's origin.
+-- * **localAnchorB**: (table) The local anchor point relative to bodyB's origin.
+-- * **referenceAngle**: (number) The bodyB angle minus bodyA angle in the reference state (radians).
+-- * **enableLimit**: (boolean) A flag to enable joint limits.
+-- * **lowerAngle**: (number) The lower angle for the joint limit (radians).
+-- * **upperAngle**: (number) The upper angle for the joint limit (radians).
+-- * **enableMotor**: (boolean) A flag to enable the joint motor.
+-- * **motorSpeed**: (number) The desired motor speed. Usually in radians per second.
+-- * **maxMotorTorque**: (number) The maximum motor torque used to achieve the desired motor speed. Usually in N-m.
+-- 
+-- Also, you can use [b2.createRevoluteJointDef](#b2.createRevoluteJointDef) function to create a revolute joint definiton table easier.
+-- 
+-- 
+-- ### Prismatic Joint
+-- 
+-- Prismatic joint definition. This requires defining a line of motion using an axis and an anchor point. The definition uses
+-- local anchor points and a local axis so that the initial configuration can violate the constraint slightly. The joint translation is
+-- zero when the local anchor points coincide in world space. Using local anchors and a local axis helps when saving and loading a game.
+-- 
+-- * **type**: (number) b2.PRISMATIC_JOINT
+-- * **bodyA**: (b2.Body) The first attached body.
+-- * **bodyB**: (b2.Body) The second attached body.
+-- * **collideConnected**: (boolean) Set this flag to true if the attached bodies should collide.
+-- * **localAnchorA**: (table) The local anchor point relative to bodyA's origin.
+-- * **localAnchorB**: (table) The local anchor point relative to bodyB's origin.
+-- * **localAxisA**: (table) The local translation axis in bodyA.
+-- * **referenceAngle**: (number) The body2 angle minus body1 angle in the reference state (radians).
+-- * **enableLimit**: (boolean) A flag to enable joint limits.
+-- * **lowerTranslation**: (number) The lower translation limit, usually in meters.
+-- * **upperTranslation**: (number) The upper translation limit, usually in meters.
+-- * **enableMotor**: (boolean) A flag to enable the joint motor.
+-- * **maxMotorForce**: (number) The maximum motor torque, usually in N-m.
+-- * **motorSpeed**: (number) The desired motor speed in radians per second.
+-- 
+-- Also, you can use [b2.createPrismaticJointDef](#b2.createPrismaticJointDef) function to create a prismatic joint definiton table easier.
+-- 
+-- 
+-- ### Distance Joint
+-- 
+-- Distance joint definition. This requires defining an anchor point on both bodies and the non-zero length of the distance joint.
+-- The definition uses local anchor points so that the initial configuration can violate the constraint slightly.
+-- This helps when saving and loading a game.
+-- 
+-- * **type**: (number) b2.DISTANCE_JOINT
+-- * **bodyA**: (b2.Body) The first attached body.
+-- * **bodyB**: (b2.Body) The second attached body.
+-- * **collideConnected**: (boolean) Set this flag to true if the attached bodies should collide.
+-- * **localAnchorA**: (table) The local anchor point relative to bodyA's origin.
+-- * **localAnchorB**: (table) The local anchor point relative to bodyB's origin.
+-- * **length**: (number) The natural length between the anchor points. Do not use a zero or short length.
+-- * **frequencyHz**: (number) The mass-spring-damper frequency in Hertz.
+-- * **dampingRatio**: (number) The damping ratio. 0 = no damping, 1 = critical damping.
+-- 
+-- Also, you can use [b2.createDistanceJointDef](#b2.createDistanceJointDef) function to create a distance joint definiton table easier.
+-- 
+-- 
+-- ### Pulley Joint
+-- 
+-- Pulley joint definition. This requires two ground anchors, two dynamic body anchor points, max lengths for each side, and a pulley ratio.
+-- 
+-- * **type**: (number) b2.PULLEY_JOINT
+-- * **bodyA**: (b2.Body) The first attached body.
+-- * **bodyB**: (b2.Body) The second attached body.
+-- * **collideConnected**: (boolean) Set this flag to true if the attached bodies should collide.
+-- * **groundAnchorA**: (table) The first ground anchor in world coordinates. This point never moves.
+-- * **groundAnchorB**: (table) The second ground anchor in world coordinates. This point never moves.
+-- * **localAnchorA**: (table) The local anchor point relative to bodyA's origin.
+-- * **localAnchorB**: (table) The local anchor point relative to bodyB's origin.
+-- * **lengthA**: (number) The a reference length for the segment attached to bodyA.
+-- * **lengthB**: (number) The a reference length for the segment attached to bodyB.
+-- * **ratio**: (number) The pulley ratio, used to simulate a block-and-tackle.
+-- 
+-- Also, you can use [b2.createPulleyJointDef](#b2.createPulleyJointDef) function to create a pulley joint definiton table easier.
+-- 
+-- 
+-- ### Mouse Joint
+-- 
+-- Mouse joint definition. This requires a world target point, tuning parameters, and the time step.
+-- 
+-- * **type**: (number) b2.MOUSE_JOINT
+-- * **bodyA**: (b2.Body) The first attached body.
+-- * **bodyB**: (b2.Body) The second attached body.
+-- * **collideConnected**: (boolean) Set this flag to true if the attached bodies should collide.
+-- * **target**: (table) The initial world target point. This is assumed to coincide with the body anchor initially.
+-- * **maxForce**: (number) The maximum constraint force that can be exerted to move the candidate body. Usually you will express as some multiple of the weight (multiplier * mass * gravity).
+-- * **frequencyHz**: (number) The response speed.
+-- * **dampingRatio**: (number) The damping ratio. 0 = no damping, 1 = critical damping.
+-- 
+-- Also, you can use [b2.createMouseJointDef](#b2.createMouseJointDef) function to create a mouse joint definiton table easier.
+-- 
+-- ### Gear Joint
+-- 
+-- Gear joint definition. This definition requires two existing revolute or prismatic joints (any combination will work). The provided joints
+-- must attach a dynamic body to a static body.
+-- 
+-- * **type**: (number) b2.GEAR_JOINT
+-- * **bodyA**: (b2.Body) The first attached body.
+-- * **bodyB**: (b2.Body) The second attached body.
+-- * **collideConnected**: (boolean) Set this flag to true if the attached bodies should collide.
+-- * **joint1**: (b2.Joint) The first revolute/prismatic joint attached to the gear joint.
+-- * **joint2**: (b2.Joint) The second revolute/prismatic joint attached to the gear joint.
+-- * **ratio**: (number) The gear ratio.
+-- 
+-- Also, you can use [b2.createGearJointDef](#b2.createGearJointDef) function to create a gear joint definiton table easier.
+-- 
+-- ### Wheel Joint
+-- 
+-- Wheel joint definition. This requires defining a line of motion using an axis and an anchor point. 
+-- The definition uses local anchor points and a local axis so that the initial configuration can violate 
+-- the constraint slightly. The joint translation is zero when the local anchor points coincide in world space. 
+-- Using local anchors and a local axis helps when saving and loading a game.
+-- 
+-- * **type**: (number) b2.WHEEL_JOINT
+-- * **bodyA**: (b2.Body) The first attached body.
+-- * **bodyB**: (b2.Body) The second attached body.
+-- * **collideConnected**: (boolean) Set this flag to true if the attached bodies should collide.
+-- * **localAnchorA**: (table) The local anchor point relative to bodyA's origin.
+-- * **localAnchorB**: (table) The local anchor point relative to bodyB's origin.
+-- * **localAxisA**: (table) The local translation axis in bodyA.
+-- * **enableMotor**: (boolean) A flag to enable the joint motor.
+-- * **maxMotorTorque**: (number) The maximum motor torque, usually in N-m. 
+-- * **motorSpeed**: (number) The desired motor speed in radians per second. 
+-- * **frequencyHz**: (number) Suspension frequency, zero indicates no suspension.
+-- * **dampingRatio**: (number) Suspension damping ratio, one indicates critical damping. 
+-- 
+-- Also, you can use [b2.createWheelJointDef](#b2.createWheelJointDef) function to create a wheel joint definiton table easier.
+-- 
+-- ### Weld Joint
+-- 
+-- Weld joint definition. You need to specify local anchor points where they are attached and the relative
+-- body angle. The position of the anchor points is important for computing the reaction torque.
+-- 
+-- * **type**: (number) b2.WELD_JOINT
+-- * **bodyA**: (b2.Body) The first attached body.
+-- * **bodyB**: (b2.Body) The second attached body.
+-- * **collideConnected**: (boolean) Set this flag to true if the attached bodies should collide.
+-- * **localAnchorA**: (table) The local anchor point relative to bodyA's origin.
+-- * **localAnchorB**: (table) The local anchor point relative to bodyB's origin.
+-- * **referenceAngle**: (number) The bodyB angle minus bodyA angle in the reference state (radians).
+-- 
+-- Also, you can use [b2.createWeldJointDef](#b2.createWeldJointDef) function to create a weld joint definiton table easier.
+-- 
+-- ### Friction Joint
+-- 
+-- Friction joint definition.
+-- 
+-- * **type**: (number) b2.LINE_JOINT
+-- * **bodyA**: (b2.Body) The first attached body.
+-- * **bodyB**: (b2.Body) The second attached body.
+-- * **collideConnected**: (boolean) Set this flag to true if the attached bodies should collide.
+-- * **localAnchorA**: (table) The local anchor point relative to bodyA's origin.
+-- * **localAnchorB**: (table) The local anchor point relative to bodyB's origin.
+-- * **maxForce**: (number) The maximum friction force in N.
+-- * **maxTorque**: (number) The maximum friction torque in N-m.
+-- 
+-- @function [parent=#World] createJoint
+-- @param self
+-- @param jointDef (table)
+-- @return The created joint instance.
+
+-- 
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Destroy a joint. This may cause the connected bodies to begin colliding. 
+-- 
+-- **Warning:** This function is locked during callbacks.
+-- 
+-- @function [parent=#World] destroyJoint
+-- @param self
+-- @param joint (b2.Joint) joint to be destroyed
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Registers a b2.DebugDraw instance for debug drawing.
+-- 
+-- @function [parent=#World] setDebugDraw
+-- @param self
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Registers a listener function and an optional data value so that the listener function is called when an event
+-- of a particular type occurs.
+-- 
+-- @function [parent=#World] addEventListener
+-- @param self
+-- @param type (string) The type of event.
+-- @param listener (function) The listener function that processes the event.
+-- @param data (optional) An optional data parameter that is passed as a first argument to the listener function.
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Removes a listener from the `EventDispatcher` object. `removeEventListener()` function expects
+-- the same arguments with `addEventListener()` to remove the event. If there is no matching listener
+-- registered, a call to this function has no effect.
+-- 
+-- @function [parent=#World] removeEventListener
+-- @param self
+-- @param type (string) The type of event.
+-- @param listener (function) The listener object to remove.
+-- @param data The data parameter that is used while registering the event.
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Dispatches an event to this `EventDispatcher` instance.
+-- 
+-- @function [parent=#World] dispatchEvent
+-- @param self
+-- @param event (Event) The `Event` object to be dispatched.
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Checks if the `EventDispatcher` object has a event listener registered for the specified type of event.
+-- 
+-- @function [parent=#World] hasEventListener
+-- @param self
+-- @param type (string) The type of event.
+-- @return A value of `true` if a listener of the specified type is registered; `false` otherwise.
+
+-- 
+-- 
+-- 
+
+
+return nil

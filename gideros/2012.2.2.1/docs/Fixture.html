@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+	</head>
+<body>
+<div id="container">
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div>
+<div id="main">
+	<div id="navigation">
+		<h2>Modules</h2>
+			<ul><li>
+				<a href="index.html">index</a>
+			</li></ul>
+		<ul>
+					<li><a href="Accelerometer.html">Accelerometer</a></li>
+					<li><a href="Application.html">Application</a></li>
+					<li><a href="Bitmap.html">Bitmap</a></li>
+					<li><a href="Body.html">Body</a></li>
+					<li><a href="ChainShape.html">ChainShape</a></li>
+					<li><a href="CircleShape.html">CircleShape</a></li>
+					<li><a href="DistanceJoint.html">DistanceJoint</a></li>
+					<li><a href="EdgeShape.html">EdgeShape</a></li>
+					<li><a href="Event.html">Event</a></li>
+					<li><a href="EventDispatcher.html">EventDispatcher</a></li>
+					<li>Fixture</li>
+					<li><a href="Font.html">Font</a></li>
+					<li><a href="FontBase.html">FontBase</a></li>
+					<li><a href="FrictionJoint.html">FrictionJoint</a></li>
+					<li><a href="Geolocation.html">Geolocation</a></li>
+					<li><a href="Gyroscope.html">Gyroscope</a></li>
+					<li><a href="Joint.html">Joint</a></li>
+					<li><a href="Matrix.html">Matrix</a></li>
+					<li><a href="MouseJoint.html">MouseJoint</a></li>
+					<li><a href="MovieClip.html">MovieClip</a></li>
+					<li><a href="PolygonShape.html">PolygonShape</a></li>
+					<li><a href="PrismaticJoint.html">PrismaticJoint</a></li>
+					<li><a href="PulleyJoint.html">PulleyJoint</a></li>
+					<li><a href="RevoluteJoint.html">RevoluteJoint</a></li>
+					<li><a href="Shape.html">Shape</a></li>
+					<li><a href="Sound.html">Sound</a></li>
+					<li><a href="SoundChannel.html">SoundChannel</a></li>
+					<li><a href="Sprite.html">Sprite</a></li>
+					<li><a href="Stage.html">Stage</a></li>
+					<li><a href="TTFont.html">TTFont</a></li>
+					<li><a href="TextField.html">TextField</a></li>
+					<li><a href="Texture.html">Texture</a></li>
+					<li><a href="TextureBase.html">TextureBase</a></li>
+					<li><a href="TexturePack.html">TexturePack</a></li>
+					<li><a href="TextureRegion.html">TextureRegion</a></li>
+					<li><a href="TileMap.html">TileMap</a></li>
+					<li><a href="Timer.html">Timer</a></li>
+					<li><a href="WeldJoint.html">WeldJoint</a></li>
+					<li><a href="WheelJoint.html">WheelJoint</a></li>
+					<li><a href="World.html">World</a></li>
+					<li><a href="b2.html">b2</a></li>
+					<li><a href="b2.DebugDraw.html">b2.DebugDraw</a></li>
+					<li><a href="b2.GearJoint.html">b2.GearJoint</a></li>
+					<li><a href="coroutine.html">coroutine</a></li>
+					<li><a href="debug.html">debug</a></li>
+					<li><a href="flurry.html">flurry</a></li>
+					<li><a href="global.html">global</a></li>
+					<li><a href="io.html">io</a></li>
+					<li><a href="math.html">math</a></li>
+					<li><a href="os.html">os</a></li>
+					<li><a href="package.html">package</a></li>
+					<li><a href="string.html">string</a></li>
+					<li><a href="table.html">table</a></li>
+		</ul>
+	</div>
+	<div id="content">
+   <h1>Module <code>Fixture</code></h1>
+    A fixture is used to attach a shape to a body for collision detection.
+   <br/>A fixture inherits its
+ transform from its parent. Fixtures hold additional non-geometric data such as friction, collision filters, etc.
+ Fixtures are created via <a href="#b2.Body:createFixture">b2.Body:createFixture</a>.
+			<h2><a id="#(Fixture)">Type <code>Fixture</code></a></h2>
+				<table class="function_list">
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Fixture.html##(Fixture).getBody">Fixture:getBody()</a></td>
+		<td class="summary"> Returns the parent body of this fixture.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Fixture.html##(Fixture).getFilterData">Fixture:getFilterData()</a></td>
+		<td class="summary"> Returns the contact filtering data.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Fixture.html##(Fixture).isSensor">Fixture:isSensor()</a></td>
+		<td class="summary"> Is this fixture a sensor (non-solid)?</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Fixture.html##(Fixture).setFilterData">Fixture:setFilterData(filterData)</a></td>
+		<td class="summary"> Sets the contact filtering data.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Fixture.html##(Fixture).setSensor">Fixture:setSensor(sensor)</a></td>
+		<td class="summary"> Sets if this fixture is a sensor.</td>
+		</tr>
+	</table>
+
+			<h2>Type <code>Fixture</code></h2>
+				<h3>Field(s)</h3>
+		<dl class="function">
+<dt>
+<a id="#(Fixture).getBody" >
+<strong>Fixture:getBody()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the parent body of this fixture.
+	<br/>This is <code>nil</code> if the fixture is not attached.
+		<h3>Return value</h3>
+				<p>
+				The parent body.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Fixture).getFilterData" >
+<strong>Fixture:getFilterData()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the contact filtering data.
+		<h3>Return value</h3>
+				<p>
+				contact filtering data table
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Fixture).isSensor" >
+<strong>Fixture:isSensor()</strong>
+</a>
+</dt>
+<dd>
+	 Is this fixture a sensor (non-solid)?
+		<h3>Return value</h3>
+				<p>
+				<code>true</code> if the shape is a sensor, <code>false</code> otherwise.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Fixture).setFilterData" >
+<strong>Fixture:setFilterData(filterData)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the contact filtering data.
+	<br/>
+<p>This will not update contacts until the next time step
+ when either parent body is active and awake. The filter data definition is given
+ as a ordinary table. The fields of the filter data table are:</p>
+
+<ul>
+    <li><strong>categoryBits</strong>: (number) The collision category bits. Normally you would just set one bit.</li>
+    <li><strong>maskBits</strong>: (number) The collision mask bits. This states the categories that this shape would accept for collision.</li>
+    <li><strong>groupIndex</strong>: (number) Collision groups allow a certain group of objects to never collide (negative) or always collide (positive). Zero means no collision group. Non-zero group filtering always wins against the mask bits.</li>
+</ul>
+
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				filterData  </em></code>: (table)
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Fixture).setSensor" >
+<strong>Fixture:setSensor(sensor)</strong>
+</a>
+</dt>
+<dd>
+	 Sets if this fixture is a sensor.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				sensor  </em></code>: (boolean)
+				</li>
+		</ul>
+</dd>
+</dl>
+
+</div>
+
+</div>
+</body>
+</html>

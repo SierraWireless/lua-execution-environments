@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+	</head>
+<body>
+<div id="container">
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div>
+<div id="main">
+	<div id="navigation">
+		<h2>Modules</h2>
+			<ul><li>
+				<a href="index.html">index</a>
+			</li></ul>
+		<ul>
+					<li><a href="Accelerometer.html">Accelerometer</a></li>
+					<li><a href="Application.html">Application</a></li>
+					<li><a href="Bitmap.html">Bitmap</a></li>
+					<li><a href="Body.html">Body</a></li>
+					<li><a href="ChainShape.html">ChainShape</a></li>
+					<li><a href="CircleShape.html">CircleShape</a></li>
+					<li><a href="DistanceJoint.html">DistanceJoint</a></li>
+					<li><a href="EdgeShape.html">EdgeShape</a></li>
+					<li><a href="Event.html">Event</a></li>
+					<li><a href="EventDispatcher.html">EventDispatcher</a></li>
+					<li><a href="Fixture.html">Fixture</a></li>
+					<li><a href="Font.html">Font</a></li>
+					<li><a href="FontBase.html">FontBase</a></li>
+					<li><a href="FrictionJoint.html">FrictionJoint</a></li>
+					<li><a href="Geolocation.html">Geolocation</a></li>
+					<li><a href="Gyroscope.html">Gyroscope</a></li>
+					<li><a href="Joint.html">Joint</a></li>
+					<li><a href="Matrix.html">Matrix</a></li>
+					<li><a href="MouseJoint.html">MouseJoint</a></li>
+					<li><a href="MovieClip.html">MovieClip</a></li>
+					<li><a href="PolygonShape.html">PolygonShape</a></li>
+					<li><a href="PrismaticJoint.html">PrismaticJoint</a></li>
+					<li><a href="PulleyJoint.html">PulleyJoint</a></li>
+					<li><a href="RevoluteJoint.html">RevoluteJoint</a></li>
+					<li><a href="Shape.html">Shape</a></li>
+					<li><a href="Sound.html">Sound</a></li>
+					<li><a href="SoundChannel.html">SoundChannel</a></li>
+					<li><a href="Sprite.html">Sprite</a></li>
+					<li><a href="Stage.html">Stage</a></li>
+					<li><a href="TTFont.html">TTFont</a></li>
+					<li><a href="TextField.html">TextField</a></li>
+					<li><a href="Texture.html">Texture</a></li>
+					<li><a href="TextureBase.html">TextureBase</a></li>
+					<li><a href="TexturePack.html">TexturePack</a></li>
+					<li><a href="TextureRegion.html">TextureRegion</a></li>
+					<li><a href="TileMap.html">TileMap</a></li>
+					<li><a href="Timer.html">Timer</a></li>
+					<li><a href="WeldJoint.html">WeldJoint</a></li>
+					<li><a href="WheelJoint.html">WheelJoint</a></li>
+					<li><a href="World.html">World</a></li>
+					<li><a href="b2.html">b2</a></li>
+					<li><a href="b2.DebugDraw.html">b2.DebugDraw</a></li>
+					<li><a href="b2.GearJoint.html">b2.GearJoint</a></li>
+					<li><a href="coroutine.html">coroutine</a></li>
+					<li><a href="debug.html">debug</a></li>
+					<li>flurry</li>
+					<li><a href="global.html">global</a></li>
+					<li><a href="io.html">io</a></li>
+					<li><a href="math.html">math</a></li>
+					<li><a href="os.html">os</a></li>
+					<li><a href="package.html">package</a></li>
+					<li><a href="string.html">string</a></li>
+					<li><a href="table.html">table</a></li>
+		</ul>
+	</div>
+	<div id="content">
+   <h1>Module <code>flurry</code></h1>
+    This table stores all the functions related to Flurry analytics library.
+   <br/>Flurry is available only for iOS as an external plugin. To use flurry:</p>
+
+<ol>
+    <li>Create an account on <a href="http://www.flurry.com">http://www.flurry.com</a> and follow the instructions about creating a new application.</li>
+    <li>Download Flurry header and libraries and add them to your Xcode project.</li>
+    <li>Add {Gideros Installation Directory}/All Plugins/Flurry/source/iOS/flurry.mm file to your Xcode project.</li>
+</ol>
+
+<p> To load the Flurry library, call <code>require "flurry"</code>.
+			<h2><a id="#(flurry)">Type <code>flurry</code></a></h2>
+				<table class="function_list">
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="flurry.html##(flurry).endTimedEvent">flurry.endTimedEvent(eventName, parameters)</a></td>
+		<td class="summary"> Use this function to end timed event before app exists, otherwise timed events automatically end when app exists.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="flurry.html##(flurry).isAvailable">flurry.isAvailable()</a></td>
+		<td class="summary"> Returns <code>true</code> if Flurry is available for this platform.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="flurry.html##(flurry).logEvent">flurry.logEvent(eventName, parameters, timed)</a></td>
+		<td class="summary"> Use this function to count the number of times certain events happen during a session of your application and to pass dynamic parameters 
+ to be recorded with that event.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="flurry.html##(flurry).startSession">flurry.startSession(apiKey)</a></td>
+		<td class="summary"> Starts the Flurry session with your API key.</td>
+		</tr>
+	</table>
+
+			<h2>Type <code>flurry</code></h2>
+				<h3>Field(s)</h3>
+		<dl class="function">
+<dt>
+<a id="#(flurry).endTimedEvent" >
+<strong>flurry.endTimedEvent(eventName, parameters)</strong>
+</a>
+</dt>
+<dd>
+	 Use this function to end timed event before app exists, otherwise timed events automatically end when app exists.
+	<br/>When ending the timed event, 
+ a new event parameters table can be used to update event parameters. If you don't specify a new event parameters table, event parameters are kept the same.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				eventName  </em></code>: (string) The event name of end timed event.
+				</li>
+				<li><code><em>
+				parameters  </em></code>: (table, optional) If specified, event paramaters updated for this event.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(flurry).isAvailable" >
+<strong>flurry.isAvailable()</strong>
+</a>
+</dt>
+<dd>
+	 Returns <code>true</code> if Flurry is available for this platform.
+	<br/>Currently, Flurry is available only for iOS.
+		<h3>Return value</h3>
+				<p>
+				<code>true</code> if Flurry is available for this platform, <code>false</code> otherwise.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(flurry).logEvent" >
+<strong>flurry.logEvent(eventName, parameters, timed)</strong>
+</a>
+</dt>
+<dd>
+	 Use this function to count the number of times certain events happen during a session of your application and to pass dynamic parameters 
+ to be recorded with that event.
+	<br/>Event parameters is optional and can be passed in as a table value. Your application is currently limited to counting 
+ occurrences for 100 different event ids (maximum length 255 characters). Maximum of 10 event parameters per event is supported.</p>
+
+<p> To start a timed event, pass <code>timed</code> parameter as <code>true</code>.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				eventName  </em></code>: (string) The event name to be logged at Flurry service.
+				</li>
+				<li><code><em>
+				parameters  </em></code>: (table, optional) Optional paramaters to be recorted with this event.
+				</li>
+				<li><code><em>
+				timed  </em></code>: (boolean, optional) Specifies this is a timed event.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(flurry).startSession" >
+<strong>flurry.startSession(apiKey)</strong>
+</a>
+</dt>
+<dd>
+	 Starts the Flurry session with your API key.
+	<br/>To create an account on Flurry and to obtain the API key specific to your application,
+ please visit <a href="http://www.flurry.com">http://www.flurry.com</a> and follow the instructions there.</p>
+
+<p> You need to call this function once after your application starts. For example, <code>init.lua</code> is suitable to call this function.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				apiKey  </em></code>: (string) The Flurry API key.
+				</li>
+		</ul>
+</dd>
+</dl>
+
+</div>
+
+</div>
+</body>
+</html>

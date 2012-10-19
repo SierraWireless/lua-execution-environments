@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+	</head>
+<body>
+<div id="container">
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div>
+<div id="main">
+	<div id="navigation">
+		<h2>Modules</h2>
+			<ul><li>
+				<a href="index.html">index</a>
+			</li></ul>
+		<ul>
+					<li><a href="Accelerometer.html">Accelerometer</a></li>
+					<li><a href="Application.html">Application</a></li>
+					<li><a href="Bitmap.html">Bitmap</a></li>
+					<li><a href="Body.html">Body</a></li>
+					<li><a href="ChainShape.html">ChainShape</a></li>
+					<li><a href="CircleShape.html">CircleShape</a></li>
+					<li><a href="DistanceJoint.html">DistanceJoint</a></li>
+					<li><a href="EdgeShape.html">EdgeShape</a></li>
+					<li><a href="Event.html">Event</a></li>
+					<li><a href="EventDispatcher.html">EventDispatcher</a></li>
+					<li><a href="Fixture.html">Fixture</a></li>
+					<li><a href="Font.html">Font</a></li>
+					<li><a href="FontBase.html">FontBase</a></li>
+					<li><a href="FrictionJoint.html">FrictionJoint</a></li>
+					<li>Geolocation</li>
+					<li><a href="Gyroscope.html">Gyroscope</a></li>
+					<li><a href="Joint.html">Joint</a></li>
+					<li><a href="Matrix.html">Matrix</a></li>
+					<li><a href="MouseJoint.html">MouseJoint</a></li>
+					<li><a href="MovieClip.html">MovieClip</a></li>
+					<li><a href="PolygonShape.html">PolygonShape</a></li>
+					<li><a href="PrismaticJoint.html">PrismaticJoint</a></li>
+					<li><a href="PulleyJoint.html">PulleyJoint</a></li>
+					<li><a href="RevoluteJoint.html">RevoluteJoint</a></li>
+					<li><a href="Shape.html">Shape</a></li>
+					<li><a href="Sound.html">Sound</a></li>
+					<li><a href="SoundChannel.html">SoundChannel</a></li>
+					<li><a href="Sprite.html">Sprite</a></li>
+					<li><a href="Stage.html">Stage</a></li>
+					<li><a href="TTFont.html">TTFont</a></li>
+					<li><a href="TextField.html">TextField</a></li>
+					<li><a href="Texture.html">Texture</a></li>
+					<li><a href="TextureBase.html">TextureBase</a></li>
+					<li><a href="TexturePack.html">TexturePack</a></li>
+					<li><a href="TextureRegion.html">TextureRegion</a></li>
+					<li><a href="TileMap.html">TileMap</a></li>
+					<li><a href="Timer.html">Timer</a></li>
+					<li><a href="WeldJoint.html">WeldJoint</a></li>
+					<li><a href="WheelJoint.html">WheelJoint</a></li>
+					<li><a href="World.html">World</a></li>
+					<li><a href="b2.html">b2</a></li>
+					<li><a href="b2.DebugDraw.html">b2.DebugDraw</a></li>
+					<li><a href="b2.GearJoint.html">b2.GearJoint</a></li>
+					<li><a href="coroutine.html">coroutine</a></li>
+					<li><a href="debug.html">debug</a></li>
+					<li><a href="flurry.html">flurry</a></li>
+					<li><a href="global.html">global</a></li>
+					<li><a href="io.html">io</a></li>
+					<li><a href="math.html">math</a></li>
+					<li><a href="os.html">os</a></li>
+					<li><a href="package.html">package</a></li>
+					<li><a href="string.html">string</a></li>
+					<li><a href="table.html">table</a></li>
+		</ul>
+	</div>
+	<div id="content">
+   <h1>Module <code>Geolocation</code></h1>
+    The <code>Geolocation</code> class inherits from the following class: <code>EventDispatcher</code> </p>
+
+<p> The <code>Geolocation</code> class is used to configure the parameters and dispatching of location and heading related events.
+   <br/>
+<p>The <code>Geolocation</code> class is defined in module "geolocation". Therefore, you need to call
+ <code>require "geolocation"</code> before using it. Loading the "geolocation" module also 
+ creates a global variable <code>geolocation</code> of type <code>Geolocation</code> for direct use.</p>
+
+<p> ####Events:</p>
+
+<ul>
+    <li><code>Event.LOCATION_UPDATE = "locationUpdate"</code></li>
+    <li><code>Event.HEADING_UPDATE = "headingUpdate"</code></li>
+    <li><code>Event.ERROR = "error"</code></li>
+</ul>
+
+<p> <code>LOCATION_UPDATE</code> event contains the fields <code>latitude</code>, <code>longitude</code> and <code>altitude</code>. <br/>
+ <code>HEADING_UPDATE</code> event contains the fields <code>magneticHeading</code> and <code>trueHeading</code>.</p>
+
+
+<h2> Examples</h2>
+
+<pre><code>require "geolocation"
+
+local function onLocationUpdate(event)
+    print("location: ", event.latitude, event.longitude, event.altitude)
+end
+
+local function onHeadingUpdate(event)
+    print("heading: ", event.magneticHeading, event.trueHeading)
+end
+
+geolocation:addEventListener(Event.LOCATION_UPDATE, onLocationUpdate)
+geolocation:addEventListener(Event.HEADING_UPDATE, onHeadingUpdate)
+geolocation:start()
+</code></pre>
+
+			<h2><a id="#(Geolocation)">Type <code>Geolocation</code></a></h2>
+				<table class="function_list">
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).addEventListener">Geolocation:addEventListener(listener, data)</a></td>
+		<td class="summary"> Registers a listener function and an optional data value so that the listener function is called when an event
+ of a particular type occurs.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).dispatchEvent">Geolocation:dispatchEvent(event)</a></td>
+		<td class="summary"> Dispatches an event to this <code>EventDispatcher</code> instance.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).getAccuracy">Geolocation:getAccuracy()</a></td>
+		<td class="summary"> Returns the previously set desired accuracy.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).getThreshold">Geolocation:getThreshold()</a></td>
+		<td class="summary"> Returns the previously set minimum distance threshold.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).hasEventListener">Geolocation:hasEventListener()</a></td>
+		<td class="summary"> Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).isAvailable">Geolocation:isAvailable()</a></td>
+		<td class="summary"> Returns <code>true</code> if the device has the capability to determine current location and this capability is enabled, <code>false</code> otherwise.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).isHeadingAvailable">Geolocation:isHeadingAvailable()</a></td>
+		<td class="summary"> Returns <code>true</code> if the device has the capability to determine heading, <code>false</code> otherwise.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).removeEventListener">Geolocation:removeEventListener(listener, data)</a></td>
+		<td class="summary"> Removes a listener from the <code>EventDispatcher</code> object.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).setAccuracy">Geolocation:setAccuracy(accuracy)</a></td>
+		<td class="summary"> Sets the desired accuracy (in meters) of the location data.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).setThreshold">Geolocation:setThreshold(threshold)</a></td>
+		<td class="summary"> Sets the minimum distance (in meters) threshold.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).start">Geolocation:start()</a></td>
+		<td class="summary"> Starts the generation of updates that report the current location and heading.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).startUpdatingHeading">Geolocation:startUpdatingHeading()</a></td>
+		<td class="summary"> Starts the generation of updates that report the heading.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).startUpdatingLocation">Geolocation:startUpdatingLocation()</a></td>
+		<td class="summary"> Starts the generation of updates that report the current location.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).stop">Geolocation:stop()</a></td>
+		<td class="summary"> Stops the generation of updates that report the current location and heading.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).stopUpdatingHeading">Geolocation:stopUpdatingHeading()</a></td>
+		<td class="summary"> Stops the generation of updates that report the heading.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Geolocation.html##(Geolocation).stopUpdatingLocation">Geolocation:stopUpdatingLocation()</a></td>
+		<td class="summary"> Stops the generation of updates that report the current location.</td>
+		</tr>
+	</table>
+
+			<h2>Type <code>Geolocation</code></h2>
+				<h3>Field(s)</h3>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).addEventListener" >
+<strong>Geolocation:addEventListener(listener, data)</strong>
+</a>
+</dt>
+<dd>
+	 Registers a listener function and an optional data value so that the listener function is called when an event
+ of a particular type occurs.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				listener  </em></code>: (function) The listener function that processes the event.
+				</li>
+				<li><code><em>
+				data  </em></code>: (optional) An optional data parameter that is passed as a first argument to the listener function.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).dispatchEvent" >
+<strong>Geolocation:dispatchEvent(event)</strong>
+</a>
+</dt>
+<dd>
+	 Dispatches an event to this <code>EventDispatcher</code> instance.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				event  </em></code>: (Event) The <code>Event</code> object to be dispatched.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).getAccuracy" >
+<strong>Geolocation:getAccuracy()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the previously set desired accuracy.
+		<h3>Return value</h3>
+				<p>
+				The previously set desired accuracy
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).getThreshold" >
+<strong>Geolocation:getThreshold()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the previously set minimum distance threshold.
+		<h3>Return value</h3>
+				<p>
+				The previously set minimum distance threshold
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).hasEventListener" >
+<strong>Geolocation:hasEventListener()</strong>
+</a>
+</dt>
+<dd>
+	 Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.
+		<h3>Return value</h3>
+				<p>
+				A value of <code>true</code> if a listener of the specified type is registered; <code>false</code> otherwise.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).isAvailable" >
+<strong>Geolocation:isAvailable()</strong>
+</a>
+</dt>
+<dd>
+	 Returns <code>true</code> if the device has the capability to determine current location and this capability is enabled, <code>false</code> otherwise.
+		<h3>Return value</h3>
+				<p>
+				<code>true</code> if geolocation is available, <code>false</code> otherwise
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).isHeadingAvailable" >
+<strong>Geolocation:isHeadingAvailable()</strong>
+</a>
+</dt>
+<dd>
+	 Returns <code>true</code> if the device has the capability to determine heading, <code>false</code> otherwise.
+		<h3>Return value</h3>
+				<p>
+				<code>true</code> if heading is available, <code>false</code> otherwise
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).removeEventListener" >
+<strong>Geolocation:removeEventListener(listener, data)</strong>
+</a>
+</dt>
+<dd>
+	 Removes a listener from the <code>EventDispatcher</code> object.
+	<br/><code>removeEventListener()</code> function expects
+ the same arguments with <code>addEventListener()</code> to remove the event. If there is no matching listener
+ registered, a call to this function has no effect.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				listener  </em></code>: (function) The listener object to remove.
+				</li>
+				<li><code><em>
+				data  </em></code>: The data parameter that is used while registering the event.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).setAccuracy" >
+<strong>Geolocation:setAccuracy(accuracy)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the desired accuracy (in meters) of the location data.
+	<br/>The receiver does its best to achieve the requested 
+ accuracy. However the actual accuracy is not guaranteed. The default value is 0 (best accuracy).
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				accuracy  </em></code>: (number) the desired accuracy
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).setThreshold" >
+<strong>Geolocation:setThreshold(threshold)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the minimum distance (in meters) threshold.
+	<br/>If threshold distance is greater than 0, 
+ a location event will only be dispatched if the device moves by threshold. The default value 
+ is 0 (as frequently as possible).
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				threshold  </em></code>: (number) the minimum distance threshold
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).start" >
+<strong>Geolocation:start()</strong>
+</a>
+</dt>
+<dd>
+	 Starts the generation of updates that report the current location and heading.
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).startUpdatingHeading" >
+<strong>Geolocation:startUpdatingHeading()</strong>
+</a>
+</dt>
+<dd>
+	 Starts the generation of updates that report the heading.
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).startUpdatingLocation" >
+<strong>Geolocation:startUpdatingLocation()</strong>
+</a>
+</dt>
+<dd>
+	 Starts the generation of updates that report the current location.
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).stop" >
+<strong>Geolocation:stop()</strong>
+</a>
+</dt>
+<dd>
+	 Stops the generation of updates that report the current location and heading.
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).stopUpdatingHeading" >
+<strong>Geolocation:stopUpdatingHeading()</strong>
+</a>
+</dt>
+<dd>
+	 Stops the generation of updates that report the heading.
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Geolocation).stopUpdatingLocation" >
+<strong>Geolocation:stopUpdatingLocation()</strong>
+</a>
+</dt>
+<dd>
+	 Stops the generation of updates that report the current location.
+</dd>
+</dl>
+
+</div>
+
+</div>
+</body>
+</html>

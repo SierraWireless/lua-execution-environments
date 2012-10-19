@@ -1,0 +1,718 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+	</head>
+<body>
+<div id="container">
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div>
+<div id="main">
+	<div id="navigation">
+		<h2>Modules</h2>
+			<ul><li>
+				<a href="index.html">index</a>
+			</li></ul>
+		<ul>
+					<li><a href="Accelerometer.html">Accelerometer</a></li>
+					<li><a href="Application.html">Application</a></li>
+					<li><a href="Bitmap.html">Bitmap</a></li>
+					<li><a href="Body.html">Body</a></li>
+					<li><a href="ChainShape.html">ChainShape</a></li>
+					<li><a href="CircleShape.html">CircleShape</a></li>
+					<li><a href="DistanceJoint.html">DistanceJoint</a></li>
+					<li><a href="EdgeShape.html">EdgeShape</a></li>
+					<li><a href="Event.html">Event</a></li>
+					<li><a href="EventDispatcher.html">EventDispatcher</a></li>
+					<li><a href="Fixture.html">Fixture</a></li>
+					<li><a href="Font.html">Font</a></li>
+					<li><a href="FontBase.html">FontBase</a></li>
+					<li><a href="FrictionJoint.html">FrictionJoint</a></li>
+					<li><a href="Geolocation.html">Geolocation</a></li>
+					<li><a href="Gyroscope.html">Gyroscope</a></li>
+					<li><a href="Joint.html">Joint</a></li>
+					<li><a href="Matrix.html">Matrix</a></li>
+					<li><a href="MouseJoint.html">MouseJoint</a></li>
+					<li><a href="MovieClip.html">MovieClip</a></li>
+					<li><a href="PolygonShape.html">PolygonShape</a></li>
+					<li><a href="PrismaticJoint.html">PrismaticJoint</a></li>
+					<li><a href="PulleyJoint.html">PulleyJoint</a></li>
+					<li><a href="RevoluteJoint.html">RevoluteJoint</a></li>
+					<li><a href="Shape.html">Shape</a></li>
+					<li><a href="Sound.html">Sound</a></li>
+					<li><a href="SoundChannel.html">SoundChannel</a></li>
+					<li><a href="Sprite.html">Sprite</a></li>
+					<li><a href="Stage.html">Stage</a></li>
+					<li><a href="TTFont.html">TTFont</a></li>
+					<li><a href="TextField.html">TextField</a></li>
+					<li><a href="Texture.html">Texture</a></li>
+					<li><a href="TextureBase.html">TextureBase</a></li>
+					<li><a href="TexturePack.html">TexturePack</a></li>
+					<li><a href="TextureRegion.html">TextureRegion</a></li>
+					<li><a href="TileMap.html">TileMap</a></li>
+					<li><a href="Timer.html">Timer</a></li>
+					<li><a href="WeldJoint.html">WeldJoint</a></li>
+					<li><a href="WheelJoint.html">WheelJoint</a></li>
+					<li>World</li>
+					<li><a href="b2.html">b2</a></li>
+					<li><a href="b2.DebugDraw.html">b2.DebugDraw</a></li>
+					<li><a href="b2.GearJoint.html">b2.GearJoint</a></li>
+					<li><a href="coroutine.html">coroutine</a></li>
+					<li><a href="debug.html">debug</a></li>
+					<li><a href="flurry.html">flurry</a></li>
+					<li><a href="global.html">global</a></li>
+					<li><a href="io.html">io</a></li>
+					<li><a href="math.html">math</a></li>
+					<li><a href="os.html">os</a></li>
+					<li><a href="package.html">package</a></li>
+					<li><a href="string.html">string</a></li>
+					<li><a href="table.html">table</a></li>
+		</ul>
+	</div>
+	<div id="content">
+   <h1>Module <code>World</code></h1>
+    The <code>b2.World</code> class inherits from the following class: <code>EventDispatcher</code>.
+   <br/>The <code>b2.World</code> class manages all physics entities and dynamic simulation. It is possible to create and manage more than one <code>b2.World</code> instance.
+			<h2><a id="#(World)">Type <code>World</code></a></h2>
+				<table class="function_list">
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).addEventListener">World:addEventListener(listener, data)</a></td>
+		<td class="summary"> Registers a listener function and an optional data value so that the listener function is called when an event
+ of a particular type occurs.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).clearForces">World:clearForces()</a></td>
+		<td class="summary"> Call this after you are done with time steps to clear the forces.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).createBody">World:createBody(bodyDef)</a></td>
+		<td class="summary"> Creates a rigid body given a definition.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).createJoint">World:createJoint(jointDef)</a></td>
+		<td class="summary"> Creates a joint given a definition.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).destroyBody">World:destroyBody(body)</a></td>
+		<td class="summary"> Destroys a rigid body.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).destroyJoint">World:destroyJoint(joint)</a></td>
+		<td class="summary"> Destroy a joint.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).dispatchEvent">World:dispatchEvent(event)</a></td>
+		<td class="summary"> Dispatches an event to this <code>EventDispatcher</code> instance.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).getGravity">World:getGravity()</a></td>
+		<td class="summary"> Returns the gravity vector.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).hasEventListener">World:hasEventListener()</a></td>
+		<td class="summary"> Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).new">World.new(gravityx, gravityy, doSleep)</a></td>
+		<td class="summary"> Creates a new <code>b2.World</code> object.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).queryAABB">World:queryAABB(lowerx, lowery, upperx, uppery)</a></td>
+		<td class="summary"> Query the world for all fixtures that potentially overlap the provided AABB.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).rayCast">World:rayCast(x1, y1, x2, y2, listener, data)</a></td>
+		<td class="summary"> Ray-cast the world for all fixtures in the path of the ray.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).removeEventListener">World:removeEventListener(listener, data)</a></td>
+		<td class="summary"> Removes a listener from the <code>EventDispatcher</code> object.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).setDebugDraw">World:setDebugDraw()</a></td>
+		<td class="summary"> Registers a b2.DebugDraw instance for debug drawing.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).setGravity">World:setGravity(gravityx, gravityy)</a></td>
+		<td class="summary"> Sets the gravity vector.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="World.html##(World).step">World:step(timeStep, velocityIterations, positionIterations)</a></td>
+		<td class="summary"> Take a time step.</td>
+		</tr>
+	</table>
+
+			<h2>Type <code>World</code></h2>
+				<h3>Field(s)</h3>
+		<dl class="function">
+<dt>
+<a id="#(World).addEventListener" >
+<strong>World:addEventListener(listener, data)</strong>
+</a>
+</dt>
+<dd>
+	 Registers a listener function and an optional data value so that the listener function is called when an event
+ of a particular type occurs.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				listener  </em></code>: (function) The listener function that processes the event.
+				</li>
+				<li><code><em>
+				data  </em></code>: (optional) An optional data parameter that is passed as a first argument to the listener function.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).clearForces" >
+<strong>World:clearForces()</strong>
+</a>
+</dt>
+<dd>
+	 Call this after you are done with time steps to clear the forces.
+	<br/>You normally call this after each call to <code>b2.World:step</code>,
+ unless you are performing sub-steps. By default, forces will be automatically cleared, so you don't need to call this function.
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).createBody" >
+<strong>World:createBody(bodyDef)</strong>
+</a>
+</dt>
+<dd>
+	 Creates a rigid body given a definition.
+	<br/>The body definition is given as an ordinary table. The fields of the body definition table are:</p>
+
+<ul>
+    <li><strong>type</strong>: (number) The body type: <code>b2.STATIC_BODY</code>, <code>b2.KINEMATIC_BODY</code>, or <code>b2.DYNAMIC_BODY</code>. Note: if a dynamic body would have zero mass, the mass is set to one.</li>
+    <li><strong>position</strong>: (table) The world position of the body (see the example below to understand how this table is set). Avoid creating bodies at the origin since this can lead to many overlapping shapes.</li>
+    <li><strong>angle</strong>: (number) The world angle of the body in radians.</li>
+    <li><strong>linearVelocity</strong>: (table) The linear velocity of the body's origin in world co-ordinates (see the example below to understand how this table is set).</li>
+    <li><strong>angularVelocity</strong>: (number) The angular velocity of the body.</li>
+    <li><strong>linearDamping</strong>: (number) Linear damping is use to reduce the linear velocity. The damping parameter can be larger than 1.0 but the damping effect becomes sensitive to the time step when the damping parameter is large.</li>
+    <li><strong>angularDamping</strong>: (number) Angular damping is use to reduce the angular velocity. The damping parameter can be larger than 1.0 but the damping effect becomes sensitive to the time step when the damping parameter is large.</li>
+    <li><strong>allowSleep</strong>: (boolean) Set this flag to false if this body should never fall asleep. Note that this increases CPU usage.</li>
+    <li><strong>awake</strong>: (boolean) Is this body initially awake or sleeping?</li>
+    <li><strong>fixedRotation</strong>: (boolean) Should this body be prevented from rotating? Useful for characters.</li>
+    <li><strong>bullet</strong>: (boolean) Is this a fast moving body that should be prevented from tunneling through other moving bodies? Note that all bodies are prevented from tunneling through kinematic and static bodies. This setting is only considered on dynamic bodies. <strong>Warning:</strong> You should use this flag sparingly since it increases processing time.</li>
+    <li><strong>active</strong>: (boolean) Does this body start out active?</li>
+    <li><strong>gravityScale</strong>: (number) Scale the gravity applied to this body.</li>
+</ul>
+
+<p> The unset fields gets default values.</p>
+
+<p> <strong>Warning:</strong> This function is locked during callbacks.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				bodyDef  </em></code>: (table)
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				<em><a href="Body.html##(Body)">Body#Body</a>:</em>
+				The created <code>b2.Body</code> instance.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).createJoint" >
+<strong>World:createJoint(jointDef)</strong>
+</a>
+</dt>
+<dd>
+	 Creates a joint given a definition.
+	<br/>
+<p>All 9 types of joints is created by using this function:</p>
+
+
+<p> ### Revolute Joint</p>
+
+<p> Revolute joint definition. This requires defining an anchor point where the bodies are joined. The definition uses
+ local anchor points so that the initial configuration can violate the constraint slightly. You also need to specify the
+ initial relative angle for joint limits. This helps when saving and loading a game. The local anchor points are measured from
+ the body's origin rather than the center of mass because:</p>
+
+<ol>
+    <li>you might not know where the center of mass will be.</li>
+    <li>if you add/remove shapes from a body</li>
+</ol>
+
+<p> and recompute the mass, the joints will be broken.</p>
+
+<ul>
+    <li><strong>type</strong>: (number) b2.REVOLUTE_JOINT</li>
+    <li><strong>bodyA</strong>: (b2.Body) The first attached body.</li>
+    <li><strong>bodyB</strong>: (b2.Body) The second attached body.</li>
+    <li><strong>collideConnected</strong>: (boolean) Set this flag to true if the attached bodies should collide.</li>
+    <li><strong>localAnchorA</strong>: (table) The local anchor point relative to bodyA's origin.</li>
+    <li><strong>localAnchorB</strong>: (table) The local anchor point relative to bodyB's origin.</li>
+    <li><strong>referenceAngle</strong>: (number) The bodyB angle minus bodyA angle in the reference state (radians).</li>
+    <li><strong>enableLimit</strong>: (boolean) A flag to enable joint limits.</li>
+    <li><strong>lowerAngle</strong>: (number) The lower angle for the joint limit (radians).</li>
+    <li><strong>upperAngle</strong>: (number) The upper angle for the joint limit (radians).</li>
+    <li><strong>enableMotor</strong>: (boolean) A flag to enable the joint motor.</li>
+    <li><strong>motorSpeed</strong>: (number) The desired motor speed. Usually in radians per second.</li>
+    <li><strong>maxMotorTorque</strong>: (number) The maximum motor torque used to achieve the desired motor speed. Usually in N-m.</li>
+</ul>
+
+<p> Also, you can use <a href="#b2.createRevoluteJointDef">b2.createRevoluteJointDef</a> function to create a revolute joint definiton table easier.</p>
+
+
+<p> ### Prismatic Joint</p>
+
+<p> Prismatic joint definition. This requires defining a line of motion using an axis and an anchor point. The definition uses
+ local anchor points and a local axis so that the initial configuration can violate the constraint slightly. The joint translation is
+ zero when the local anchor points coincide in world space. Using local anchors and a local axis helps when saving and loading a game.</p>
+
+<ul>
+    <li><strong>type</strong>: (number) b2.PRISMATIC_JOINT</li>
+    <li><strong>bodyA</strong>: (b2.Body) The first attached body.</li>
+    <li><strong>bodyB</strong>: (b2.Body) The second attached body.</li>
+    <li><strong>collideConnected</strong>: (boolean) Set this flag to true if the attached bodies should collide.</li>
+    <li><strong>localAnchorA</strong>: (table) The local anchor point relative to bodyA's origin.</li>
+    <li><strong>localAnchorB</strong>: (table) The local anchor point relative to bodyB's origin.</li>
+    <li><strong>localAxisA</strong>: (table) The local translation axis in bodyA.</li>
+    <li><strong>referenceAngle</strong>: (number) The body2 angle minus body1 angle in the reference state (radians).</li>
+    <li><strong>enableLimit</strong>: (boolean) A flag to enable joint limits.</li>
+    <li><strong>lowerTranslation</strong>: (number) The lower translation limit, usually in meters.</li>
+    <li><strong>upperTranslation</strong>: (number) The upper translation limit, usually in meters.</li>
+    <li><strong>enableMotor</strong>: (boolean) A flag to enable the joint motor.</li>
+    <li><strong>maxMotorForce</strong>: (number) The maximum motor torque, usually in N-m.</li>
+    <li><strong>motorSpeed</strong>: (number) The desired motor speed in radians per second.</li>
+</ul>
+
+<p> Also, you can use <a href="#b2.createPrismaticJointDef">b2.createPrismaticJointDef</a> function to create a prismatic joint definiton table easier.</p>
+
+
+<p> ### Distance Joint</p>
+
+<p> Distance joint definition. This requires defining an anchor point on both bodies and the non-zero length of the distance joint.
+ The definition uses local anchor points so that the initial configuration can violate the constraint slightly.
+ This helps when saving and loading a game.</p>
+
+<ul>
+    <li><strong>type</strong>: (number) b2.DISTANCE_JOINT</li>
+    <li><strong>bodyA</strong>: (b2.Body) The first attached body.</li>
+    <li><strong>bodyB</strong>: (b2.Body) The second attached body.</li>
+    <li><strong>collideConnected</strong>: (boolean) Set this flag to true if the attached bodies should collide.</li>
+    <li><strong>localAnchorA</strong>: (table) The local anchor point relative to bodyA's origin.</li>
+    <li><strong>localAnchorB</strong>: (table) The local anchor point relative to bodyB's origin.</li>
+    <li><strong>length</strong>: (number) The natural length between the anchor points. Do not use a zero or short length.</li>
+    <li><strong>frequencyHz</strong>: (number) The mass-spring-damper frequency in Hertz.</li>
+    <li><strong>dampingRatio</strong>: (number) The damping ratio. 0 = no damping, 1 = critical damping.</li>
+</ul>
+
+<p> Also, you can use <a href="#b2.createDistanceJointDef">b2.createDistanceJointDef</a> function to create a distance joint definiton table easier.</p>
+
+
+<p> ### Pulley Joint</p>
+
+<p> Pulley joint definition. This requires two ground anchors, two dynamic body anchor points, max lengths for each side, and a pulley ratio.</p>
+
+<ul>
+    <li><strong>type</strong>: (number) b2.PULLEY_JOINT</li>
+    <li><strong>bodyA</strong>: (b2.Body) The first attached body.</li>
+    <li><strong>bodyB</strong>: (b2.Body) The second attached body.</li>
+    <li><strong>collideConnected</strong>: (boolean) Set this flag to true if the attached bodies should collide.</li>
+    <li><strong>groundAnchorA</strong>: (table) The first ground anchor in world coordinates. This point never moves.</li>
+    <li><strong>groundAnchorB</strong>: (table) The second ground anchor in world coordinates. This point never moves.</li>
+    <li><strong>localAnchorA</strong>: (table) The local anchor point relative to bodyA's origin.</li>
+    <li><strong>localAnchorB</strong>: (table) The local anchor point relative to bodyB's origin.</li>
+    <li><strong>lengthA</strong>: (number) The a reference length for the segment attached to bodyA.</li>
+    <li><strong>lengthB</strong>: (number) The a reference length for the segment attached to bodyB.</li>
+    <li><strong>ratio</strong>: (number) The pulley ratio, used to simulate a block-and-tackle.</li>
+</ul>
+
+<p> Also, you can use <a href="#b2.createPulleyJointDef">b2.createPulleyJointDef</a> function to create a pulley joint definiton table easier.</p>
+
+
+<p> ### Mouse Joint</p>
+
+<p> Mouse joint definition. This requires a world target point, tuning parameters, and the time step.</p>
+
+<ul>
+    <li><strong>type</strong>: (number) b2.MOUSE_JOINT</li>
+    <li><strong>bodyA</strong>: (b2.Body) The first attached body.</li>
+    <li><strong>bodyB</strong>: (b2.Body) The second attached body.</li>
+    <li><strong>collideConnected</strong>: (boolean) Set this flag to true if the attached bodies should collide.</li>
+    <li><strong>target</strong>: (table) The initial world target point. This is assumed to coincide with the body anchor initially.</li>
+    <li><strong>maxForce</strong>: (number) The maximum constraint force that can be exerted to move the candidate body. Usually you will express as some multiple of the weight (multiplier * mass * gravity).</li>
+    <li><strong>frequencyHz</strong>: (number) The response speed.</li>
+    <li><strong>dampingRatio</strong>: (number) The damping ratio. 0 = no damping, 1 = critical damping.</li>
+</ul>
+
+<p> Also, you can use <a href="#b2.createMouseJointDef">b2.createMouseJointDef</a> function to create a mouse joint definiton table easier.</p>
+
+<p> ### Gear Joint</p>
+
+<p> Gear joint definition. This definition requires two existing revolute or prismatic joints (any combination will work). The provided joints
+ must attach a dynamic body to a static body.</p>
+
+<ul>
+    <li><strong>type</strong>: (number) b2.GEAR_JOINT</li>
+    <li><strong>bodyA</strong>: (b2.Body) The first attached body.</li>
+    <li><strong>bodyB</strong>: (b2.Body) The second attached body.</li>
+    <li><strong>collideConnected</strong>: (boolean) Set this flag to true if the attached bodies should collide.</li>
+    <li><strong>joint1</strong>: (b2.Joint) The first revolute/prismatic joint attached to the gear joint.</li>
+    <li><strong>joint2</strong>: (b2.Joint) The second revolute/prismatic joint attached to the gear joint.</li>
+    <li><strong>ratio</strong>: (number) The gear ratio.</li>
+</ul>
+
+<p> Also, you can use <a href="#b2.createGearJointDef">b2.createGearJointDef</a> function to create a gear joint definiton table easier.</p>
+
+<p> ### Wheel Joint</p>
+
+<p> Wheel joint definition. This requires defining a line of motion using an axis and an anchor point. 
+ The definition uses local anchor points and a local axis so that the initial configuration can violate 
+ the constraint slightly. The joint translation is zero when the local anchor points coincide in world space. 
+ Using local anchors and a local axis helps when saving and loading a game.</p>
+
+<ul>
+    <li><strong>type</strong>: (number) b2.WHEEL_JOINT</li>
+    <li><strong>bodyA</strong>: (b2.Body) The first attached body.</li>
+    <li><strong>bodyB</strong>: (b2.Body) The second attached body.</li>
+    <li><strong>collideConnected</strong>: (boolean) Set this flag to true if the attached bodies should collide.</li>
+    <li><strong>localAnchorA</strong>: (table) The local anchor point relative to bodyA's origin.</li>
+    <li><strong>localAnchorB</strong>: (table) The local anchor point relative to bodyB's origin.</li>
+    <li><strong>localAxisA</strong>: (table) The local translation axis in bodyA.</li>
+    <li><strong>enableMotor</strong>: (boolean) A flag to enable the joint motor.</li>
+    <li><strong>maxMotorTorque</strong>: (number) The maximum motor torque, usually in N-m. </li>
+    <li><strong>motorSpeed</strong>: (number) The desired motor speed in radians per second. </li>
+    <li><strong>frequencyHz</strong>: (number) Suspension frequency, zero indicates no suspension.</li>
+    <li><strong>dampingRatio</strong>: (number) Suspension damping ratio, one indicates critical damping. </li>
+</ul>
+
+<p> Also, you can use <a href="#b2.createWheelJointDef">b2.createWheelJointDef</a> function to create a wheel joint definiton table easier.</p>
+
+<p> ### Weld Joint</p>
+
+<p> Weld joint definition. You need to specify local anchor points where they are attached and the relative
+ body angle. The position of the anchor points is important for computing the reaction torque.</p>
+
+<ul>
+    <li><strong>type</strong>: (number) b2.WELD_JOINT</li>
+    <li><strong>bodyA</strong>: (b2.Body) The first attached body.</li>
+    <li><strong>bodyB</strong>: (b2.Body) The second attached body.</li>
+    <li><strong>collideConnected</strong>: (boolean) Set this flag to true if the attached bodies should collide.</li>
+    <li><strong>localAnchorA</strong>: (table) The local anchor point relative to bodyA's origin.</li>
+    <li><strong>localAnchorB</strong>: (table) The local anchor point relative to bodyB's origin.</li>
+    <li><strong>referenceAngle</strong>: (number) The bodyB angle minus bodyA angle in the reference state (radians).</li>
+</ul>
+
+<p> Also, you can use <a href="#b2.createWeldJointDef">b2.createWeldJointDef</a> function to create a weld joint definiton table easier.</p>
+
+<p> ### Friction Joint</p>
+
+<p> Friction joint definition.</p>
+
+<ul>
+    <li><strong>type</strong>: (number) b2.LINE_JOINT</li>
+    <li><strong>bodyA</strong>: (b2.Body) The first attached body.</li>
+    <li><strong>bodyB</strong>: (b2.Body) The second attached body.</li>
+    <li><strong>collideConnected</strong>: (boolean) Set this flag to true if the attached bodies should collide.</li>
+    <li><strong>localAnchorA</strong>: (table) The local anchor point relative to bodyA's origin.</li>
+    <li><strong>localAnchorB</strong>: (table) The local anchor point relative to bodyB's origin.</li>
+    <li><strong>maxForce</strong>: (number) The maximum friction force in N.</li>
+    <li><strong>maxTorque</strong>: (number) The maximum friction torque in N-m.</li>
+</ul>
+
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				jointDef  </em></code>: (table)
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				The created joint instance.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).destroyBody" >
+<strong>World:destroyBody(body)</strong>
+</a>
+</dt>
+<dd>
+	 Destroys a rigid body.
+	<br/>
+<p>This function is locked during callbacks.</p>
+
+<p> <strong>Warning:</strong></p>
+
+<ul>
+    <li>This automatically deletes all associated shapes and joints.</li>
+    <li>This function is locked during callbacks.</li>
+</ul>
+
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				body  </em></code>: (b2.Body) body to be destroyed
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).destroyJoint" >
+<strong>World:destroyJoint(joint)</strong>
+</a>
+</dt>
+<dd>
+	 Destroy a joint.
+	<br/>This may cause the connected bodies to begin colliding. </p>
+
+<p> <strong>Warning:</strong> This function is locked during callbacks.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				joint  </em></code>: (b2.Joint) joint to be destroyed
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).dispatchEvent" >
+<strong>World:dispatchEvent(event)</strong>
+</a>
+</dt>
+<dd>
+	 Dispatches an event to this <code>EventDispatcher</code> instance.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				event  </em></code>: (Event) The <code>Event</code> object to be dispatched.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).getGravity" >
+<strong>World:getGravity()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the gravity vector.
+		<h3>Return value</h3>
+				<p>
+				x and y component of gravity vector.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).hasEventListener" >
+<strong>World:hasEventListener()</strong>
+</a>
+</dt>
+<dd>
+	 Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.
+		<h3>Return value</h3>
+				<p>
+				A value of <code>true</code> if a listener of the specified type is registered; <code>false</code> otherwise.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).new" >
+<strong>World.new(gravityx, gravityy, doSleep)</strong>
+</a>
+</dt>
+<dd>
+	 Creates a new <code>b2.World</code> object.
+	<br/>You can create more then one <code>b2.World</code> object to manage independent worlds.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				gravityx  </em></code>: (number) the x component the gravity
+				</li>
+				<li><code><em>
+				gravityy  </em></code>: (number) the y component the gravity
+				</li>
+				<li><code><em>
+				doSleep  </em></code>: (boolean, default = true) improve performance by not simulating inactive bodies
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				<em><a href="##(World)">#World</a>:</em>
+				A new <code>b2.World</code> object.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).queryAABB" >
+<strong>World:queryAABB(lowerx, lowery, upperx, uppery)</strong>
+</a>
+</dt>
+<dd>
+	 Query the world for all fixtures that potentially overlap the provided AABB.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				lowerx  </em></code>: (number) the lower x coordinate of the query box
+				</li>
+				<li><code><em>
+				lowery  </em></code>: (number) the lower y coordinate of the query box
+				</li>
+				<li><code><em>
+				upperx  </em></code>: (number) the upper x coordinate of the query box
+				</li>
+				<li><code><em>
+				uppery  </em></code>: (number) the upper y coordinate of the query box
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				Array of fixtures that potentially overlaps the provided AABB
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).rayCast" >
+<strong>World:rayCast(x1, y1, x2, y2, listener, data)</strong>
+</a>
+</dt>
+<dd>
+	 Ray-cast the world for all fixtures in the path of the ray.
+	<br/>
+<p>Your callback controls whether you get the closest point, any point, or n-points. The ray-cast ignores shapes that contain the starting point. </p>
+
+<p> Listener function is called for each fixture found in the query and accepts 6 parameters (7 if data parameter is provided):</p>
+
+<ol>
+    <li>the fixture hit by the ray</li>
+    <li>the x coordinate of the point of initial intersection </li>
+    <li>the y coordinate of the point of initial intersection</li>
+    <li>the x coordinate of the normal vector at the point of intersection </li>
+    <li>the y coordinate of the normal vector at the point of intersection </li>
+    <li>fraction</li>
+</ol>
+
+<p> You control how the ray cast proceeds by returning a number:</p>
+
+<ul>
+    <li>return no value or -1: ignore this fixture and continue</li>
+    <li>return 0: terminate the ray cast</li>
+    <li>return fraction: clip the ray to this point</li>
+    <li>return 1: don't clip the ray and continue</li>
+</ul>
+
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x1  </em></code>: (number) the x coordinate of the ray starting point
+				</li>
+				<li><code><em>
+				y1  </em></code>: (number) the y coordinate of the ray starting point
+				</li>
+				<li><code><em>
+				x2  </em></code>: (number) the x coordinate of the ray ending point
+				</li>
+				<li><code><em>
+				y2  </em></code>: (number) the y coordinate of the ray ending point
+				</li>
+				<li><code><em>
+				listener  </em></code>: (function) the listener function that processes the results
+				</li>
+				<li><code><em>
+				data  </em></code>: (optional) an optional data parameter that is passed as a first argument to the listener function
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).removeEventListener" >
+<strong>World:removeEventListener(listener, data)</strong>
+</a>
+</dt>
+<dd>
+	 Removes a listener from the <code>EventDispatcher</code> object.
+	<br/><code>removeEventListener()</code> function expects
+ the same arguments with <code>addEventListener()</code> to remove the event. If there is no matching listener
+ registered, a call to this function has no effect.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				listener  </em></code>: (function) The listener object to remove.
+				</li>
+				<li><code><em>
+				data  </em></code>: The data parameter that is used while registering the event.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).setDebugDraw" >
+<strong>World:setDebugDraw()</strong>
+</a>
+</dt>
+<dd>
+	 Registers a b2.DebugDraw instance for debug drawing.
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).setGravity" >
+<strong>World:setGravity(gravityx, gravityy)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the gravity vector.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				gravityx  </em></code>: (number) the x component the gravity
+				</li>
+				<li><code><em>
+				gravityy  </em></code>: (number) the y component the gravity
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(World).step" >
+<strong>World:step(timeStep, velocityIterations, positionIterations)</strong>
+</a>
+</dt>
+<dd>
+	 Take a time step.
+	<br/>This performs collision detection, integration, and constraint solution.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				timeStep  </em></code>: (number) the amount of time to simulate, this should not vary
+				</li>
+				<li><code><em>
+				velocityIterations  </em></code>: (number) for the velocity constraint solver
+				</li>
+				<li><code><em>
+				positionIterations  </em></code>: (number) for the position constraint solver
+				</li>
+		</ul>
+</dd>
+</dl>
+
+</div>
+
+</div>
+</body>
+</html>

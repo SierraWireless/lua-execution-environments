@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+	</head>
+<body>
+<div id="container">
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div>
+<div id="main">
+	<div id="navigation">
+		<h2>Modules</h2>
+			<ul><li>
+				<a href="index.html">index</a>
+			</li></ul>
+		<ul>
+					<li><a href="Accelerometer.html">Accelerometer</a></li>
+					<li><a href="Application.html">Application</a></li>
+					<li><a href="Bitmap.html">Bitmap</a></li>
+					<li><a href="Body.html">Body</a></li>
+					<li><a href="ChainShape.html">ChainShape</a></li>
+					<li><a href="CircleShape.html">CircleShape</a></li>
+					<li><a href="DistanceJoint.html">DistanceJoint</a></li>
+					<li><a href="EdgeShape.html">EdgeShape</a></li>
+					<li>Event</li>
+					<li><a href="EventDispatcher.html">EventDispatcher</a></li>
+					<li><a href="Fixture.html">Fixture</a></li>
+					<li><a href="Font.html">Font</a></li>
+					<li><a href="FontBase.html">FontBase</a></li>
+					<li><a href="FrictionJoint.html">FrictionJoint</a></li>
+					<li><a href="Geolocation.html">Geolocation</a></li>
+					<li><a href="Gyroscope.html">Gyroscope</a></li>
+					<li><a href="Joint.html">Joint</a></li>
+					<li><a href="Matrix.html">Matrix</a></li>
+					<li><a href="MouseJoint.html">MouseJoint</a></li>
+					<li><a href="MovieClip.html">MovieClip</a></li>
+					<li><a href="PolygonShape.html">PolygonShape</a></li>
+					<li><a href="PrismaticJoint.html">PrismaticJoint</a></li>
+					<li><a href="PulleyJoint.html">PulleyJoint</a></li>
+					<li><a href="RevoluteJoint.html">RevoluteJoint</a></li>
+					<li><a href="Shape.html">Shape</a></li>
+					<li><a href="Sound.html">Sound</a></li>
+					<li><a href="SoundChannel.html">SoundChannel</a></li>
+					<li><a href="Sprite.html">Sprite</a></li>
+					<li><a href="Stage.html">Stage</a></li>
+					<li><a href="TTFont.html">TTFont</a></li>
+					<li><a href="TextField.html">TextField</a></li>
+					<li><a href="Texture.html">Texture</a></li>
+					<li><a href="TextureBase.html">TextureBase</a></li>
+					<li><a href="TexturePack.html">TexturePack</a></li>
+					<li><a href="TextureRegion.html">TextureRegion</a></li>
+					<li><a href="TileMap.html">TileMap</a></li>
+					<li><a href="Timer.html">Timer</a></li>
+					<li><a href="WeldJoint.html">WeldJoint</a></li>
+					<li><a href="WheelJoint.html">WheelJoint</a></li>
+					<li><a href="World.html">World</a></li>
+					<li><a href="b2.html">b2</a></li>
+					<li><a href="b2.DebugDraw.html">b2.DebugDraw</a></li>
+					<li><a href="b2.GearJoint.html">b2.GearJoint</a></li>
+					<li><a href="coroutine.html">coroutine</a></li>
+					<li><a href="debug.html">debug</a></li>
+					<li><a href="flurry.html">flurry</a></li>
+					<li><a href="global.html">global</a></li>
+					<li><a href="io.html">io</a></li>
+					<li><a href="math.html">math</a></li>
+					<li><a href="os.html">os</a></li>
+					<li><a href="package.html">package</a></li>
+					<li><a href="string.html">string</a></li>
+					<li><a href="table.html">table</a></li>
+		</ul>
+	</div>
+	<div id="content">
+   <h1>Module <code>Event</code></h1>
+    The objects of <code>Event</code> class contains information about an event that has occurred.
+   <br/>
+<p><code>Event</code> objects
+ are passed to event listeners when an event occurs.</p>
+
+<p> Usually event objects contains specific additional information about the event that has occured. For example,
+ when an <code>Event.MOUSE_DOWN</code> event occurs, <code>x</code> and <code>y</code> fields contain the coordinates:</p>
+
+<pre><code>function onMouseDown(event)
+    print(event.x, event.y)
+end
+
+mysprite:addEventListener(Event.MOUSE_DOWN, onMouseDown)
+</code></pre>
+
+<p> Users can create their own events and dispatch through the event mechanism:</p>
+
+<pre><code>local event = Event.new("myevent")
+event.data1 = "12345"
+event.data2 = "abcde"
+
+mydispatcher:dispatchEvent(event)
+</code></pre>
+
+			<h2><a id="#(Event)">Type <code>Event</code></a></h2>
+				<table class="function_list">
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).ADDED_TO_STAGE">Event.ADDED_TO_STAGE</a></td>
+		<td class="summary">
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).ENTER_FRAME">Event.ENTER_FRAME</a></td>
+		<td class="summary">
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).MOUSE_DOWN">Event.MOUSE_DOWN</a></td>
+		<td class="summary">
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).MOUSE_MOVE">Event.MOUSE_MOVE</a></td>
+		<td class="summary">
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).MOUSE_UP">Event.MOUSE_UP</a></td>
+		<td class="summary">
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).REMOVED_FROM_STAGE">Event.REMOVED_FROM_STAGE</a></td>
+		<td class="summary">
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).TOUCHES_BEGIN">Event.TOUCHES_BEGIN</a></td>
+		<td class="summary">
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).TOUCHES_CANCEL">Event.TOUCHES_CANCEL</a></td>
+		<td class="summary">
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).TOUCHES_END">Event.TOUCHES_END</a></td>
+		<td class="summary">
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).TOUCHES_MOVE">Event.TOUCHES_MOVE</a></td>
+		<td class="summary">
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).getTarget">Event:getTarget()</a></td>
+		<td class="summary"> Returns the element on which the event listener was registered.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).getType">Event:getType()</a></td>
+		<td class="summary"> Returns a string that represents the type of the event.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).new">Event.new()</a></td>
+		<td class="summary"> Creates a new <code>Event</code> object to be dispatched from an <code>EventDispatcher</code>.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).stopPropagation">Event:stopPropagation()</a></td>
+		<td class="summary"> Disables the propagation of the current event in the scene tree hierarchy.</td>
+		</tr>
+	</table>
+
+			<h2>Type <code>Event</code></h2>
+				<h3>Field(s)</h3>
+		<dl class="function">
+<dt>
+<a id="#(Event).ADDED_TO_STAGE" >
+<strong>Event.ADDED_TO_STAGE</strong>
+</a>
+</dt>
+<dd>
+	
+
+
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Event).ENTER_FRAME" >
+<strong>Event.ENTER_FRAME</strong>
+</a>
+</dt>
+<dd>
+	
+
+
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Event).MOUSE_DOWN" >
+<strong>Event.MOUSE_DOWN</strong>
+</a>
+</dt>
+<dd>
+	
+
+
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Event).MOUSE_MOVE" >
+<strong>Event.MOUSE_MOVE</strong>
+</a>
+</dt>
+<dd>
+	
+
+
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Event).MOUSE_UP" >
+<strong>Event.MOUSE_UP</strong>
+</a>
+</dt>
+<dd>
+	
+
+
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Event).REMOVED_FROM_STAGE" >
+<strong>Event.REMOVED_FROM_STAGE</strong>
+</a>
+</dt>
+<dd>
+	
+
+
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Event).TOUCHES_BEGIN" >
+<strong>Event.TOUCHES_BEGIN</strong>
+</a>
+</dt>
+<dd>
+	
+
+
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Event).TOUCHES_CANCEL" >
+<strong>Event.TOUCHES_CANCEL</strong>
+</a>
+</dt>
+<dd>
+	
+
+
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Event).TOUCHES_END" >
+<strong>Event.TOUCHES_END</strong>
+</a>
+</dt>
+<dd>
+	
+
+
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Event).TOUCHES_MOVE" >
+<strong>Event.TOUCHES_MOVE</strong>
+</a>
+</dt>
+<dd>
+	
+
+
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Event).getTarget" >
+<strong>Event:getTarget()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the element on which the event listener was registered.
+		<h3>Return value</h3>
+				<p>
+				Target of event.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Event).getType" >
+<strong>Event:getType()</strong>
+</a>
+</dt>
+<dd>
+	 Returns a string that represents the type of the event.
+		<h3>Return value</h3>
+				<p>
+				Type of event.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Event).new" >
+<strong>Event.new()</strong>
+</a>
+</dt>
+<dd>
+	 Creates a new <code>Event</code> object to be dispatched from an <code>EventDispatcher</code>.
+		<h3>Return value</h3>
+				<p>
+				New <code>Event</code> object.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Event).stopPropagation" >
+<strong>Event:stopPropagation()</strong>
+</a>
+</dt>
+<dd>
+	 Disables the propagation of the current event in the scene tree hierarchy.
+</dd>
+</dl>
+
+</div>
+
+</div>
+</body>
+</html>

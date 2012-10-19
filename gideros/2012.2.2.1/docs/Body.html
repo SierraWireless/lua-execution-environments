@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+	</head>
+<body>
+<div id="container">
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div>
+<div id="main">
+	<div id="navigation">
+		<h2>Modules</h2>
+			<ul><li>
+				<a href="index.html">index</a>
+			</li></ul>
+		<ul>
+					<li><a href="Accelerometer.html">Accelerometer</a></li>
+					<li><a href="Application.html">Application</a></li>
+					<li><a href="Bitmap.html">Bitmap</a></li>
+					<li>Body</li>
+					<li><a href="ChainShape.html">ChainShape</a></li>
+					<li><a href="CircleShape.html">CircleShape</a></li>
+					<li><a href="DistanceJoint.html">DistanceJoint</a></li>
+					<li><a href="EdgeShape.html">EdgeShape</a></li>
+					<li><a href="Event.html">Event</a></li>
+					<li><a href="EventDispatcher.html">EventDispatcher</a></li>
+					<li><a href="Fixture.html">Fixture</a></li>
+					<li><a href="Font.html">Font</a></li>
+					<li><a href="FontBase.html">FontBase</a></li>
+					<li><a href="FrictionJoint.html">FrictionJoint</a></li>
+					<li><a href="Geolocation.html">Geolocation</a></li>
+					<li><a href="Gyroscope.html">Gyroscope</a></li>
+					<li><a href="Joint.html">Joint</a></li>
+					<li><a href="Matrix.html">Matrix</a></li>
+					<li><a href="MouseJoint.html">MouseJoint</a></li>
+					<li><a href="MovieClip.html">MovieClip</a></li>
+					<li><a href="PolygonShape.html">PolygonShape</a></li>
+					<li><a href="PrismaticJoint.html">PrismaticJoint</a></li>
+					<li><a href="PulleyJoint.html">PulleyJoint</a></li>
+					<li><a href="RevoluteJoint.html">RevoluteJoint</a></li>
+					<li><a href="Shape.html">Shape</a></li>
+					<li><a href="Sound.html">Sound</a></li>
+					<li><a href="SoundChannel.html">SoundChannel</a></li>
+					<li><a href="Sprite.html">Sprite</a></li>
+					<li><a href="Stage.html">Stage</a></li>
+					<li><a href="TTFont.html">TTFont</a></li>
+					<li><a href="TextField.html">TextField</a></li>
+					<li><a href="Texture.html">Texture</a></li>
+					<li><a href="TextureBase.html">TextureBase</a></li>
+					<li><a href="TexturePack.html">TexturePack</a></li>
+					<li><a href="TextureRegion.html">TextureRegion</a></li>
+					<li><a href="TileMap.html">TileMap</a></li>
+					<li><a href="Timer.html">Timer</a></li>
+					<li><a href="WeldJoint.html">WeldJoint</a></li>
+					<li><a href="WheelJoint.html">WheelJoint</a></li>
+					<li><a href="World.html">World</a></li>
+					<li><a href="b2.html">b2</a></li>
+					<li><a href="b2.DebugDraw.html">b2.DebugDraw</a></li>
+					<li><a href="b2.GearJoint.html">b2.GearJoint</a></li>
+					<li><a href="coroutine.html">coroutine</a></li>
+					<li><a href="debug.html">debug</a></li>
+					<li><a href="flurry.html">flurry</a></li>
+					<li><a href="global.html">global</a></li>
+					<li><a href="io.html">io</a></li>
+					<li><a href="math.html">math</a></li>
+					<li><a href="os.html">os</a></li>
+					<li><a href="package.html">package</a></li>
+					<li><a href="string.html">string</a></li>
+					<li><a href="table.html">table</a></li>
+		</ul>
+	</div>
+	<div id="content">
+   <h1>Module <code>Body</code></h1>
+    A rigid body.
+   <br/>These are created via <code>b2.World:createBody</code>.
+			<h2><a id="#(Body)">Type <code>Body</code></a></h2>
+				<table class="function_list">
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).applyAngularImpulse">Body:applyAngularImpulse(impulse)</a></td>
+		<td class="summary"> Applies an angular impulse.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).applyForce">Body:applyForce(forcex, forcey, pointx, pointy)</a></td>
+		<td class="summary"> Applies a force at a world point.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).applyLinearImpulse">Body:applyLinearImpulse(impulsex, impulsey, pointx, pointy)</a></td>
+		<td class="summary"> Applies an impulse at a point.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).applyTorque">Body:applyTorque(torque)</a></td>
+		<td class="summary"> Applies a torque.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).createFixture">Body:createFixture(fixtureDef)</a></td>
+		<td class="summary"> Creates a fixture and attach it to this body.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).destroyFixture">Body:destroyFixture(fixture)</a></td>
+		<td class="summary"> Destroy a fixture.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).getAngle">Body:getAngle()</a></td>
+		<td class="summary"> Returns the current world rotation angle in radians.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).getAngularDamping">Body:getAngularDamping()</a></td>
+		<td class="summary"> Returns the angular damping of the body.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).getAngularVelocity">Body:getAngularVelocity()</a></td>
+		<td class="summary"> Returns the angular velocity.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).getGravityScale">Body:getGravityScale()</a></td>
+		<td class="summary"> Returns the gravity scale of the body.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).getInertia">Body:getInertia()</a></td>
+		<td class="summary"> Returns the rotational inertia of the body about the local origin in kg-m^2.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).getLinearDamping">Body:getLinearDamping()</a></td>
+		<td class="summary"> Returns the linear damping of the body.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).getLinearVelocity">Body:getLinearVelocity()</a></td>
+		<td class="summary"> Returns the linear velocity of the center of mass.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).getLocalCenter">Body:getLocalCenter()</a></td>
+		<td class="summary"> Returns the local position of the center of mass.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).getMass">Body:getMass()</a></td>
+		<td class="summary"> Returns the total mass of the body in kilograms (kg).</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).getPosition">Body:getPosition()</a></td>
+		<td class="summary"> Returns the world body origin position.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).getWorldCenter">Body:getWorldCenter()</a></td>
+		<td class="summary"> Returns the world position of the center of mass.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).isActive">Body:isActive()</a></td>
+		<td class="summary"> Returns the active state of the body.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).isAwake">Body:isAwake()</a></td>
+		<td class="summary"> Returns the sleeping state of this body.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).setActive">Body:setActive(flag)</a></td>
+		<td class="summary"> Sets the active state of the body.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).setAngle">Body:setAngle(angle)</a></td>
+		<td class="summary"> Sets the current world rotation angle in radians.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).setAngularDamping">Body:setAngularDamping(angularDamping)</a></td>
+		<td class="summary"> Sets the angular damping of the body.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).setAngularVelocity">Body:setAngularVelocity(omega)</a></td>
+		<td class="summary"> Sets the angular velocity.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).setAwake">Body:setAwake(awake)</a></td>
+		<td class="summary"> Set the sleep state of the body.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).setGravityScale">Body:setGravityScale(scale)</a></td>
+		<td class="summary"> Sets the gravity scale of the body.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).setLinearDamping">Body:setLinearDamping(linearDamping)</a></td>
+		<td class="summary"> Sets the linear damping of the body.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).setLinearVelocity">Body:setLinearVelocity(x, y)</a></td>
+		<td class="summary"> Sets the linear velocity of the center of mass.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Body.html##(Body).setPosition">Body:setPosition(x, y)</a></td>
+		<td class="summary"> Sets the world body origin position.</td>
+		</tr>
+	</table>
+
+			<h2>Type <code>Body</code></h2>
+				<h3>Field(s)</h3>
+		<dl class="function">
+<dt>
+<a id="#(Body).applyAngularImpulse" >
+<strong>Body:applyAngularImpulse(impulse)</strong>
+</a>
+</dt>
+<dd>
+	 Applies an angular impulse.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				impulse  </em></code>: (number) the angular impulse in units of kg<em>m</em>m/s
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).applyForce" >
+<strong>Body:applyForce(forcex, forcey, pointx, pointy)</strong>
+</a>
+</dt>
+<dd>
+	 Applies a force at a world point.
+	<br/>If the force is not
+ applied at the center of mass, it will generate a torque and
+ affect the angular velocity. This wakes up the body.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				forcex  </em></code>: (number) the x coordinate of the world force vector, usually in Newtons (N)
+				</li>
+				<li><code><em>
+				forcey  </em></code>: (number) the y coordinate of the world force vector, usually in Newtons (N)
+				</li>
+				<li><code><em>
+				pointx  </em></code>: (number) the x coordinate of the world position of the point of application
+				</li>
+				<li><code><em>
+				pointy  </em></code>: (number) the y coordinate of the world position of the point of application
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).applyLinearImpulse" >
+<strong>Body:applyLinearImpulse(impulsex, impulsey, pointx, pointy)</strong>
+</a>
+</dt>
+<dd>
+	 Applies an impulse at a point.
+	<br/>This immediately modifies the velocity. It also
+ modifies the angular velocity if the point of application is not at the center of
+ mass. This wakes up the body.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				impulsex  </em></code>: (number) the x coordinate of the world impulse vector, usually in N-seconds or kg-m/s
+				</li>
+				<li><code><em>
+				impulsey  </em></code>: (number) the y coordinate of the world impulse vector, usually in N-seconds or kg-m/s
+				</li>
+				<li><code><em>
+				pointx  </em></code>: (number) the x coordinate of the world position of the point of application
+				</li>
+				<li><code><em>
+				pointy  </em></code>: (number) the y coordinate of the world position of the point of application
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).applyTorque" >
+<strong>Body:applyTorque(torque)</strong>
+</a>
+</dt>
+<dd>
+	 Applies a torque.
+	<br/>This affects the angular velocity without affecting
+ the linear velocity of the center of mass. This wakes up the body.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				torque  </em></code>: (number) about the z-axis (out of the screen), usually in N-m
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).createFixture" >
+<strong>Body:createFixture(fixtureDef)</strong>
+</a>
+</dt>
+<dd>
+	 Creates a fixture and attach it to this body.
+	<br/>If the density is non-zero, this function automatically
+ updates the mass of the body. Contacts are not created until the next time step. The fixture definition is given
+ as a ordinary table. The fields of the fixture definition table are:</p>
+
+<ul>
+    <li><strong>shape</strong>: (b2.Shape) The shape, this must be set.</li>
+    <li><strong>friction</strong>: (number) The friction coefficient, usually in the range [0,1].</li>
+    <li><strong>restitution</strong>: (number) The restitution (elasticity) usually in the range [0,1].</li>
+    <li><strong>density</strong>: (number) The density, usually in kg/m^2.</li>
+    <li><strong>isSensor</strong>: (boolean) A sensor shape collects contact information but never generates a collision response.</li>
+    <li><strong>filter</strong>: (table) Contact filtering data. The definition of contact filtering data is given at <code>b2.Fixture:setFilterData</code> function.</li>
+</ul>
+
+<p> The unset fields gets default values.</p>
+
+<p> <strong>Warning:</strong> This function is locked during callbacks.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				fixtureDef  </em></code>: (table)
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				The created fixture instance.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).destroyFixture" >
+<strong>Body:destroyFixture(fixture)</strong>
+</a>
+</dt>
+<dd>
+	 Destroy a fixture.
+	<br/>This removes the fixture from the broad-phase and destroys all
+ contacts associated with this fixture. This will automatically adjust the mass of the body if the
+ body is dynamic and the fixture has positive density. All fixtures attached to a body are implicitly
+ destroyed when the body is destroyed.</p>
+
+<p> <strong>Warning:</strong> This function is locked during callbacks.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				fixture  </em></code>: (b2.Fixture)    the fixture to be removed
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).getAngle" >
+<strong>Body:getAngle()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the current world rotation angle in radians.
+		<h3>Return value</h3>
+				<p>
+				Current body angle in radians
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).getAngularDamping" >
+<strong>Body:getAngularDamping()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the angular damping of the body.
+		<h3>Return value</h3>
+				<p>
+				The angular damping of the body
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).getAngularVelocity" >
+<strong>Body:getAngularVelocity()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the angular velocity.
+		<h3>Return value</h3>
+				<p>
+				Angular velocity in radians/second
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).getGravityScale" >
+<strong>Body:getGravityScale()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the gravity scale of the body.
+		<h3>Return value</h3>
+				<p>
+				The gravity scale of the body
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).getInertia" >
+<strong>Body:getInertia()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the rotational inertia of the body about the local origin in kg-m^2.
+		<h3>Return value</h3>
+				<p>
+				The rotational inertia of the body about the local origin in kg-m^2.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).getLinearDamping" >
+<strong>Body:getLinearDamping()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the linear damping of the body.
+		<h3>Return value</h3>
+				<p>
+				The linear damping of the body
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).getLinearVelocity" >
+<strong>Body:getLinearVelocity()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the linear velocity of the center of mass.
+		<h3>Return value</h3>
+				<p>
+				x and y coordinates of the linear velocity
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).getLocalCenter" >
+<strong>Body:getLocalCenter()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the local position of the center of mass.
+		<h3>Return value</h3>
+				<p>
+				x and y coordinates of the local position of the center of mass
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).getMass" >
+<strong>Body:getMass()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the total mass of the body in kilograms (kg).
+		<h3>Return value</h3>
+				<p>
+				The total mass of the body in kilograms (kg)
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).getPosition" >
+<strong>Body:getPosition()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the world body origin position.
+		<h3>Return value</h3>
+				<p>
+				x and y coordinates of the position
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).getWorldCenter" >
+<strong>Body:getWorldCenter()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the world position of the center of mass.
+		<h3>Return value</h3>
+				<p>
+				x and y coordinates of the world position of the center of mass
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).isActive" >
+<strong>Body:isActive()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the active state of the body.
+		<h3>Return value</h3>
+				<p>
+				<code>true</code> if the body is active, <code>false</code> otherwise
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).isAwake" >
+<strong>Body:isAwake()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the sleeping state of this body.
+	<br/>Returns <code>true</code> if body is awake (not sleeping), <code>false</code> otherwise.
+		<h3>Return value</h3>
+				<p>
+				The sleeping state of this body.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).setActive" >
+<strong>Body:setActive(flag)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the active state of the body.
+	<br/>An inactive body is not simulated and cannot be collided with or woken up. 
+ If you pass a flag of true, all fixtures will be added to the broad-phase. If you pass a flag of false,
+ all fixtures will be removed from the broad-phase and all contacts will be destroyed. Fixtures and joints are 
+ otherwise unaffected. You may continue to create/destroy fixtures and joints on inactive bodies. 
+ Fixtures on an inactive body are implicitly inactive and will not participate in collisions, ray-casts, or queries. 
+ Joints connected to an inactive body are implicitly inactive. An inactive body is still owned by a <a href="#b2.World">b2.World</a> object and 
+ remains in the body list.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				flag  </em></code>: (boolean) active flag
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).setAngle" >
+<strong>Body:setAngle(angle)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the current world rotation angle in radians.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				angle  </em></code>: (number) world rotation angle in radians
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).setAngularDamping" >
+<strong>Body:setAngularDamping(angularDamping)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the angular damping of the body.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				angularDamping  </em></code>: (number) new angular damping of the body
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).setAngularVelocity" >
+<strong>Body:setAngularVelocity(omega)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the angular velocity.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				omega  </em></code>: (number) the new angular velocity in radians/second
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).setAwake" >
+<strong>Body:setAwake(awake)</strong>
+</a>
+</dt>
+<dd>
+	 Set the sleep state of the body.
+	<br/>A sleeping body has very low CPU cost.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				awake  </em></code>: (boolean) set to true to wake body, false to put it to sleep
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).setGravityScale" >
+<strong>Body:setGravityScale(scale)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the gravity scale of the body.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				scale  </em></code>: (number) new gravity scale of the body
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).setLinearDamping" >
+<strong>Body:setLinearDamping(linearDamping)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the linear damping of the body.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				linearDamping  </em></code>: (number) new linear damping of the body
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).setLinearVelocity" >
+<strong>Body:setLinearVelocity(x, y)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the linear velocity of the center of mass.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number) x coordinate of the linear velocity
+				</li>
+				<li><code><em>
+				y  </em></code>: (number) y coordinate of the linear velocity
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Body).setPosition" >
+<strong>Body:setPosition(x, y)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the world body origin position.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number) x coordinate of the position
+				</li>
+				<li><code><em>
+				y  </em></code>: (number) y coordinate of the position
+				</li>
+		</ul>
+</dd>
+</dl>
+
+</div>
+
+</div>
+</body>
+</html>

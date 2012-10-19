@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+	</head>
+<body>
+<div id="container">
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div>
+<div id="main">
+	<div id="navigation">
+		<h2>Modules</h2>
+			<ul><li>
+				<a href="index.html">index</a>
+			</li></ul>
+		<ul>
+					<li><a href="Accelerometer.html">Accelerometer</a></li>
+					<li><a href="Application.html">Application</a></li>
+					<li><a href="Bitmap.html">Bitmap</a></li>
+					<li><a href="Body.html">Body</a></li>
+					<li><a href="ChainShape.html">ChainShape</a></li>
+					<li><a href="CircleShape.html">CircleShape</a></li>
+					<li><a href="DistanceJoint.html">DistanceJoint</a></li>
+					<li><a href="EdgeShape.html">EdgeShape</a></li>
+					<li><a href="Event.html">Event</a></li>
+					<li><a href="EventDispatcher.html">EventDispatcher</a></li>
+					<li><a href="Fixture.html">Fixture</a></li>
+					<li><a href="Font.html">Font</a></li>
+					<li><a href="FontBase.html">FontBase</a></li>
+					<li><a href="FrictionJoint.html">FrictionJoint</a></li>
+					<li><a href="Geolocation.html">Geolocation</a></li>
+					<li><a href="Gyroscope.html">Gyroscope</a></li>
+					<li>Joint</li>
+					<li><a href="Matrix.html">Matrix</a></li>
+					<li><a href="MouseJoint.html">MouseJoint</a></li>
+					<li><a href="MovieClip.html">MovieClip</a></li>
+					<li><a href="PolygonShape.html">PolygonShape</a></li>
+					<li><a href="PrismaticJoint.html">PrismaticJoint</a></li>
+					<li><a href="PulleyJoint.html">PulleyJoint</a></li>
+					<li><a href="RevoluteJoint.html">RevoluteJoint</a></li>
+					<li><a href="Shape.html">Shape</a></li>
+					<li><a href="Sound.html">Sound</a></li>
+					<li><a href="SoundChannel.html">SoundChannel</a></li>
+					<li><a href="Sprite.html">Sprite</a></li>
+					<li><a href="Stage.html">Stage</a></li>
+					<li><a href="TTFont.html">TTFont</a></li>
+					<li><a href="TextField.html">TextField</a></li>
+					<li><a href="Texture.html">Texture</a></li>
+					<li><a href="TextureBase.html">TextureBase</a></li>
+					<li><a href="TexturePack.html">TexturePack</a></li>
+					<li><a href="TextureRegion.html">TextureRegion</a></li>
+					<li><a href="TileMap.html">TileMap</a></li>
+					<li><a href="Timer.html">Timer</a></li>
+					<li><a href="WeldJoint.html">WeldJoint</a></li>
+					<li><a href="WheelJoint.html">WheelJoint</a></li>
+					<li><a href="World.html">World</a></li>
+					<li><a href="b2.html">b2</a></li>
+					<li><a href="b2.DebugDraw.html">b2.DebugDraw</a></li>
+					<li><a href="b2.GearJoint.html">b2.GearJoint</a></li>
+					<li><a href="coroutine.html">coroutine</a></li>
+					<li><a href="debug.html">debug</a></li>
+					<li><a href="flurry.html">flurry</a></li>
+					<li><a href="global.html">global</a></li>
+					<li><a href="io.html">io</a></li>
+					<li><a href="math.html">math</a></li>
+					<li><a href="os.html">os</a></li>
+					<li><a href="package.html">package</a></li>
+					<li><a href="string.html">string</a></li>
+					<li><a href="table.html">table</a></li>
+		</ul>
+	</div>
+	<div id="content">
+   <h1>Module <code>Joint</code></h1>
+    The <code>b2.Joint</code> class is the base joint class.
+   <br/>Joints are used to constraint two bodies together in various fashions. Some joints also feature limits and motors.
+			<h2><a id="#(Joint)">Type <code>Joint</code></a></h2>
+				<table class="function_list">
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Joint.html##(Joint).getAnchorA">Joint:getAnchorA()</a></td>
+		<td class="summary"> Returns the anchor point on bodyA in world coordinates.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Joint.html##(Joint).getAnchorB">Joint:getAnchorB()</a></td>
+		<td class="summary"> Returns the anchor point on bodyB in world coordinates.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Joint.html##(Joint).getBodyA">Joint:getBodyA()</a></td>
+		<td class="summary"> Returns the first body attached to this joint.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Joint.html##(Joint).getBodyB">Joint:getBodyB()</a></td>
+		<td class="summary"> Returns the second body attached to this joint.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Joint.html##(Joint).getType">Joint:getType()</a></td>
+		<td class="summary"> Returns the type of the concrete joint.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Joint.html##(Joint).isActive">Joint:isActive()</a></td>
+		<td class="summary"> Short-cut function to determine if either body is inactive.</td>
+		</tr>
+	</table>
+
+			<h2>Type <code>Joint</code></h2>
+				<h3>Field(s)</h3>
+		<dl class="function">
+<dt>
+<a id="#(Joint).getAnchorA" >
+<strong>Joint:getAnchorA()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the anchor point on bodyA in world coordinates.
+		<h3>Return value</h3>
+				<p>
+				The x and y coordinates of the anchor point
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Joint).getAnchorB" >
+<strong>Joint:getAnchorB()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the anchor point on bodyB in world coordinates.
+		<h3>Return value</h3>
+				<p>
+				The x and y coordinates of the anchor point
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Joint).getBodyA" >
+<strong>Joint:getBodyA()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the first body attached to this joint.
+		<h3>Return value</h3>
+				<p>
+				The first body attached to this joint
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Joint).getBodyB" >
+<strong>Joint:getBodyB()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the second body attached to this joint.
+		<h3>Return value</h3>
+				<p>
+				The second body attached to this joint
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Joint).getType" >
+<strong>Joint:getType()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the type of the concrete joint.
+	<br/>The return value can be one of the <code>b2.REVOLUTE_JOINT</code>, <code>b2.PRISMATIC_JOINT</code>, <code>b2.DISTANCE_JOINT</code>, <code>b2.PULLEY_JOINT</code>,
+ <code>b2,MOUSE_JOINT</code>, <code>b2.GEAR_JOINT</code>, <code>b2.LINE_JOINT</code>, <code>b2.WELD_JOINT</code>, <code>b2.FRICTION_JOINT</code>.
+		<h3>Return value</h3>
+				<p>
+				The type of the concrete joint
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Joint).isActive" >
+<strong>Joint:isActive()</strong>
+</a>
+</dt>
+<dd>
+	 Short-cut function to determine if either body is inactive.
+		<h3>Return value</h3>
+				<p>
+				<code>true</code> if both bodyA and bodyB is active, <code>false</code> otherwise
+				</p>
+</dd>
+</dl>
+
+</div>
+
+</div>
+</body>
+</html>

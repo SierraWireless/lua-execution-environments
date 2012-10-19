@@ -1,0 +1,1186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+	</head>
+<body>
+<div id="container">
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div>
+<div id="main">
+	<div id="navigation">
+		<h2>Modules</h2>
+			<ul><li>
+				<a href="index.html">index</a>
+			</li></ul>
+		<ul>
+					<li><a href="Accelerometer.html">Accelerometer</a></li>
+					<li><a href="Application.html">Application</a></li>
+					<li><a href="Bitmap.html">Bitmap</a></li>
+					<li><a href="Body.html">Body</a></li>
+					<li><a href="ChainShape.html">ChainShape</a></li>
+					<li><a href="CircleShape.html">CircleShape</a></li>
+					<li><a href="DistanceJoint.html">DistanceJoint</a></li>
+					<li><a href="EdgeShape.html">EdgeShape</a></li>
+					<li><a href="Event.html">Event</a></li>
+					<li><a href="EventDispatcher.html">EventDispatcher</a></li>
+					<li><a href="Fixture.html">Fixture</a></li>
+					<li><a href="Font.html">Font</a></li>
+					<li><a href="FontBase.html">FontBase</a></li>
+					<li><a href="FrictionJoint.html">FrictionJoint</a></li>
+					<li><a href="Geolocation.html">Geolocation</a></li>
+					<li><a href="Gyroscope.html">Gyroscope</a></li>
+					<li><a href="Joint.html">Joint</a></li>
+					<li><a href="Matrix.html">Matrix</a></li>
+					<li><a href="MouseJoint.html">MouseJoint</a></li>
+					<li><a href="MovieClip.html">MovieClip</a></li>
+					<li><a href="PolygonShape.html">PolygonShape</a></li>
+					<li><a href="PrismaticJoint.html">PrismaticJoint</a></li>
+					<li><a href="PulleyJoint.html">PulleyJoint</a></li>
+					<li><a href="RevoluteJoint.html">RevoluteJoint</a></li>
+					<li><a href="Shape.html">Shape</a></li>
+					<li><a href="Sound.html">Sound</a></li>
+					<li><a href="SoundChannel.html">SoundChannel</a></li>
+					<li><a href="Sprite.html">Sprite</a></li>
+					<li><a href="Stage.html">Stage</a></li>
+					<li><a href="TTFont.html">TTFont</a></li>
+					<li><a href="TextField.html">TextField</a></li>
+					<li><a href="Texture.html">Texture</a></li>
+					<li><a href="TextureBase.html">TextureBase</a></li>
+					<li><a href="TexturePack.html">TexturePack</a></li>
+					<li><a href="TextureRegion.html">TextureRegion</a></li>
+					<li>TileMap</li>
+					<li><a href="Timer.html">Timer</a></li>
+					<li><a href="WeldJoint.html">WeldJoint</a></li>
+					<li><a href="WheelJoint.html">WheelJoint</a></li>
+					<li><a href="World.html">World</a></li>
+					<li><a href="b2.html">b2</a></li>
+					<li><a href="b2.DebugDraw.html">b2.DebugDraw</a></li>
+					<li><a href="b2.GearJoint.html">b2.GearJoint</a></li>
+					<li><a href="coroutine.html">coroutine</a></li>
+					<li><a href="debug.html">debug</a></li>
+					<li><a href="flurry.html">flurry</a></li>
+					<li><a href="global.html">global</a></li>
+					<li><a href="io.html">io</a></li>
+					<li><a href="math.html">math</a></li>
+					<li><a href="os.html">os</a></li>
+					<li><a href="package.html">package</a></li>
+					<li><a href="string.html">string</a></li>
+					<li><a href="table.html">table</a></li>
+		</ul>
+	</div>
+	<div id="content">
+   <h1>Module <code>TileMap</code></h1>
+    The <code>TileMap</code> class is used to work with tile maps easily and efficiently.
+			<h2><a id="#(TileMap)">Type <code>TileMap</code></a></h2>
+				<table class="function_list">
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).addChild">TileMap:addChild(child)</a></td>
+		<td class="summary"> Adds a sprite as a child to this sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).addChildAt">TileMap:addChildAt(child, index)</a></td>
+		<td class="summary"> Adds a sprite as a child to this sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).clearBlendMode">TileMap:clearBlendMode()</a></td>
+		<td class="summary"> Clears the blending mode.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).clearTile">TileMap:clearTile(x, y)</a></td>
+		<td class="summary"> Set an empty tile at given indices.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).contains">TileMap:contains(child)</a></td>
+		<td class="summary"> Determines whether the specified sprite is contained in the subtree of
+ this <code>Sprite</code> instance.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).get">TileMap:get()</a></td>
+		<td class="summary"> Returns the specified property of this sprite instance by its name.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getAlpha">TileMap:getAlpha()</a></td>
+		<td class="summary"> Returns the alpha transparency of this sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getChildAt">TileMap:getChildAt(index)</a></td>
+		<td class="summary"> Returns the child <code>Sprite</code> instance that exists at the specified index.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getChildIndex">TileMap:getChildIndex(child)</a></td>
+		<td class="summary"> Returns the index of the specified child sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getColorTransform">TileMap:getColorTransform()</a></td>
+		<td class="summary"> Returns the red, green, blue and alpha channel multipliers.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getHeight">TileMap:getHeight()</a></td>
+		<td class="summary"> Returns the height of the sprite, in pixels.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getMatrix">TileMap:getMatrix()</a></td>
+		<td class="summary"> Returns the transformation matrix of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getNumChildren">TileMap:getNumChildren()</a></td>
+		<td class="summary"> Returns the number of children of this sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getParent">TileMap:getParent()</a></td>
+		<td class="summary"> Returns the <code>Sprite</code> object that contains this <code>Sprite</code> object.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getPosition">TileMap:getPosition()</a></td>
+		<td class="summary"> Returns the x and y coordinates of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getRotation">TileMap:getRotation()</a></td>
+		<td class="summary"> Returns the rotation of the sprite in degrees.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getScale">TileMap:getScale()</a></td>
+		<td class="summary"> Returns the horizontal and vertical scales of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getScaleX">TileMap:getScaleX()</a></td>
+		<td class="summary"> Returns the horizontal scale of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getScaleY">TileMap:getScaleY()</a></td>
+		<td class="summary"> Returns the vertical scale of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getTile">TileMap:getTile(x, y)</a></td>
+		<td class="summary"> Returns the index of the tile.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getWidth">TileMap:getWidth()</a></td>
+		<td class="summary"> Returns the width of the sprite, in pixels.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getX">TileMap:getX()</a></td>
+		<td class="summary"> Returns the x coordinate of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).getY">TileMap:getY()</a></td>
+		<td class="summary"> Returns the y coordinate of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).globalToLocal">TileMap:globalToLocal(x, y)</a></td>
+		<td class="summary"> Converts the x,y coordinates from the global to the sprite's (local) coordinates.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).hitTestPoint">TileMap:hitTestPoint(x, y)</a></td>
+		<td class="summary"> Checks whether the given coordinates (in global coordinate system) is in bounds of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).isVisible">TileMap:isVisible()</a></td>
+		<td class="summary"> Returns whether or not the sprite is visible.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).localToGlobal">TileMap:localToGlobal(x, y)</a></td>
+		<td class="summary"> Converts the x,y coordinates from the sprites's (local) coordinates to the global coordinates.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).new">TileMap.new(width, height, texture, tilewidth, tileheight, spacingx, spacingy, marginx, marginy, displaywidth, displayheight)</a></td>
+		<td class="summary"> Creates a new <code>TileMap</code> instance.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).removeChild">TileMap:removeChild(child)</a></td>
+		<td class="summary"> Removes the specified child <code>Sprite</code> instance from the child list of this <code>Sprite</code> instance.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).removeChildAt">TileMap:removeChildAt(index)</a></td>
+		<td class="summary"> Removes the child <code>Sprite</code> instance at the specifed index.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).removeFromParent">TileMap:removeFromParent()</a></td>
+		<td class="summary"> If the sprite has a parent, removes the sprite from the child list of its parent sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).set">TileMap:set(value)</a></td>
+		<td class="summary"> Sets the specified property of this sprite instance by its name.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).setAlpha">TileMap:setAlpha(alpha)</a></td>
+		<td class="summary"> Sets the alpha transparency of this sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).setBlendMode">TileMap:setBlendMode(blendMode)</a></td>
+		<td class="summary"> Sets the blend mode of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).setColorTransform">TileMap:setColorTransform(redMultiplier, greenMultiplier, blueMultiplier, alphaMultiplier)</a></td>
+		<td class="summary"> Sets the red, green, blue and alpha channel multipliers.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).setMatrix">TileMap:setMatrix(matrix)</a></td>
+		<td class="summary"> Sets the transformation matrix of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).setPosition">TileMap:setPosition(x, y)</a></td>
+		<td class="summary"> Sets the x and y coordinates of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).setRotation">TileMap:setRotation(rotation)</a></td>
+		<td class="summary"> Sets the rotation of the sprite in degrees.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).setScale">TileMap:setScale(scaleX, scaleY)</a></td>
+		<td class="summary"> Sets the horizontal and vertical scales of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).setScaleX">TileMap:setScaleX(scaleX)</a></td>
+		<td class="summary"> Sets the horizontal scale of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).setScaleY">TileMap:setScaleY(scaleY)</a></td>
+		<td class="summary"> Sets the vertical scale of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).setTile">TileMap:setTile(x, y, tx, ty)</a></td>
+		<td class="summary"> Sets the index of the tile.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).setVisible">TileMap:setVisible(visible)</a></td>
+		<td class="summary"> Sets whether or not the sprite is visible.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).setX">TileMap:setX(x)</a></td>
+		<td class="summary"> Sets the x coordinate of the sprite</p>
+
+<p> </td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).setY">TileMap:setY(y)</a></td>
+		<td class="summary"> Sets the y coordinate of the sprite.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="TileMap.html##(TileMap).shift">TileMap:shift(dx, dy)</a></td>
+		<td class="summary"> Shifts the tile map.</td>
+		</tr>
+	</table>
+
+			<h2>Type <code>TileMap</code></h2>
+				<h3>Field(s)</h3>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).addChild" >
+<strong>TileMap:addChild(child)</strong>
+</a>
+</dt>
+<dd>
+	 Adds a sprite as a child to this sprite.
+	<br/>The child is
+ added as a last child of this <code>Sprite</code> instance.</p>
+
+<p> Sprites can have only one parent. Therefore if you add a child
+ object that already has a different sprite as a parent,
+ the sprite is removed from the child list of the other sprite
+ and then added to this sprite.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				child  </em></code>: (Sprite) The child sprite to add.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).addChildAt" >
+<strong>TileMap:addChildAt(child, index)</strong>
+</a>
+</dt>
+<dd>
+	 Adds a sprite as a child to this sprite.
+	<br/>The child is
+ added at the index position specified. Indices start from 1.</p>
+
+<p> Sprites can have only one parent. Therefore if you add a child
+ object that already has a different sprite as a parent,
+ the sprite is removed from the child list of the other sprite
+ and then added to this sprite.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				child  </em></code>: (Sprite) The child sprite to add.
+				</li>
+				<li><code><em>
+				index  </em></code>: (number) The index position to which the child is added.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).clearBlendMode" >
+<strong>TileMap:clearBlendMode()</strong>
+</a>
+</dt>
+<dd>
+	 Clears the blending mode.
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).clearTile" >
+<strong>TileMap:clearTile(x, y)</strong>
+</a>
+</dt>
+<dd>
+	 Set an empty tile at given indices.
+	<br/>The tile indices are starting from 1.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number) The x-position of tile
+				</li>
+				<li><code><em>
+				y  </em></code>: (number) The y-position of tile
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).contains" >
+<strong>TileMap:contains(child)</strong>
+</a>
+</dt>
+<dd>
+	 Determines whether the specified sprite is contained in the subtree of
+ this <code>Sprite</code> instance.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				child  </em></code>: (Sprite) The child object to test.
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				<code>true</code> if the child object is contained in the subtree of this <code>Sprite</code> instance, otherwise <code>false</code>.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).get" >
+<strong>TileMap:get()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the specified property of this sprite instance by its name.
+	<br/>
+<p>These names are supported:</p>
+
+<ul>
+    <li><code>"x"</code></li>
+    <li><code>"y"</code></li>
+    <li><code>"rotation"</code></li>
+    <li><code>"scaleX"</code></li>
+    <li><code>"scaleY"</code></li>
+    <li><code>"alpha"</code></li>
+    <li><code>"redMultiplier"</code></li>
+    <li><code>"greenMultiplier"</code></li>
+    <li><code>"blueMultiplier"</code></li>
+    <li><code>"alphaMultiplier"</code></li>
+</ul>
+
+		<h3>Return value</h3>
+				<p>
+				The value of the parameter
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getAlpha" >
+<strong>TileMap:getAlpha()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the alpha transparency of this sprite.
+	<br/>0 means fully transparent and 1 means fully opaque.
+		<h3>Return value</h3>
+				<p>
+				The alpha of the sprite
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getChildAt" >
+<strong>TileMap:getChildAt(index)</strong>
+</a>
+</dt>
+<dd>
+	 Returns the child <code>Sprite</code> instance that exists at the specified index.
+	<br/>First child is at index 1.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				index  </em></code>: (number) The index position of the child object.
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				The child sprite at the specified index position.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getChildIndex" >
+<strong>TileMap:getChildIndex(child)</strong>
+</a>
+</dt>
+<dd>
+	 Returns the index of the specified child sprite.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				child  </em></code>: (Sprite) The child sprite to identify.
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				The index of the specified child sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getColorTransform" >
+<strong>TileMap:getColorTransform()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the red, green, blue and alpha channel multipliers.
+		<h3>Return value</h3>
+				<p>
+				4 values: redMultiplier, greenMultiplier, blueMultiplier and alphaMultiplier
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getHeight" >
+<strong>TileMap:getHeight()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the height of the sprite, in pixels.
+	<br/>The height is calculated based on the
+ bounds of the content of the sprite.
+		<h3>Return value</h3>
+				<p>
+				Height of the sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getMatrix" >
+<strong>TileMap:getMatrix()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the transformation matrix of the sprite.
+	<br/>Each invocation of this function returns a new <code>Matrix</code> object.
+		<h3>Return value</h3>
+				<p>
+				The transformation matrix of the sprite
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getNumChildren" >
+<strong>TileMap:getNumChildren()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the number of children of this sprite.
+		<h3>Return value</h3>
+				<p>
+				The number of children of this sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getParent" >
+<strong>TileMap:getParent()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the <code>Sprite</code> object that contains this <code>Sprite</code> object.
+		<h3>Return value</h3>
+				<p>
+				The parent sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getPosition" >
+<strong>TileMap:getPosition()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the x and y coordinates of the sprite.
+		<h3>Return value</h3>
+				<p>
+				The x and y coordinates of the sprite
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getRotation" >
+<strong>TileMap:getRotation()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the rotation of the sprite in degrees.
+		<h3>Return value</h3>
+				<p>
+				Rotation of the sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getScale" >
+<strong>TileMap:getScale()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the horizontal and vertical scales of the sprite.
+		<h3>Return value</h3>
+				<p>
+				The horizontal and vertical scales of the sprite
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getScaleX" >
+<strong>TileMap:getScaleX()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the horizontal scale of the sprite.
+		<h3>Return value</h3>
+				<p>
+				The horizontal scale (percentage) of the sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getScaleY" >
+<strong>TileMap:getScaleY()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the vertical scale of the sprite.
+		<h3>Return value</h3>
+				<p>
+				The vertical scale of the object.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getTile" >
+<strong>TileMap:getTile(x, y)</strong>
+</a>
+</dt>
+<dd>
+	 Returns the index of the tile.
+	<br/>The tile indices are starting from 1.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number) The x-position of tile
+				</li>
+				<li><code><em>
+				y  </em></code>: (number) The y-position of tile
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				If the tile is empty, returns <code>nil</code>, otherwise returns x,y index of the tile.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getWidth" >
+<strong>TileMap:getWidth()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the width of the sprite, in pixels.
+	<br/>The width is calculated based on the
+ bounds of the content of the sprite.
+		<h3>Return value</h3>
+				<p>
+				Width of the sprite.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getX" >
+<strong>TileMap:getX()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the x coordinate of the sprite.
+		<h3>Return value</h3>
+				<p>
+				The x coordinate of the sprite
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).getY" >
+<strong>TileMap:getY()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the y coordinate of the sprite.
+		<h3>Return value</h3>
+				<p>
+				The y coordinate of the sprite
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).globalToLocal" >
+<strong>TileMap:globalToLocal(x, y)</strong>
+</a>
+</dt>
+<dd>
+	 Converts the x,y coordinates from the global to the sprite's (local) coordinates.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number) x coordinate of the global coordinate.
+				</li>
+				<li><code><em>
+				y  </em></code>: (number) y coordinate of the global coordinate.
+				</li>
+		</ul>
+		<h3>Return values</h3>
+			<ol>
+				<li>
+				x coordinate relative to the display object.
+				</li>
+				<li>
+				y coordinate relative to the display object.
+				</li>
+			</ol>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).hitTestPoint" >
+<strong>TileMap:hitTestPoint(x, y)</strong>
+</a>
+</dt>
+<dd>
+	 Checks whether the given coordinates (in global coordinate system) is in bounds of the sprite.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number)
+				</li>
+				<li><code><em>
+				y  </em></code>: (number)
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				<code>true</code> if the given global coordinates are in bounds of the sprite, <code>false</code> otherwise.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).isVisible" >
+<strong>TileMap:isVisible()</strong>
+</a>
+</dt>
+<dd>
+	 Returns whether or not the sprite is visible.
+	<br/>Child sprites that are not visible are also taken
+ into consideration while calculating bounds.
+		<h3>Return value</h3>
+				<p>
+				A value of <code>true</code> if sprite is visible; <code>false</code> otherwise.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).localToGlobal" >
+<strong>TileMap:localToGlobal(x, y)</strong>
+</a>
+</dt>
+<dd>
+	 Converts the x,y coordinates from the sprites's (local) coordinates to the global coordinates.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number) x coordinate of the local coordinate.
+				</li>
+				<li><code><em>
+				y  </em></code>: (number) y coordinate of the local coordinate.
+				</li>
+		</ul>
+		<h3>Return values</h3>
+			<ol>
+				<li>
+				x coordinate relative to the display area.
+				</li>
+				<li>
+				y coordinate relative to the display area.
+				</li>
+			</ol>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).new" >
+<strong>TileMap.new(width, height, texture, tilewidth, tileheight, spacingx, spacingy, marginx, marginy, displaywidth, displayheight)</strong>
+</a>
+</dt>
+<dd>
+	 Creates a new <code>TileMap</code> instance.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				width  </em></code>: (number) The width of the map in tiles
+				</li>
+				<li><code><em>
+				height  </em></code>: (number) The height of the map in tiles
+				</li>
+				<li><code><em>
+				texture  </em></code>: (TextureBase) The texture used in rendering tile map
+				</li>
+				<li><code><em>
+				tilewidth  </em></code>: (number) The width of a tile in pixels
+				</li>
+				<li><code><em>
+				tileheight  </em></code>: (number) The height of a tile in pixels
+				</li>
+				<li><code><em>
+				spacingx  </em></code>: (number, default = 0) The x-spacing in pixels between the tiles in this tileset
+				</li>
+				<li><code><em>
+				spacingy  </em></code>: (number, default = 0) The y-spacing in pixels between the tiles in this tileset
+				</li>
+				<li><code><em>
+				marginx  </em></code>: (number, default = 0) The x-margin from the top-left of the texture
+				</li>
+				<li><code><em>
+				marginy  </em></code>: (number, default = 0) The y-margin from the top-left of the texture
+				</li>
+				<li><code><em>
+				displaywidth  </em></code>: (number, default = tilewidth) The display width of a tile in pixels
+				</li>
+				<li><code><em>
+				displayheight  </em></code>: (number, default = tileheight) The display height of a tile in pixels
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				<em><a href="##(TileMap)">#TileMap</a>:</em>
+				
+
+
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).removeChild" >
+<strong>TileMap:removeChild(child)</strong>
+</a>
+</dt>
+<dd>
+	 Removes the specified child <code>Sprite</code> instance from the child list of this <code>Sprite</code> instance.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				child  </em></code>: (Sprite) The child sprite to remove.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).removeChildAt" >
+<strong>TileMap:removeChildAt(index)</strong>
+</a>
+</dt>
+<dd>
+	 Removes the child <code>Sprite</code> instance at the specifed index.
+	<br/>Index of the first child is 1
+ and index of the last child can be get from <code>Sprite:getNumChildren</code> function.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				index  </em></code>: (number) The child index of the sprite to remove.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).removeFromParent" >
+<strong>TileMap:removeFromParent()</strong>
+</a>
+</dt>
+<dd>
+	 If the sprite has a parent, removes the sprite from the child list of its parent sprite.
+	<br/>
+<p>This function is equilavent to:</p>
+
+<pre><code>function Sprite:removeFromParent()
+    local parent = self:getParent()
+    if parent ~= nil then
+        parent:removeChild(self)
+    end
+end
+</code></pre>
+
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).set" >
+<strong>TileMap:set(value)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the specified property of this sprite instance by its name.
+	<br/>
+<p>These names are supported:</p>
+
+<ul>
+    <li><code>"x"</code></li>
+    <li><code>"y"</code></li>
+    <li><code>"rotation"</code></li>
+    <li><code>"scaleX"</code></li>
+    <li><code>"scaleY"</code></li>
+    <li><code>"scale"</code></li>
+    <li><code>"alpha"</code></li>
+    <li><code>"redMultiplier"</code></li>
+    <li><code>"greenMultiplier"</code></li>
+    <li><code>"blueMultiplier"</code></li>
+    <li><code>"alphaMultiplier"</code></li>
+</ul>
+
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				value  </em></code>: (number) The new value of the specified parameter
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).setAlpha" >
+<strong>TileMap:setAlpha(alpha)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the alpha transparency of this sprite.
+	<br/>0 means fully transparent and 1 means fully opaque.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				alpha  </em></code>: (number) The new alpha transparency of the sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).setBlendMode" >
+<strong>TileMap:setBlendMode(blendMode)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the blend mode of the sprite.
+	<br/>Currently supported blending modes are:</p>
+
+<ul>
+    <li>Sprite.ALPHA = "alpha" </li>
+    <li>Sprite.NO_ALPHA = "noAlpha"</li>
+    <li>Sprite.ADD = "add"</li>
+    <li>Sprite.MULTIPLY = "multiply"</li>
+    <li>Sprite.SCREEN = "screen"</li>
+</ul>
+
+<p> If a <code>Sprite</code> object doesn't set any blending mode, it takes the blending mode from its parent sprite.</p>
+
+<p> <strong>Note:</strong> The following two lines are completely same:</p>
+<pre><code>sprite:setBlendMode("add")
+sprite:setBlendMode(Sprite.ADD)
+</code></pre>
+<p> It's a matter of taste which one to choose.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				blendMode  </em></code>: (String)
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).setColorTransform" >
+<strong>TileMap:setColorTransform(redMultiplier, greenMultiplier, blueMultiplier, alphaMultiplier)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the red, green, blue and alpha channel multipliers.
+	<br/>This function lets you adjust the color multipliers of a display object.
+ This adjustment also applies to the children of this sprite instance.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				redMultiplier  </em></code>: (number, default = 1) The red multiplier of this sprite
+				</li>
+				<li><code><em>
+				greenMultiplier  </em></code>: (number, default = 1) The green multiplier of this sprite
+				</li>
+				<li><code><em>
+				blueMultiplier  </em></code>: (number, default = 1) The blue multiplier of this sprite
+				</li>
+				<li><code><em>
+				alphaMultiplier  </em></code>: (number, default = 1) The alpha multiplier of this sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).setMatrix" >
+<strong>TileMap:setMatrix(matrix)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the transformation matrix of the sprite.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				matrix  </em></code>: (Matrix)
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).setPosition" >
+<strong>TileMap:setPosition(x, y)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the x and y coordinates of the sprite.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number) The new x coordinate of the sprite
+				</li>
+				<li><code><em>
+				y  </em></code>: (number) The new y coordinate of the sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).setRotation" >
+<strong>TileMap:setRotation(rotation)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the rotation of the sprite in degrees.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				rotation  </em></code>: (number) rotation of the sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).setScale" >
+<strong>TileMap:setScale(scaleX, scaleY)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the horizontal and vertical scales of the sprite.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				scaleX  </em></code>: (number) horizontal scale (percentage) of the object
+				</li>
+				<li><code><em>
+				scaleY  </em></code>: (number, default = scaleX) vertical scale (percentage) of the object
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).setScaleX" >
+<strong>TileMap:setScaleX(scaleX)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the horizontal scale of the sprite.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				scaleX  </em></code>: (number) horizontal scale of the sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).setScaleY" >
+<strong>TileMap:setScaleY(scaleY)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the vertical scale of the sprite.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				scaleY  </em></code>: (number) vertical scale (percentage) of the object
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).setTile" >
+<strong>TileMap:setTile(x, y, tx, ty)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the index of the tile.
+	<br/>The tile indices are starting from 1.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number) The x-position of tile
+				</li>
+				<li><code><em>
+				y  </em></code>: (number) The y-position of tile
+				</li>
+				<li><code><em>
+				tx  </em></code>: (number) The x-index of the tile
+				</li>
+				<li><code><em>
+				ty  </em></code>: (number) The y-index of the tile
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).setVisible" >
+<strong>TileMap:setVisible(visible)</strong>
+</a>
+</dt>
+<dd>
+	 Sets whether or not the sprite is visible.
+	<br/>Sprites that are not visible are also taken
+ into consideration while calculating bounds.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				visible  </em></code>: (bool) whether or not the sprite is visible
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).setX" >
+<strong>TileMap:setX(x)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the x coordinate of the sprite</p>
+
+<p> 
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				x  </em></code>: (number) The new x coordinate of the sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).setY" >
+<strong>TileMap:setY(y)</strong>
+</a>
+</dt>
+<dd>
+	 Sets the y coordinate of the sprite.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				y  </em></code>: (number) The new y coordinate of the sprite
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(TileMap).shift" >
+<strong>TileMap:shift(dx, dy)</strong>
+</a>
+</dt>
+<dd>
+	 Shifts the tile map.
+	<br/>The arguments are in tiles, not in pixels. By shifting the tile map one by one as needed, you can create dynamic tile maps.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				dx  </em></code>: (number) The x amount of shift in tiles
+				</li>
+				<li><code><em>
+				dy  </em></code>: (number) The y amount of shift in tiles
+				</li>
+		</ul>
+</dd>
+</dl>
+
+</div>
+
+</div>
+</body>
+</html>

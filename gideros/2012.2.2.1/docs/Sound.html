@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+	</head>
+<body>
+<div id="container">
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div>
+<div id="main">
+	<div id="navigation">
+		<h2>Modules</h2>
+			<ul><li>
+				<a href="index.html">index</a>
+			</li></ul>
+		<ul>
+					<li><a href="Accelerometer.html">Accelerometer</a></li>
+					<li><a href="Application.html">Application</a></li>
+					<li><a href="Bitmap.html">Bitmap</a></li>
+					<li><a href="Body.html">Body</a></li>
+					<li><a href="ChainShape.html">ChainShape</a></li>
+					<li><a href="CircleShape.html">CircleShape</a></li>
+					<li><a href="DistanceJoint.html">DistanceJoint</a></li>
+					<li><a href="EdgeShape.html">EdgeShape</a></li>
+					<li><a href="Event.html">Event</a></li>
+					<li><a href="EventDispatcher.html">EventDispatcher</a></li>
+					<li><a href="Fixture.html">Fixture</a></li>
+					<li><a href="Font.html">Font</a></li>
+					<li><a href="FontBase.html">FontBase</a></li>
+					<li><a href="FrictionJoint.html">FrictionJoint</a></li>
+					<li><a href="Geolocation.html">Geolocation</a></li>
+					<li><a href="Gyroscope.html">Gyroscope</a></li>
+					<li><a href="Joint.html">Joint</a></li>
+					<li><a href="Matrix.html">Matrix</a></li>
+					<li><a href="MouseJoint.html">MouseJoint</a></li>
+					<li><a href="MovieClip.html">MovieClip</a></li>
+					<li><a href="PolygonShape.html">PolygonShape</a></li>
+					<li><a href="PrismaticJoint.html">PrismaticJoint</a></li>
+					<li><a href="PulleyJoint.html">PulleyJoint</a></li>
+					<li><a href="RevoluteJoint.html">RevoluteJoint</a></li>
+					<li><a href="Shape.html">Shape</a></li>
+					<li>Sound</li>
+					<li><a href="SoundChannel.html">SoundChannel</a></li>
+					<li><a href="Sprite.html">Sprite</a></li>
+					<li><a href="Stage.html">Stage</a></li>
+					<li><a href="TTFont.html">TTFont</a></li>
+					<li><a href="TextField.html">TextField</a></li>
+					<li><a href="Texture.html">Texture</a></li>
+					<li><a href="TextureBase.html">TextureBase</a></li>
+					<li><a href="TexturePack.html">TexturePack</a></li>
+					<li><a href="TextureRegion.html">TextureRegion</a></li>
+					<li><a href="TileMap.html">TileMap</a></li>
+					<li><a href="Timer.html">Timer</a></li>
+					<li><a href="WeldJoint.html">WeldJoint</a></li>
+					<li><a href="WheelJoint.html">WheelJoint</a></li>
+					<li><a href="World.html">World</a></li>
+					<li><a href="b2.html">b2</a></li>
+					<li><a href="b2.DebugDraw.html">b2.DebugDraw</a></li>
+					<li><a href="b2.GearJoint.html">b2.GearJoint</a></li>
+					<li><a href="coroutine.html">coroutine</a></li>
+					<li><a href="debug.html">debug</a></li>
+					<li><a href="flurry.html">flurry</a></li>
+					<li><a href="global.html">global</a></li>
+					<li><a href="io.html">io</a></li>
+					<li><a href="math.html">math</a></li>
+					<li><a href="os.html">os</a></li>
+					<li><a href="package.html">package</a></li>
+					<li><a href="string.html">string</a></li>
+					<li><a href="table.html">table</a></li>
+		</ul>
+	</div>
+	<div id="content">
+   <h1>Module <code>Sound</code></h1>
+    The <code>Sound</code> class lets you load and play WAV or MP3 sound files.
+   <br/>
+<p>Control of the playing sound is performed through the <code>SoundChannel</code>
+ object.</p>
+
+
+<h2> Examples</h2>
+
+<pre><code>local sound = Sound.new("music.mp3")
+
+local channel = sound:play()
+
+-- after some time --
+
+channel:stop()
+</code></pre>
+
+			<h2><a id="#(Sound)">Type <code>Sound</code></a></h2>
+				<table class="function_list">
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Sound.html##(Sound).getLength">Sound:getLength()</a></td>
+		<td class="summary"> Returns the duration of the sound in miliseconds.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Sound.html##(Sound).new">Sound.new(filename)</a></td>
+		<td class="summary"> Creates a new <code>Sound</code> object.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="Sound.html##(Sound).play">Sound:play(startTime, loops)</a></td>
+		<td class="summary"> Creates a new <code>SoundChannel</code> object to play the sound.</td>
+		</tr>
+	</table>
+
+			<h2>Type <code>Sound</code></h2>
+				<h3>Field(s)</h3>
+		<dl class="function">
+<dt>
+<a id="#(Sound).getLength" >
+<strong>Sound:getLength()</strong>
+</a>
+</dt>
+<dd>
+	 Returns the duration of the sound in miliseconds.
+		<h3>Return value</h3>
+				<p>
+				The duration of the sound in miliseconds.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Sound).new" >
+<strong>Sound.new(filename)</strong>
+</a>
+</dt>
+<dd>
+	 Creates a new <code>Sound</code> object.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				filename  </em></code>: (string) The name of the sound file to be loaded.
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				<em><a href="##(Sound)">#Sound</a>:</em>
+				
+
+
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(Sound).play" >
+<strong>Sound:play(startTime, loops)</strong>
+</a>
+</dt>
+<dd>
+	 Creates a new <code>SoundChannel</code> object to play the sound.
+	<br/>By using the retured <code>SoundChannel</code> object,
+ you can stop the sound and monitor the position.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				startTime  </em></code>: (number, default = 0) The initial position in milliseconds at which playback should start.
+				</li>
+				<li><code><em>
+				loops  </em></code>: (number, default = 0) Defines the number of times a sound play to the begining before the sound channel stops playback. For example, a value of 0 and 1 will play once, 2 will play twice and so on.
+				</li>
+		</ul>
+		<h3>Return value</h3>
+				<p>
+				A <code>SoundChannel</code> object, which you use to control the sound. This function returns <code>nil</code> if you run out of available sound channels.
+				</p>
+</dd>
+</dl>
+
+</div>
+
+</div>
+</body>
+</html>

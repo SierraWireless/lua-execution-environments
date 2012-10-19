@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+	</head>
+<body>
+<div id="container">
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div>
+<div id="main">
+	<div id="navigation">
+		<h2>Modules</h2>
+			<ul><li>
+				<a href="index.html">index</a>
+			</li></ul>
+		<ul>
+					<li><a href="Accelerometer.html">Accelerometer</a></li>
+					<li><a href="Application.html">Application</a></li>
+					<li><a href="Bitmap.html">Bitmap</a></li>
+					<li><a href="Body.html">Body</a></li>
+					<li><a href="ChainShape.html">ChainShape</a></li>
+					<li><a href="CircleShape.html">CircleShape</a></li>
+					<li><a href="DistanceJoint.html">DistanceJoint</a></li>
+					<li><a href="EdgeShape.html">EdgeShape</a></li>
+					<li><a href="Event.html">Event</a></li>
+					<li>EventDispatcher</li>
+					<li><a href="Fixture.html">Fixture</a></li>
+					<li><a href="Font.html">Font</a></li>
+					<li><a href="FontBase.html">FontBase</a></li>
+					<li><a href="FrictionJoint.html">FrictionJoint</a></li>
+					<li><a href="Geolocation.html">Geolocation</a></li>
+					<li><a href="Gyroscope.html">Gyroscope</a></li>
+					<li><a href="Joint.html">Joint</a></li>
+					<li><a href="Matrix.html">Matrix</a></li>
+					<li><a href="MouseJoint.html">MouseJoint</a></li>
+					<li><a href="MovieClip.html">MovieClip</a></li>
+					<li><a href="PolygonShape.html">PolygonShape</a></li>
+					<li><a href="PrismaticJoint.html">PrismaticJoint</a></li>
+					<li><a href="PulleyJoint.html">PulleyJoint</a></li>
+					<li><a href="RevoluteJoint.html">RevoluteJoint</a></li>
+					<li><a href="Shape.html">Shape</a></li>
+					<li><a href="Sound.html">Sound</a></li>
+					<li><a href="SoundChannel.html">SoundChannel</a></li>
+					<li><a href="Sprite.html">Sprite</a></li>
+					<li><a href="Stage.html">Stage</a></li>
+					<li><a href="TTFont.html">TTFont</a></li>
+					<li><a href="TextField.html">TextField</a></li>
+					<li><a href="Texture.html">Texture</a></li>
+					<li><a href="TextureBase.html">TextureBase</a></li>
+					<li><a href="TexturePack.html">TexturePack</a></li>
+					<li><a href="TextureRegion.html">TextureRegion</a></li>
+					<li><a href="TileMap.html">TileMap</a></li>
+					<li><a href="Timer.html">Timer</a></li>
+					<li><a href="WeldJoint.html">WeldJoint</a></li>
+					<li><a href="WheelJoint.html">WheelJoint</a></li>
+					<li><a href="World.html">World</a></li>
+					<li><a href="b2.html">b2</a></li>
+					<li><a href="b2.DebugDraw.html">b2.DebugDraw</a></li>
+					<li><a href="b2.GearJoint.html">b2.GearJoint</a></li>
+					<li><a href="coroutine.html">coroutine</a></li>
+					<li><a href="debug.html">debug</a></li>
+					<li><a href="flurry.html">flurry</a></li>
+					<li><a href="global.html">global</a></li>
+					<li><a href="io.html">io</a></li>
+					<li><a href="math.html">math</a></li>
+					<li><a href="os.html">os</a></li>
+					<li><a href="package.html">package</a></li>
+					<li><a href="string.html">string</a></li>
+					<li><a href="table.html">table</a></li>
+		</ul>
+	</div>
+	<div id="content">
+   <h1>Module <code>EventDispatcher</code></h1>
+    All classes that dispatch events inherit from <code>EventDispatcher</code>.
+   <br/>
+<p>The target of
+ an event is a listener function and an optional data value.
+ When an event is dispatched, the registered function is called.
+ If the optional data value is given, it is used as a first parameter
+ while calling the listener function.</p>
+
+<p> Event dispatching and event targets are the core part of the
+ Gideros event model. Different event types (such as <code>Event.ENTER_FRAME</code>,
+ <code>Event.TOUCHES_BEGIN</code> or <code>Event.MOUSE_DOwN</code>)
+ flow through the scene tree hierarchy differently. When a touch or mouse event occurs,
+ Gideros dispatches an event object into the event flow from the root of the scene tree.
+ On the other hand, <code>Event.ENTER_FRAME</code> event is dispatched to all <code>Sprite</code> objects.</p>
+
+<p> If you want to define a class that dispatches events, you can inherit your class
+ from <code>EventDispatcher</code>.</p>
+
+
+<h2> Examples</h2>
+
+<pre><code>-- example 1
+ClassA = Core.class(EventDispatcher)
+ClassB = Core.class(EventDispatcher)
+
+function ClassA:funcA(event)
+    print("funcA", self, event:getType(), event:getTarget())
+end
+
+local a = ClassA.new()
+local b = ClassB.new()
+
+b:addEventListener("myevent", a.funcA, a)   -- when b dispatches an "myevent" event,
+                                            -- a.funcA will be called with 'a'
+                                            -- as first parameter
+
+b:dispatchEvent(Event.new("myevent"))       -- will print "funcA"
+
+
+-- example 2
+Ball = Core.class(Sprite)
+
+function Ball:onEnterFrame()
+    self:setX(self:getX() + 1)
+end
+
+ball = Ball.new()
+ball:addEventListener(Event.ENTER_FRAME, ball.onEnterFrame, ball)
+</code></pre>
+
+			<h2><a id="#(EventDispatcher)">Type <code>EventDispatcher</code></a></h2>
+				<table class="function_list">
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="EventDispatcher.html##(EventDispatcher).addEventListener">EventDispatcher:addEventListener(listener, data)</a></td>
+		<td class="summary"> Registers a listener function and an optional data value so that the listener function is called when an event
+ of a particular type occurs.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="EventDispatcher.html##(EventDispatcher).dispatchEvent">EventDispatcher:dispatchEvent(event)</a></td>
+		<td class="summary"> Dispatches an event to this <code>EventDispatcher</code> instance.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="EventDispatcher.html##(EventDispatcher).hasEventListener">EventDispatcher:hasEventListener()</a></td>
+		<td class="summary"> Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="EventDispatcher.html##(EventDispatcher).removeEventListener">EventDispatcher:removeEventListener(listener, data)</a></td>
+		<td class="summary"> Removes a listener from the <code>EventDispatcher</code> object.</td>
+		</tr>
+	</table>
+
+			<h2>Type <code>EventDispatcher</code></h2>
+				<h3>Field(s)</h3>
+		<dl class="function">
+<dt>
+<a id="#(EventDispatcher).addEventListener" >
+<strong>EventDispatcher:addEventListener(listener, data)</strong>
+</a>
+</dt>
+<dd>
+	 Registers a listener function and an optional data value so that the listener function is called when an event
+ of a particular type occurs.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				listener  </em></code>: (function) The listener function that processes the event.
+				</li>
+				<li><code><em>
+				data  </em></code>: (optional) An optional data parameter that is passed as a first argument to the listener function.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(EventDispatcher).dispatchEvent" >
+<strong>EventDispatcher:dispatchEvent(event)</strong>
+</a>
+</dt>
+<dd>
+	 Dispatches an event to this <code>EventDispatcher</code> instance.
+		<h3>Parameter</h3>
+		<ul>
+				<li><code><em>
+				event  </em></code>: (Event) The <code>Event</code> object to be dispatched.
+				</li>
+		</ul>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(EventDispatcher).hasEventListener" >
+<strong>EventDispatcher:hasEventListener()</strong>
+</a>
+</dt>
+<dd>
+	 Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.
+		<h3>Return value</h3>
+				<p>
+				A value of <code>true</code> if a listener of the specified type is registered; <code>false</code> otherwise.
+				</p>
+</dd>
+</dl>
+		<dl class="function">
+<dt>
+<a id="#(EventDispatcher).removeEventListener" >
+<strong>EventDispatcher:removeEventListener(listener, data)</strong>
+</a>
+</dt>
+<dd>
+	 Removes a listener from the <code>EventDispatcher</code> object.
+	<br/><code>removeEventListener()</code> function expects
+ the same arguments with <code>addEventListener()</code> to remove the event. If there is no matching listener
+ registered, a call to this function has no effect.
+		<h3>Parameters</h3>
+		<ul>
+				<li><code><em>
+				listener  </em></code>: (function) The listener object to remove.
+				</li>
+				<li><code><em>
+				data  </em></code>: The data parameter that is used while registering the event.
+				</li>
+		</ul>
+</dd>
+</dl>
+
+</div>
+
+</div>
+</body>
+</html>

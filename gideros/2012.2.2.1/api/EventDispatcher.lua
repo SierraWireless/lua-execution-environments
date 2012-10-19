@@ -1,0 +1,110 @@
+
+
+-----------------------------------------------------------	
+-- 
+-- All classes that dispatch events inherit from `EventDispatcher`. The target of
+-- an event is a listener function and an optional data value.
+-- When an event is dispatched, the registered function is called.
+-- If the optional data value is given, it is used as a first parameter
+-- while calling the listener function.
+-- 
+-- Event dispatching and event targets are the core part of the
+-- Gideros event model. Different event types (such as `Event.ENTER_FRAME`,
+-- `Event.TOUCHES_BEGIN` or `Event.MOUSE_DOwN`)
+-- flow through the scene tree hierarchy differently. When a touch or mouse event occurs,
+-- Gideros dispatches an event object into the event flow from the root of the scene tree.
+-- On the other hand, `Event.ENTER_FRAME` event is dispatched to all `Sprite` objects.
+-- 
+-- If you want to define a class that dispatches events, you can inherit your class
+-- from `EventDispatcher`.
+-- 
+-- 
+-- Examples
+-- --------
+-- 
+-- 	-- example 1
+-- 	ClassA = Core.class(EventDispatcher)
+-- 	ClassB = Core.class(EventDispatcher)
+-- 
+-- 	function ClassA:funcA(event)
+-- 		print("funcA", self, event:getType(), event:getTarget())
+-- 	end
+-- 
+-- 	local a = ClassA.new()
+-- 	local b = ClassB.new()
+-- 
+-- 	b:addEventListener("myevent", a.funcA, a)	-- when b dispatches an "myevent" event,
+-- 												-- a.funcA will be called with 'a'
+-- 												-- as first parameter
+-- 
+-- 	b:dispatchEvent(Event.new("myevent"))		-- will print "funcA"
+-- 
+-- 
+-- 	-- example 2
+-- 	Ball = Core.class(Sprite)
+-- 
+-- 	function Ball:onEnterFrame()
+-- 		self:setX(self:getX() + 1)
+-- 	end
+-- 
+-- 	ball = Ball.new()
+-- 	ball:addEventListener(Event.ENTER_FRAME, ball.onEnterFrame, ball)
+-- 
+-- 
+-- 
+-- @module EventDispatcher
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Registers a listener function and an optional data value so that the listener function is called when an event
+-- of a particular type occurs.
+-- 
+-- @function [parent=#EventDispatcher] addEventListener
+-- @param self
+-- @param type (string) The type of event.
+-- @param listener (function) The listener function that processes the event.
+-- @param data (optional) An optional data parameter that is passed as a first argument to the listener function.
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Removes a listener from the `EventDispatcher` object. `removeEventListener()` function expects
+-- the same arguments with `addEventListener()` to remove the event. If there is no matching listener
+-- registered, a call to this function has no effect.
+-- 
+-- @function [parent=#EventDispatcher] removeEventListener
+-- @param self
+-- @param type (string) The type of event.
+-- @param listener (function) The listener object to remove.
+-- @param data The data parameter that is used while registering the event.
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Dispatches an event to this `EventDispatcher` instance.
+-- 
+-- @function [parent=#EventDispatcher] dispatchEvent
+-- @param self
+-- @param event (Event) The `Event` object to be dispatched.
+-- 
+-- 
+
+-----------------------------------------------------------	
+-- 
+-- Checks if the `EventDispatcher` object has a event listener registered for the specified type of event.
+-- 
+-- @function [parent=#EventDispatcher] hasEventListener
+-- @param self
+-- @param type (string) The type of event.
+-- @return A value of `true` if a listener of the specified type is registered; `false` otherwise.
+
+-- 
+-- 
+-- 
+
+
+return nil
