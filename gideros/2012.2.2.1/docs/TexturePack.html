@@ -74,51 +74,71 @@
 	</div>
 	<div id="content">
    <h1>Module <code>TexturePack</code></h1>
-    The <code>TexturePack</code> class specifies a texture pack (or texture atlas).
-   <br/>
+   
+
+<p>The <code>TexturePack</code> class specifies a texture pack (or texture atlas).</p>
+
+   
 <p>A texture atlas is a large image which contains many smaller sub-images.
- Gideros supports dynamic creation of texture atlases and pre-packed texture atlasses by using "Gideros Texture Packer" tool.</p>
+Gideros supports dynamic creation of texture atlases and pre-packed texture atlasses by using "Gideros Texture Packer" tool.</p>
 
 
-<p> ### Dynamic Creation of Texture Packs</p>
+<h3>Dynamic Creation of Texture Packs</h3>
 
-<p> To create a texture pack dynamically (at run-time), create <code>TexturePack</code> object with a table of file names of textures.</p>
+<p>To create a texture pack dynamically (at run-time), create <code>TexturePack</code> object with a table of file names of textures.</p>
 
 <pre><code>local pack = TexturePack.new({"1.png", "2.png", "3.png", "4.png")}
 </code></pre>
 
 
-<p> ### Static Creation of Texture Packs</p>
+<h3>Static Creation of Texture Packs</h3>
 
-<p> To create a pre-packed texture atlas, use "Gideros Texture Packer" tool:</p>
+<p>To create a pre-packed texture atlas, use "Gideros Texture Packer" tool:</p>
 
-<p> <img src="images/texture_packer.png" alt="Gideros Texture Packer" title="Gideros Texture Packer"/></p>
+<p><img src="http://www.giderosmobile.com/documentation/images/texture_packer.png" alt="Gideros Texture Packer" title="Gideros Texture Packer"/></p>
 
 
-<p> This tool exports two files: A <strong>.txt</strong> file that specifes the positions of texture regions and a <strong>.png</strong> file of packed texture.
- Use these two files to create texture pack:</p>
+<p>This tool exports two files: A <strong>.txt</strong> file that specifes the positions of texture regions and a <strong>.png</strong> file of packed texture.
+Use these two files to create texture pack:</p>
 
 
 <pre><code>local pack = TexturePack.new("pack.txt", "pack.png")
 </code></pre>
 
+
+
 			<h2><a id="#(TexturePack)">Type <code>TexturePack</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="TexturePack.html##(TexturePack).getHeight">TexturePack:getHeight()</a></td>
-		<td class="summary"> Returns the height of the texture in pixels.</td>
+		<td class="name" nowrap="nowrap"><a href="##(TexturePack).getHeight">TexturePack:getHeight()</a></td>
+		<td class="summary">
+
+<p>Returns the height of the texture in pixels.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="TexturePack.html##(TexturePack).getTextureRegion">TexturePack:getTextureRegion(texturename)</a></td>
-		<td class="summary"> Returns the texture region of texture pack.</td>
+		<td class="name" nowrap="nowrap"><a href="##(TexturePack).getTextureRegion">TexturePack:getTextureRegion(texturename)</a></td>
+		<td class="summary">
+
+<p>Returns the texture region of texture pack.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="TexturePack.html##(TexturePack).getWidth">TexturePack:getWidth()</a></td>
-		<td class="summary"> Returns the width of the texture in pixels.</td>
+		<td class="name" nowrap="nowrap"><a href="##(TexturePack).getWidth">TexturePack:getWidth()</a></td>
+		<td class="summary">
+
+<p>Returns the width of the texture in pixels.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="TexturePack.html##(TexturePack).new">TexturePack.new(txtfile, imagefile, filtering, options)</a></td>
-		<td class="summary"> Creates a new <code>TexturePack</code> object.</td>
+		<td class="name" nowrap="nowrap"><a href="##(TexturePack).new">TexturePack.new(txtfile, imagefile, filtering, options)</a></td>
+		<td class="summary">
+
+<p>Creates a new <code>TexturePack</code> object.</p>
+</td>
 		</tr>
 	</table>
 
@@ -131,11 +151,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the height of the texture in pixels.
+	
+
+<p>Returns the height of the texture in pixels.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The height of the texture in pixels.
-				</p>
+				
+
+<p>The height of the texture in pixels.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -145,17 +171,26 @@
 </a>
 </dt>
 <dd>
-	 Returns the texture region of texture pack.
+	
+
+<p>Returns the texture region of texture pack.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				texturename  </em></code>: (string)
+				<li>
+				
+<p><code><em> texturename </em></code>: 
+(string)</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				<code>TextureRegion</code> object that specifies the region within the texture pack.
-				</p>
+				
+
+<p><code>TextureRegion</code> object that specifies the region within the texture pack.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -165,11 +200,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the width of the texture in pixels.
+	
+
+<p>Returns the width of the texture in pixels.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The width of the texture in pixels.
-				</p>
+				
+
+<p>The width of the texture in pixels.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -179,30 +220,47 @@
 </a>
 </dt>
 <dd>
-	 Creates a new <code>TexturePack</code> object.
-	<br/>This function loads the pre-packed texture atlas created by "Gideros Texture Packer" tool.
+	
+
+<p>Creates a new <code>TexturePack</code> object.</p>
+
+	
+<p>This function loads the pre-packed texture atlas created by "Gideros Texture Packer" tool.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				txtfile  </em></code>: (string)
+				<li>
+				
+<p><code><em> txtfile </em></code>: 
+(string)</p>
+
 				</li>
-				<li><code><em>
-				imagefile  </em></code>: (string)
+				<li>
+				
+<p><code><em> imagefile </em></code>: 
+(string)</p>
+
 				</li>
-				<li><code><em>
-				filtering  </em></code>: (boolean, default = false) Whether or not the texture is filtered.
+				<li>
+				
+<p><code><em> filtering </em></code>: 
+(boolean, default = false) Whether or not the texture is filtered.</p>
+
 				</li>
-				<li><code><em>
-				options  </em></code>: (table, optional) A table that specifies optional paramaters. Currently "transparentColor" field is supported.
+				<li>
+				
+<p><code><em> options </em></code>: 
+(table, optional) A table that specifies optional paramaters. Currently "transparentColor" field is supported.</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				<em><a href="##(TexturePack)">#TexturePack</a>:</em>
 				
+<p><em><a href="##(TexturePack)">#TexturePack</a>:</em></p>
 
 
-				</p>
+
 </dd>
 </dl>
 

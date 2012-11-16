@@ -17,7 +17,7 @@
 -- 
 -- To create a pre-packed texture atlas, use "Gideros Texture Packer" tool:
 -- 
--- ![Gideros Texture Packer](images/texture_packer.png "Gideros Texture Packer")
+-- ![Gideros Texture Packer](http://www.giderosmobile.com/documentation/images/texture_packer.png "Gideros Texture Packer")
 -- 
 -- 
 -- This tool exports two files: A **.txt** file that specifes the positions of texture regions and a **.png** file of packed texture.

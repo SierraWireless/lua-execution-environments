@@ -4,7 +4,7 @@
 -- 
 -- The 'Font' class is used to load fonts created by "Gideros Font Creator".
 -- 
--- ![Gideros Font Creator](images/font_creator.png "Gideros Font Creator")
+-- ![Gideros Font Creator](http://www.giderosmobile.com/documentation/images/font_creator.png "Gideros Font Creator")
 -- 
 -- 
 -- Gideros Font Creator exports two files: A **.txt** file that specifes the positions of character glyph a **.png** file of font.

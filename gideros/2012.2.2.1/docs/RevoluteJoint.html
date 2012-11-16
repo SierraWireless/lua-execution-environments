@@ -74,77 +74,140 @@
 	</div>
 	<div id="content">
    <h1>Module <code>RevoluteJoint</code></h1>
-    A revolute joint constrains two bodies to share a common point while they are free to rotate about the point.
-   <br/>The relative rotation about the shared point is the joint angle. You can limit the relative rotation with a joint limit that specifies a lower and upper angle. You can use a motor to drive the relative rotation about the shared point. A maximum motor torque is provided so that infinite forces are not generated.
+   
+
+<p>A revolute joint constrains two bodies to share a common point while they are free to rotate about the point.</p>
+
+   
+<p>The relative rotation about the shared point is the joint angle. You can limit the relative rotation with a joint limit that specifies a lower and upper angle. You can use a motor to drive the relative rotation about the shared point. A maximum motor torque is provided so that infinite forces are not generated. </p>
+
+
+
 			<h2><a id="#(RevoluteJoint)">Type <code>RevoluteJoint</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).enableLimit">RevoluteJoint:enableLimit(flag)</a></td>
-		<td class="summary"> Enables or disables the joint limit.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).enableLimit">RevoluteJoint:enableLimit(flag)</a></td>
+		<td class="summary">
+
+<p>Enables or disables the joint limit.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).enableMotor">RevoluteJoint:enableMotor(flag)</a></td>
-		<td class="summary"> Enables or disables the joint motor.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).enableMotor">RevoluteJoint:enableMotor(flag)</a></td>
+		<td class="summary">
+
+<p>Enables or disables the joint motor.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).getAnchorA">RevoluteJoint:getAnchorA()</a></td>
-		<td class="summary"> Returns the anchor point on bodyA in world coordinates.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).getAnchorA">RevoluteJoint:getAnchorA()</a></td>
+		<td class="summary">
+
+<p>Returns the anchor point on bodyA in world coordinates.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).getAnchorB">RevoluteJoint:getAnchorB()</a></td>
-		<td class="summary"> Returns the anchor point on bodyB in world coordinates.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).getAnchorB">RevoluteJoint:getAnchorB()</a></td>
+		<td class="summary">
+
+<p>Returns the anchor point on bodyB in world coordinates.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).getBodyA">RevoluteJoint:getBodyA()</a></td>
-		<td class="summary"> Returns the first body attached to this joint.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).getBodyA">RevoluteJoint:getBodyA()</a></td>
+		<td class="summary">
+
+<p>Returns the first body attached to this joint.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).getBodyB">RevoluteJoint:getBodyB()</a></td>
-		<td class="summary"> Returns the second body attached to this joint.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).getBodyB">RevoluteJoint:getBodyB()</a></td>
+		<td class="summary">
+
+<p>Returns the second body attached to this joint.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).getJointAngle">RevoluteJoint:getJointAngle()</a></td>
-		<td class="summary"> Returns the current joint angle in radians.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).getJointAngle">RevoluteJoint:getJointAngle()</a></td>
+		<td class="summary">
+
+<p>Returns the current joint angle in radians.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).getJointSpeed">RevoluteJoint:getJointSpeed()</a></td>
-		<td class="summary"> Returns the current joint angle speed in radians per second.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).getJointSpeed">RevoluteJoint:getJointSpeed()</a></td>
+		<td class="summary">
+
+<p>Returns the current joint angle speed in radians per second.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).getLimits">RevoluteJoint:getLimits()</a></td>
-		<td class="summary"> Returns the lower and upper joint limit in radians.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).getLimits">RevoluteJoint:getLimits()</a></td>
+		<td class="summary">
+
+<p>Returns the lower and upper joint limit in radians.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).getMotorSpeed">RevoluteJoint:getMotorSpeed()</a></td>
-		<td class="summary"> Returns the motor speed in radians per second.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).getMotorSpeed">RevoluteJoint:getMotorSpeed()</a></td>
+		<td class="summary">
+
+<p>Returns the motor speed in radians per second.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).getType">RevoluteJoint:getType()</a></td>
-		<td class="summary"> Returns the type of the concrete joint.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).getType">RevoluteJoint:getType()</a></td>
+		<td class="summary">
+
+<p>Returns the type of the concrete joint.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).isActive">RevoluteJoint:isActive()</a></td>
-		<td class="summary"> Short-cut function to determine if either body is inactive.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).isActive">RevoluteJoint:isActive()</a></td>
+		<td class="summary">
+
+<p>Short-cut function to determine if either body is inactive.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).isLimitEnabled">RevoluteJoint:isLimitEnabled()</a></td>
-		<td class="summary"> Is the joint limit enabled?</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).isLimitEnabled">RevoluteJoint:isLimitEnabled()</a></td>
+		<td class="summary">
+
+<p>Is the joint limit enabled?</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).isMotorEnabled">RevoluteJoint:isMotorEnabled()</a></td>
-		<td class="summary"> Is the joint motor enabled?</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).isMotorEnabled">RevoluteJoint:isMotorEnabled()</a></td>
+		<td class="summary">
+
+<p>Is the joint motor enabled?</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).setLimits">RevoluteJoint:setLimits(lower, upper)</a></td>
-		<td class="summary"> Sets the joint limits in radians.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).setLimits">RevoluteJoint:setLimits(lower, upper)</a></td>
+		<td class="summary">
+
+<p>Sets the joint limits in radians.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).setMaxMotorTorque">RevoluteJoint:setMaxMotorTorque(torque)</a></td>
-		<td class="summary"> Sets the maximum motor torque, usually in N-m.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).setMaxMotorTorque">RevoluteJoint:setMaxMotorTorque(torque)</a></td>
+		<td class="summary">
+
+<p>Sets the maximum motor torque, usually in N-m.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="RevoluteJoint.html##(RevoluteJoint).setMotorSpeed">RevoluteJoint:setMotorSpeed(speed)</a></td>
-		<td class="summary"> Sets the motor speed in radians per second.</td>
+		<td class="name" nowrap="nowrap"><a href="##(RevoluteJoint).setMotorSpeed">RevoluteJoint:setMotorSpeed(speed)</a></td>
+		<td class="summary">
+
+<p>Sets the motor speed in radians per second.</p>
+</td>
 		</tr>
 	</table>
 
@@ -157,11 +220,20 @@
 </a>
 </dt>
 <dd>
-	 Enables or disables the joint limit.
+	
+
+<p>Enables or disables the joint limit.</p>
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				flag  </em></code>: (boolean) enable flag of joint limit
+				<li>
+				
+<p><code><em> flag </em></code>: 
+(boolean) enable flag of joint limit</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -173,11 +245,20 @@
 </a>
 </dt>
 <dd>
-	 Enables or disables the joint motor.
+	
+
+<p>Enables or disables the joint motor.</p>
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				flag  </em></code>: (boolean) enable flag of joint motor
+				<li>
+				
+<p><code><em> flag </em></code>: 
+(boolean) enable flag of joint motor</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -189,11 +270,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the anchor point on bodyA in world coordinates.
+	
+
+<p>Returns the anchor point on bodyA in world coordinates.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The x and y coordinates of the anchor point
-				</p>
+				
+
+<p>The x and y coordinates of the anchor point</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -203,11 +290,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the anchor point on bodyB in world coordinates.
+	
+
+<p>Returns the anchor point on bodyB in world coordinates.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The x and y coordinates of the anchor point
-				</p>
+				
+
+<p>The x and y coordinates of the anchor point</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -217,11 +310,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the first body attached to this joint.
+	
+
+<p>Returns the first body attached to this joint.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The first body attached to this joint
-				</p>
+				
+
+<p>The first body attached to this joint</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -231,11 +330,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the second body attached to this joint.
+	
+
+<p>Returns the second body attached to this joint.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The second body attached to this joint
-				</p>
+				
+
+<p>The second body attached to this joint</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -245,11 +350,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the current joint angle in radians.
+	
+
+<p>Returns the current joint angle in radians.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The current joint angle in radians
-				</p>
+				
+
+<p>The current joint angle in radians</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -259,11 +370,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the current joint angle speed in radians per second.
+	
+
+<p>Returns the current joint angle speed in radians per second.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The current joint angle speed in radians per second
-				</p>
+				
+
+<p>The current joint angle speed in radians per second</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -273,11 +389,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the lower and upper joint limit in radians.
+	
+
+<p>Returns the lower and upper joint limit in radians.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The lower and upper joint limit in radians
-				</p>
+				
+
+<p>The lower and upper joint limit in radians</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -287,11 +408,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the motor speed in radians per second.
+	
+
+<p>Returns the motor speed in radians per second.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The motor speed in radians per second
-				</p>
+				
+
+<p>The motor speed in radians per second</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -301,13 +427,21 @@
 </a>
 </dt>
 <dd>
-	 Returns the type of the concrete joint.
-	<br/>The return value can be one of the <code>b2.REVOLUTE_JOINT</code>, <code>b2.PRISMATIC_JOINT</code>, <code>b2.DISTANCE_JOINT</code>, <code>b2.PULLEY_JOINT</code>,
- <code>b2,MOUSE_JOINT</code>, <code>b2.GEAR_JOINT</code>, <code>b2.LINE_JOINT</code>, <code>b2.WELD_JOINT</code>, <code>b2.FRICTION_JOINT</code>.
+	
+
+<p>Returns the type of the concrete joint.</p>
+
+	
+<p>The return value can be one of the <code>b2.REVOLUTE_JOINT</code>, <code>b2.PRISMATIC_JOINT</code>, <code>b2.DISTANCE_JOINT</code>, <code>b2.PULLEY_JOINT</code>,
+<code>b2,MOUSE_JOINT</code>, <code>b2.GEAR_JOINT</code>, <code>b2.LINE_JOINT</code>, <code>b2.WELD_JOINT</code>, <code>b2.FRICTION_JOINT</code>.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The type of the concrete joint
-				</p>
+				
+
+<p>The type of the concrete joint</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -317,11 +451,16 @@
 </a>
 </dt>
 <dd>
-	 Short-cut function to determine if either body is inactive.
+	
+
+<p>Short-cut function to determine if either body is inactive.</p>
+
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if both bodyA and bodyB is active, <code>false</code> otherwise
-				</p>
+				
+
+<p><code>true</code> if both bodyA and bodyB is active, <code>false</code> otherwise</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -331,11 +470,16 @@
 </a>
 </dt>
 <dd>
-	 Is the joint limit enabled?
+	
+
+<p>Is the joint limit enabled?</p>
+
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if joint limit is enabled, <code>false</code> otherwise
-				</p>
+				
+
+<p><code>true</code> if joint limit is enabled, <code>false</code> otherwise</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -345,11 +489,16 @@
 </a>
 </dt>
 <dd>
-	 Is the joint motor enabled?
+	
+
+<p>Is the joint motor enabled?</p>
+
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if joint motor is enabled, <code>false</code> otherwise
-				</p>
+				
+
+<p><code>true</code> if joint motor is enabled, <code>false</code> otherwise</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -359,14 +508,26 @@
 </a>
 </dt>
 <dd>
-	 Sets the joint limits in radians.
+	
+
+<p>Sets the joint limits in radians.</p>
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				lower  </em></code>: (number) lower joint limit in radians
+				<li>
+				
+<p><code><em> lower </em></code>: 
+(number) lower joint limit in radians</p>
+
 				</li>
-				<li><code><em>
-				upper  </em></code>: (number) upper joint limit in radians
+				<li>
+				
+<p><code><em> upper </em></code>: 
+(number) upper joint limit in radians</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -378,11 +539,20 @@
 </a>
 </dt>
 <dd>
-	 Sets the maximum motor torque, usually in N-m.
+	
+
+<p>Sets the maximum motor torque, usually in N-m.</p>
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				torque  </em></code>: (number) the maximum motor torque, usually in N-m
+				<li>
+				
+<p><code><em> torque </em></code>: 
+(number) the maximum motor torque, usually in N-m</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -394,11 +564,20 @@
 </a>
 </dt>
 <dd>
-	 Sets the motor speed in radians per second.
+	
+
+<p>Sets the motor speed in radians per second.</p>
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				speed  </em></code>: (number) motor speed in radians per second
+				<li>
+				
+<p><code><em> speed </em></code>: 
+(number) motor speed in radians per second</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>

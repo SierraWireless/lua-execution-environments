@@ -74,77 +74,138 @@
 	</div>
 	<div id="content">
    <h1>Module <code>PrismaticJoint</code></h1>
-    A prismatic joint.
-   <br/>This joint provides one degree of freedom: translation along an axis fixed in body1. Relative rotation is prevented. You can use a joint limit to restrict the range of motion and a joint motor to drive the motion or to model joint friction.
+   
+
+<p>A prismatic joint.</p>
+
+   
+<p>This joint provides one degree of freedom: translation along an axis fixed in body1. Relative rotation is prevented. You can use a joint limit to restrict the range of motion and a joint motor to drive the motion or to model joint friction. </p>
+
+
+
 			<h2><a id="#(PrismaticJoint)">Type <code>PrismaticJoint</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).enableLimit">PrismaticJoint:enableLimit(flag)</a></td>
-		<td class="summary"> Enables or disables the joint limit.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).enableLimit">PrismaticJoint:enableLimit(flag)</a></td>
+		<td class="summary">
+
+<p>Enables or disables the joint limit.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).enableMotor">PrismaticJoint:enableMotor(flag)</a></td>
-		<td class="summary"> Enables or disables the joint motor.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).enableMotor">PrismaticJoint:enableMotor(flag)</a></td>
+		<td class="summary">
+
+<p>Enables or disables the joint motor.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).getAnchorA">PrismaticJoint:getAnchorA()</a></td>
-		<td class="summary"> Returns the anchor point on bodyA in world coordinates.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).getAnchorA">PrismaticJoint:getAnchorA()</a></td>
+		<td class="summary">
+
+<p>Returns the anchor point on bodyA in world coordinates.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).getAnchorB">PrismaticJoint:getAnchorB()</a></td>
-		<td class="summary"> Returns the anchor point on bodyB in world coordinates.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).getAnchorB">PrismaticJoint:getAnchorB()</a></td>
+		<td class="summary">
+
+<p>Returns the anchor point on bodyB in world coordinates.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).getBodyA">PrismaticJoint:getBodyA()</a></td>
-		<td class="summary"> Returns the first body attached to this joint.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).getBodyA">PrismaticJoint:getBodyA()</a></td>
+		<td class="summary">
+
+<p>Returns the first body attached to this joint.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).getBodyB">PrismaticJoint:getBodyB()</a></td>
-		<td class="summary"> Returns the second body attached to this joint.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).getBodyB">PrismaticJoint:getBodyB()</a></td>
+		<td class="summary">
+
+<p>Returns the second body attached to this joint.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).getJointSpeed">PrismaticJoint:getJointSpeed()</a></td>
-		<td class="summary"> Returns the current joint translation speed, usually in meters per second.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).getJointSpeed">PrismaticJoint:getJointSpeed()</a></td>
+		<td class="summary">
+
+<p>Returns the current joint translation speed, usually in meters per second.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).getJointTranslation">PrismaticJoint:getJointTranslation()</a></td>
-		<td class="summary"> Returns the current joint translation, usually in meters.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).getJointTranslation">PrismaticJoint:getJointTranslation()</a></td>
+		<td class="summary">
+
+<p>Returns the current joint translation, usually in meters.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).getLimits">PrismaticJoint:getLimits()</a></td>
-		<td class="summary"> Returns the lower and upper joint limit, usually in meters.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).getLimits">PrismaticJoint:getLimits()</a></td>
+		<td class="summary">
+
+<p>Returns the lower and upper joint limit, usually in meters.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).getMotorSpeed">PrismaticJoint:getMotorSpeed()</a></td>
-		<td class="summary"> Returns the motor speed in meters per second.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).getMotorSpeed">PrismaticJoint:getMotorSpeed()</a></td>
+		<td class="summary">
+
+<p>Returns the motor speed in meters per second.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).getType">PrismaticJoint:getType()</a></td>
-		<td class="summary"> Returns the type of the concrete joint.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).getType">PrismaticJoint:getType()</a></td>
+		<td class="summary">
+
+<p>Returns the type of the concrete joint.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).isActive">PrismaticJoint:isActive()</a></td>
-		<td class="summary"> Short-cut function to determine if either body is inactive.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).isActive">PrismaticJoint:isActive()</a></td>
+		<td class="summary">
+
+<p>Short-cut function to determine if either body is inactive.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).isLimitEnabled">PrismaticJoint:isLimitEnabled()</a></td>
-		<td class="summary"> Is the joint limit enabled?</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).isLimitEnabled">PrismaticJoint:isLimitEnabled()</a></td>
+		<td class="summary">
+<p>Is the joint limit enabled?</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).isMotorEnabled">PrismaticJoint:isMotorEnabled()</a></td>
-		<td class="summary"> Is the joint motor enabled?</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).isMotorEnabled">PrismaticJoint:isMotorEnabled()</a></td>
+		<td class="summary">
+
+<p>Is the joint motor enabled?</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).setLimits">PrismaticJoint:setLimits(lower, upper)</a></td>
-		<td class="summary"> Sets the joint limits, usually in meters.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).setLimits">PrismaticJoint:setLimits(lower, upper)</a></td>
+		<td class="summary">
+
+<p>Sets the joint limits, usually in meters.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).setMaxMotorForce">PrismaticJoint:setMaxMotorForce(force)</a></td>
-		<td class="summary"> Sets the maximum motor force, usually in N.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).setMaxMotorForce">PrismaticJoint:setMaxMotorForce(force)</a></td>
+		<td class="summary">
+
+<p>Sets the maximum motor force, usually in N.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PrismaticJoint.html##(PrismaticJoint).setMotorSpeed">PrismaticJoint:setMotorSpeed(speed)</a></td>
-		<td class="summary"> Sets the motor speed in meters per second.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PrismaticJoint).setMotorSpeed">PrismaticJoint:setMotorSpeed(speed)</a></td>
+		<td class="summary">
+
+<p>Sets the motor speed in meters per second.</p>
+</td>
 		</tr>
 	</table>
 
@@ -157,11 +218,20 @@
 </a>
 </dt>
 <dd>
-	 Enables or disables the joint limit.
+	
+
+<p>Enables or disables the joint limit.</p>
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				flag  </em></code>: (boolean) enable flag of joint limit
+				<li>
+				
+<p><code><em> flag </em></code>: 
+(boolean) enable flag of joint limit</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -173,11 +243,20 @@
 </a>
 </dt>
 <dd>
-	 Enables or disables the joint motor.
+	
+
+<p>Enables or disables the joint motor.</p>
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				flag  </em></code>: (boolean) enable flag of joint motor
+				<li>
+				
+<p><code><em> flag </em></code>: 
+(boolean) enable flag of joint motor</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -189,11 +268,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the anchor point on bodyA in world coordinates.
+	
+
+<p>Returns the anchor point on bodyA in world coordinates.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The x and y coordinates of the anchor point
-				</p>
+				
+
+<p>The x and y coordinates of the anchor point</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -203,11 +288,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the anchor point on bodyB in world coordinates.
+	
+
+<p>Returns the anchor point on bodyB in world coordinates.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The x and y coordinates of the anchor point
-				</p>
+				
+
+<p>The x and y coordinates of the anchor point</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -217,11 +308,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the first body attached to this joint.
+	
+
+<p>Returns the first body attached to this joint.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The first body attached to this joint
-				</p>
+				
+
+<p>The first body attached to this joint</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -231,11 +328,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the second body attached to this joint.
+	
+
+<p>Returns the second body attached to this joint.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The second body attached to this joint
-				</p>
+				
+
+<p>The second body attached to this joint</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -245,11 +348,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the current joint translation speed, usually in meters per second.
+	
+
+<p>Returns the current joint translation speed, usually in meters per second.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The current joint translation speed, usually in meters per second
-				</p>
+				
+
+<p>The current joint translation speed, usually in meters per second</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -259,11 +367,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the current joint translation, usually in meters.
+	
+
+<p>Returns the current joint translation, usually in meters.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The current joint translation, usually in meters
-				</p>
+				
+
+<p>The current joint translation, usually in meters</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -273,11 +386,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the lower and upper joint limit, usually in meters.
+	
+
+<p>Returns the lower and upper joint limit, usually in meters.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The lower and upper joint limit, usually in meters
-				</p>
+				
+
+<p>The lower and upper joint limit, usually in meters</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -287,11 +405,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the motor speed in meters per second.
+	
+
+<p>Returns the motor speed in meters per second.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The motor speed in meters per second
-				</p>
+				
+
+<p>The motor speed in meters per second</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -301,13 +424,21 @@
 </a>
 </dt>
 <dd>
-	 Returns the type of the concrete joint.
-	<br/>The return value can be one of the <code>b2.REVOLUTE_JOINT</code>, <code>b2.PRISMATIC_JOINT</code>, <code>b2.DISTANCE_JOINT</code>, <code>b2.PULLEY_JOINT</code>,
- <code>b2,MOUSE_JOINT</code>, <code>b2.GEAR_JOINT</code>, <code>b2.LINE_JOINT</code>, <code>b2.WELD_JOINT</code>, <code>b2.FRICTION_JOINT</code>.
+	
+
+<p>Returns the type of the concrete joint.</p>
+
+	
+<p>The return value can be one of the <code>b2.REVOLUTE_JOINT</code>, <code>b2.PRISMATIC_JOINT</code>, <code>b2.DISTANCE_JOINT</code>, <code>b2.PULLEY_JOINT</code>,
+<code>b2,MOUSE_JOINT</code>, <code>b2.GEAR_JOINT</code>, <code>b2.LINE_JOINT</code>, <code>b2.WELD_JOINT</code>, <code>b2.FRICTION_JOINT</code>.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The type of the concrete joint
-				</p>
+				
+
+<p>The type of the concrete joint</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -317,11 +448,16 @@
 </a>
 </dt>
 <dd>
-	 Short-cut function to determine if either body is inactive.
+	
+
+<p>Short-cut function to determine if either body is inactive.</p>
+
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if both bodyA and bodyB is active, <code>false</code> otherwise
-				</p>
+				
+
+<p><code>true</code> if both bodyA and bodyB is active, <code>false</code> otherwise</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -331,11 +467,15 @@
 </a>
 </dt>
 <dd>
-	 Is the joint limit enabled?
+	
+<p>Is the joint limit enabled?</p>
+
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if joint limit is enabled, <code>false</code> otherwise
-				</p>
+				
+
+<p><code>true</code> if joint limit is enabled, <code>false</code> otherwise</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -345,11 +485,16 @@
 </a>
 </dt>
 <dd>
-	 Is the joint motor enabled?
+	
+
+<p>Is the joint motor enabled?</p>
+
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if joint motor is enabled, <code>false</code> otherwise
-				</p>
+				
+
+<p><code>true</code> if joint motor is enabled, <code>false</code> otherwise</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -359,14 +504,26 @@
 </a>
 </dt>
 <dd>
-	 Sets the joint limits, usually in meters.
+	
+
+<p>Sets the joint limits, usually in meters.</p>
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				lower  </em></code>: (number) lower joint limit in meters
+				<li>
+				
+<p><code><em> lower </em></code>: 
+(number) lower joint limit in meters</p>
+
 				</li>
-				<li><code><em>
-				upper  </em></code>: (number) upper joint limit in meters
+				<li>
+				
+<p><code><em> upper </em></code>: 
+(number) upper joint limit in meters</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -378,11 +535,20 @@
 </a>
 </dt>
 <dd>
-	 Sets the maximum motor force, usually in N.
+	
+
+<p>Sets the maximum motor force, usually in N.</p>
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				force  </em></code>: (number) the maximum motor force, usually in N.
+				<li>
+				
+<p><code><em> force </em></code>: 
+(number) the maximum motor force, usually in N.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -394,11 +560,20 @@
 </a>
 </dt>
 <dd>
-	 Sets the motor speed in meters per second.
+	
+
+<p>Sets the motor speed in meters per second.</p>
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				speed  </em></code>: (number) motor speed in meters per second
+				<li>
+				
+<p><code><em> speed </em></code>: 
+(number) motor speed in meters per second</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>

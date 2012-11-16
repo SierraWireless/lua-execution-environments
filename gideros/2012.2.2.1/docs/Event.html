@@ -74,13 +74,16 @@
 	</div>
 	<div id="content">
    <h1>Module <code>Event</code></h1>
-    The objects of <code>Event</code> class contains information about an event that has occurred.
-   <br/>
-<p><code>Event</code> objects
- are passed to event listeners when an event occurs.</p>
+   
 
-<p> Usually event objects contains specific additional information about the event that has occured. For example,
- when an <code>Event.MOUSE_DOWN</code> event occurs, <code>x</code> and <code>y</code> fields contain the coordinates:</p>
+<p>The objects of <code>Event</code> class contains information about an event that has occurred.</p>
+
+   
+<p><code>Event</code> objects
+are passed to event listeners when an event occurs.</p>
+
+<p>Usually event objects contains specific additional information about the event that has occured. For example,
+when an <code>Event.MOUSE_DOWN</code> event occurs, <code>x</code> and <code>y</code> fields contain the coordinates:</p>
 
 <pre><code>function onMouseDown(event)
     print(event.x, event.y)
@@ -89,7 +92,7 @@ end
 mysprite:addEventListener(Event.MOUSE_DOWN, onMouseDown)
 </code></pre>
 
-<p> Users can create their own events and dispatch through the event mechanism:</p>
+<p>Users can create their own events and dispatch through the event mechanism:</p>
 
 <pre><code>local event = Event.new("myevent")
 event.data1 = "12345"
@@ -98,83 +101,100 @@ event.data2 = "abcde"
 mydispatcher:dispatchEvent(event)
 </code></pre>
 
+
+
 			<h2><a id="#(Event)">Type <code>Event</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).ADDED_TO_STAGE">Event.ADDED_TO_STAGE</a></td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).ADDED_TO_STAGE">Event.ADDED_TO_STAGE</a></td>
 		<td class="summary">
 
 </td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).ENTER_FRAME">Event.ENTER_FRAME</a></td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).ENTER_FRAME">Event.ENTER_FRAME</a></td>
 		<td class="summary">
 
 </td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).MOUSE_DOWN">Event.MOUSE_DOWN</a></td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).MOUSE_DOWN">Event.MOUSE_DOWN</a></td>
 		<td class="summary">
 
 </td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).MOUSE_MOVE">Event.MOUSE_MOVE</a></td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).MOUSE_MOVE">Event.MOUSE_MOVE</a></td>
 		<td class="summary">
 
 </td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).MOUSE_UP">Event.MOUSE_UP</a></td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).MOUSE_UP">Event.MOUSE_UP</a></td>
 		<td class="summary">
 
 </td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).REMOVED_FROM_STAGE">Event.REMOVED_FROM_STAGE</a></td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).REMOVED_FROM_STAGE">Event.REMOVED_FROM_STAGE</a></td>
 		<td class="summary">
 
 </td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).TOUCHES_BEGIN">Event.TOUCHES_BEGIN</a></td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).TOUCHES_BEGIN">Event.TOUCHES_BEGIN</a></td>
 		<td class="summary">
 
 </td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).TOUCHES_CANCEL">Event.TOUCHES_CANCEL</a></td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).TOUCHES_CANCEL">Event.TOUCHES_CANCEL</a></td>
 		<td class="summary">
 
 </td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).TOUCHES_END">Event.TOUCHES_END</a></td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).TOUCHES_END">Event.TOUCHES_END</a></td>
 		<td class="summary">
 
 </td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).TOUCHES_MOVE">Event.TOUCHES_MOVE</a></td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).TOUCHES_MOVE">Event.TOUCHES_MOVE</a></td>
 		<td class="summary">
 
 </td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).getTarget">Event:getTarget()</a></td>
-		<td class="summary"> Returns the element on which the event listener was registered.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).getTarget">Event:getTarget()</a></td>
+		<td class="summary">
+
+<p>Returns the element on which the event listener was registered.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).getType">Event:getType()</a></td>
-		<td class="summary"> Returns a string that represents the type of the event.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).getType">Event:getType()</a></td>
+		<td class="summary">
+
+<p>Returns a string that represents the type of the event.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).new">Event.new()</a></td>
-		<td class="summary"> Creates a new <code>Event</code> object to be dispatched from an <code>EventDispatcher</code>.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).new">Event.new()</a></td>
+		<td class="summary">
+
+<p>Creates a new <code>Event</code> object to be dispatched from an <code>EventDispatcher</code>.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Event.html##(Event).stopPropagation">Event:stopPropagation()</a></td>
-		<td class="summary"> Disables the propagation of the current event in the scene tree hierarchy.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Event).stopPropagation">Event:stopPropagation()</a></td>
+		<td class="summary">
+
+<p>Disables the propagation of the current event in the scene tree hierarchy.</p>
+</td>
 		</tr>
 	</table>
 
@@ -307,11 +327,17 @@ mydispatcher:dispatchEvent(event)
 </a>
 </dt>
 <dd>
-	 Returns the element on which the event listener was registered.
+	
+
+<p>Returns the element on which the event listener was registered.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				Target of event.
-				</p>
+				
+
+<p>Target of event.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -321,11 +347,17 @@ mydispatcher:dispatchEvent(event)
 </a>
 </dt>
 <dd>
-	 Returns a string that represents the type of the event.
+	
+
+<p>Returns a string that represents the type of the event.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				Type of event.
-				</p>
+				
+
+<p>Type of event.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -335,11 +367,17 @@ mydispatcher:dispatchEvent(event)
 </a>
 </dt>
 <dd>
-	 Creates a new <code>Event</code> object to be dispatched from an <code>EventDispatcher</code>.
+	
+
+<p>Creates a new <code>Event</code> object to be dispatched from an <code>EventDispatcher</code>.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				New <code>Event</code> object.
-				</p>
+				
+
+<p>New <code>Event</code> object.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -349,7 +387,10 @@ mydispatcher:dispatchEvent(event)
 </a>
 </dt>
 <dd>
-	 Disables the propagation of the current event in the scene tree hierarchy.
+	
+
+<p>Disables the propagation of the current event in the scene tree hierarchy.</p>
+
 </dd>
 </dl>
 

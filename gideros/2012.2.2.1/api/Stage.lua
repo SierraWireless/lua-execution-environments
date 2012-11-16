@@ -13,7 +13,7 @@
 
 -----------------------------------------------------------	
 -- 
--- **This function is obsolete. Use [Application:setBackgroundColor](#Application:setBackgroundColor) instead.**
+-- **This function is obsolete, use [Application:setBackgroundColor](#Application:setBackgroundColor) instead.**
 -- 
 -- Sets the background color (or clear color) of the application. Default background color is white (1, 1, 1).
 -- 
@@ -27,7 +27,7 @@
 
 -----------------------------------------------------------	
 -- 
--- **This function is obsolete. Use [Application:getBackgroundColor](#Application:getBackgroundColor) instead.**
+-- **This function is obsolete, use [Application:getBackgroundColor](#Application:getBackgroundColor) instead.**
 -- 
 -- Returns the r, g, b values of background color.
 -- 
@@ -41,7 +41,7 @@
 
 -----------------------------------------------------------	
 -- 
--- **This function is obsolete. Use [Application:setOrientation](#Application:setOrientation) instead.**
+-- **This function is obsolete, use [Application:setOrientation](#Application:setOrientation) instead.**
 -- 
 -- * Stage.PORTRAIT = "portrait"
 -- * Stage.PORTRAIT_UPSIDE_DOWN = "portraitUpsideDown"
@@ -57,7 +57,7 @@
 
 -----------------------------------------------------------	
 -- 
--- **This function is obsolete. Use [Application:getOrientation](#Application:getOrientation) instead.**
+-- **This function is obsolete, use [Application:getOrientation](#Application:getOrientation) instead.**
 -- 
 -- Returns the orientation of the stage.
 -- 

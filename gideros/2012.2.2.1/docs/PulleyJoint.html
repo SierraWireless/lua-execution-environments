@@ -74,53 +74,98 @@
 	</div>
 	<div id="content">
    <h1>Module <code>PulleyJoint</code></h1>
-    The pulley joint is connected to two bodies and two fixed ground points.
-   <br/>The pulley supports a ratio such that: length1 + ratio * length2 &lt;= constant Yes, the force transmitted is scaled by the ratio. The pulley also enforces a maximum length limit on both sides. This is useful to prevent one side of the pulley hitting the top.
+   
+
+<p>The pulley joint is connected to two bodies and two fixed ground points.</p>
+
+   
+<p>The pulley supports a ratio such that: length1 + ratio * length2 &lt;= constant Yes, the force transmitted is scaled by the ratio. The pulley also enforces a maximum length limit on both sides. This is useful to prevent one side of the pulley hitting the top. </p>
+
+
+
 			<h2><a id="#(PulleyJoint)">Type <code>PulleyJoint</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PulleyJoint.html##(PulleyJoint).getAnchorA">PulleyJoint:getAnchorA()</a></td>
-		<td class="summary"> Returns the anchor point on bodyA in world coordinates.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PulleyJoint).getAnchorA">PulleyJoint:getAnchorA()</a></td>
+		<td class="summary">
+
+<p>Returns the anchor point on bodyA in world coordinates.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PulleyJoint.html##(PulleyJoint).getAnchorB">PulleyJoint:getAnchorB()</a></td>
-		<td class="summary"> Returns the anchor point on bodyB in world coordinates.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PulleyJoint).getAnchorB">PulleyJoint:getAnchorB()</a></td>
+		<td class="summary">
+
+<p>Returns the anchor point on bodyB in world coordinates.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PulleyJoint.html##(PulleyJoint).getBodyA">PulleyJoint:getBodyA()</a></td>
-		<td class="summary"> Returns the first body attached to this joint.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PulleyJoint).getBodyA">PulleyJoint:getBodyA()</a></td>
+		<td class="summary">
+
+<p>Returns the first body attached to this joint.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PulleyJoint.html##(PulleyJoint).getBodyB">PulleyJoint:getBodyB()</a></td>
-		<td class="summary"> Returns the second body attached to this joint.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PulleyJoint).getBodyB">PulleyJoint:getBodyB()</a></td>
+		<td class="summary">
+
+<p>Returns the second body attached to this joint.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PulleyJoint.html##(PulleyJoint).getGroundAnchorA">PulleyJoint:getGroundAnchorA()</a></td>
-		<td class="summary"> Returns the x and y coordinates of the first ground anchor.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PulleyJoint).getGroundAnchorA">PulleyJoint:getGroundAnchorA()</a></td>
+		<td class="summary">
+
+<p>Returns the x and y coordinates of the first ground anchor.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PulleyJoint.html##(PulleyJoint).getGroundAnchorB">PulleyJoint:getGroundAnchorB()</a></td>
-		<td class="summary"> Returns the x and y coordinates of the second ground anchor.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PulleyJoint).getGroundAnchorB">PulleyJoint:getGroundAnchorB()</a></td>
+		<td class="summary">
+
+<p>Returns the x and y coordinates of the second ground anchor.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PulleyJoint.html##(PulleyJoint).getLengthA">PulleyJoint:getLengthA()</a></td>
-		<td class="summary"> Returns the current length of the segment attached to bodyA.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PulleyJoint).getLengthA">PulleyJoint:getLengthA()</a></td>
+		<td class="summary">
+
+<p>Returns the current length of the segment attached to bodyA.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PulleyJoint.html##(PulleyJoint).getLengthB">PulleyJoint:getLengthB()</a></td>
-		<td class="summary"> Returns the current length of the segment attached to bodyB.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PulleyJoint).getLengthB">PulleyJoint:getLengthB()</a></td>
+		<td class="summary">
+
+<p>Returns the current length of the segment attached to bodyB.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PulleyJoint.html##(PulleyJoint).getRatio">PulleyJoint:getRatio()</a></td>
-		<td class="summary"> Returns the pulley ratio.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PulleyJoint).getRatio">PulleyJoint:getRatio()</a></td>
+		<td class="summary">
+
+<p>Returns the pulley ratio.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PulleyJoint.html##(PulleyJoint).getType">PulleyJoint:getType()</a></td>
-		<td class="summary"> Returns the type of the concrete joint.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PulleyJoint).getType">PulleyJoint:getType()</a></td>
+		<td class="summary">
+
+<p>Returns the type of the concrete joint.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="PulleyJoint.html##(PulleyJoint).isActive">PulleyJoint:isActive()</a></td>
-		<td class="summary"> Short-cut function to determine if either body is inactive.</td>
+		<td class="name" nowrap="nowrap"><a href="##(PulleyJoint).isActive">PulleyJoint:isActive()</a></td>
+		<td class="summary">
+
+<p>Short-cut function to determine if either body is inactive.</p>
+</td>
 		</tr>
 	</table>
 
@@ -133,11 +178,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the anchor point on bodyA in world coordinates.
+	
+
+<p>Returns the anchor point on bodyA in world coordinates.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The x and y coordinates of the anchor point
-				</p>
+				
+
+<p>The x and y coordinates of the anchor point</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -147,11 +198,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the anchor point on bodyB in world coordinates.
+	
+
+<p>Returns the anchor point on bodyB in world coordinates.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The x and y coordinates of the anchor point
-				</p>
+				
+
+<p>The x and y coordinates of the anchor point</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -161,11 +218,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the first body attached to this joint.
+	
+
+<p>Returns the first body attached to this joint.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The first body attached to this joint
-				</p>
+				
+
+<p>The first body attached to this joint</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -175,11 +238,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the second body attached to this joint.
+	
+
+<p>Returns the second body attached to this joint.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The second body attached to this joint
-				</p>
+				
+
+<p>The second body attached to this joint</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -189,11 +258,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the x and y coordinates of the first ground anchor.
+	
+
+<p>Returns the x and y coordinates of the first ground anchor.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The x and y coordinates of the first ground anchor
-				</p>
+				
+
+<p>The x and y coordinates of the first ground anchor</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -203,11 +277,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the x and y coordinates of the second ground anchor.
+	
+
+<p>Returns the x and y coordinates of the second ground anchor.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The x and y coordinates of the second ground anchor
-				</p>
+				
+
+<p>The x and y coordinates of the second ground anchor</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -217,11 +296,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the current length of the segment attached to bodyA.
+	
+
+<p>Returns the current length of the segment attached to bodyA.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The current length of the segment attached to bodyA
-				</p>
+				
+
+<p>The current length of the segment attached to bodyA</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -231,11 +315,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the current length of the segment attached to bodyB.
+	
+
+<p>Returns the current length of the segment attached to bodyB.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The current length of the segment attached to bodyB
-				</p>
+				
+
+<p>The current length of the segment attached to bodyB</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -245,11 +334,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the pulley ratio.
+	
+
+<p>Returns the pulley ratio.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The pulley ratio
-				</p>
+				
+
+<p>The pulley ratio</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -259,13 +354,21 @@
 </a>
 </dt>
 <dd>
-	 Returns the type of the concrete joint.
-	<br/>The return value can be one of the <code>b2.REVOLUTE_JOINT</code>, <code>b2.PRISMATIC_JOINT</code>, <code>b2.DISTANCE_JOINT</code>, <code>b2.PULLEY_JOINT</code>,
- <code>b2,MOUSE_JOINT</code>, <code>b2.GEAR_JOINT</code>, <code>b2.LINE_JOINT</code>, <code>b2.WELD_JOINT</code>, <code>b2.FRICTION_JOINT</code>.
+	
+
+<p>Returns the type of the concrete joint.</p>
+
+	
+<p>The return value can be one of the <code>b2.REVOLUTE_JOINT</code>, <code>b2.PRISMATIC_JOINT</code>, <code>b2.DISTANCE_JOINT</code>, <code>b2.PULLEY_JOINT</code>,
+<code>b2,MOUSE_JOINT</code>, <code>b2.GEAR_JOINT</code>, <code>b2.LINE_JOINT</code>, <code>b2.WELD_JOINT</code>, <code>b2.FRICTION_JOINT</code>.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The type of the concrete joint
-				</p>
+				
+
+<p>The type of the concrete joint</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -275,11 +378,16 @@
 </a>
 </dt>
 <dd>
-	 Short-cut function to determine if either body is inactive.
+	
+
+<p>Short-cut function to determine if either body is inactive.</p>
+
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if both bodyA and bodyB is active, <code>false</code> otherwise
-				</p>
+				
+
+<p><code>true</code> if both bodyA and bodyB is active, <code>false</code> otherwise</p>
+
+
 </dd>
 </dl>
 

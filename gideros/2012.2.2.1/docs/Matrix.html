@@ -74,76 +74,143 @@
 	</div>
 	<div id="content">
    <h1>Module <code>Matrix</code></h1>
-    The Matrix class specifies 2D transformation from one coordinate space to another.
-   <br/>These transformations include translation, rotation, scaling and skewing.</p>
+   
 
-<p> A 2D transformation matrix is a 3 x 3 matrix in homogenous coordinate system:</p>
+<p>The Matrix class specifies 2D transformation from one coordinate space to another.</p>
 
-<p> <img src="images/matrix_props.png" alt="Matrix Properties" title="Matrix Properties"/></p>
+   
+<p>These transformations include translation, rotation, scaling and skewing.</p>
 
-<p> You can get and set the values of all six of the properties in a
- Matrix object: <code>m11</code>, <code>m12</code>, <code>m21</code>, <code>m22</code>, <code>tx</code>, and <code>ty</code>.
+<p>A 2D transformation matrix is a 3 x 3 matrix in homogenous coordinate system:</p>
+
+<p><img src="http://www.giderosmobile.com/documentation/images/matrix_props.png" alt="Matrix Properties" title="Matrix Properties"/></p>
+
+<p>You can get and set the values of all six of the properties in a
+Matrix object: <code>m11</code>, <code>m12</code>, <code>m21</code>, <code>m22</code>, <code>tx</code>, and <code>ty</code>.</p>
+
+
+
 			<h2><a id="#(Matrix)">Type <code>Matrix</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).getElements">Matrix:getElements()</a></td>
-		<td class="summary"> Returns the elements of the matrix.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).getElements">Matrix:getElements()</a></td>
+		<td class="summary">
+
+<p>Returns the elements of the matrix.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).getM11">Matrix:getM11()</a></td>
-		<td class="summary"> Returns the value of the <code>m11</code> component for this <code>Matrix</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).getM11">Matrix:getM11()</a></td>
+		<td class="summary">
+
+<p>Returns the value of the <code>m11</code> component for this <code>Matrix</code> instance.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).getM12">Matrix:getM12()</a></td>
-		<td class="summary"> Returns the value of the <code>m12</code> component for this <code>Matrix</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).getM12">Matrix:getM12()</a></td>
+		<td class="summary">
+
+<p>Returns the value of the <code>m12</code> component for this <code>Matrix</code> instance.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).getM21">Matrix:getM21()</a></td>
-		<td class="summary"> Returns the value of the <code>m21</code> component for this <code>Matrix</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).getM21">Matrix:getM21()</a></td>
+		<td class="summary">
+
+<p>Returns the value of the <code>m21</code> component for this <code>Matrix</code> instance.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).getM22">Matrix:getM22()</a></td>
-		<td class="summary"> Returns the value of the <code>m22</code> component for this <code>Matrix</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).getM22">Matrix:getM22()</a></td>
+		<td class="summary">
+
+<p>Returns the value of the <code>m22</code> component for this <code>Matrix</code> instance.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).getTx">Matrix:getTx()</a></td>
-		<td class="summary"> Returns the value of the <code>tx</code> component for this <code>Matrix</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).getTx">Matrix:getTx()</a></td>
+		<td class="summary">
+
+<p>Returns the value of the <code>tx</code> component for this <code>Matrix</code> instance.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).getTy">Matrix:getTy()</a></td>
-		<td class="summary"> Returns the value of the <code>ty</code> component for this <code>Matrix</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).getTy">Matrix:getTy()</a></td>
+		<td class="summary">
+
+<p>Returns the value of the <code>ty</code> component for this <code>Matrix</code> instance.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).new">Matrix.new(m11, m12, m21, m22, tx, ty)</a></td>
-		<td class="summary"> Creates a new Matrix object with the specified parameters.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).new">Matrix.new(m11, m12, m21, m22, tx, ty)</a></td>
+		<td class="summary">
+
+<p>Creates a new Matrix object with the specified parameters.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).setElements">Matrix:setElements(m11, m12, m21, m22, tx, ty)</a></td>
-		<td class="summary"> Sets all 6 elements of the matrix.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).setElements">Matrix:setElements(m11, m12, m21, m22, tx, ty)</a></td>
+		<td class="summary">
+
+<p>Sets all 6 elements of the matrix.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).setM11">Matrix:setM11(m11)</a></td>
-		<td class="summary"> Sets the value of the <code>m11</code> component for this <code>Matrix</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).setM11">Matrix:setM11(m11)</a></td>
+		<td class="summary">
+
+<p>Sets the value of the <code>m11</code> component for this <code>Matrix</code> instance.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).setM12">Matrix:setM12(m12)</a></td>
-		<td class="summary"> Sets the value of the <code>m12</code> component for this <code>Matrix</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).setM12">Matrix:setM12(m12)</a></td>
+		<td class="summary">
+
+<p>Sets the value of the <code>m12</code> component for this <code>Matrix</code> instance.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).setM21">Matrix:setM21(m21)</a></td>
-		<td class="summary"> Sets the value of the <code>m21</code> component for this <code>Matrix</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).setM21">Matrix:setM21(m21)</a></td>
+		<td class="summary">
+
+<p>Sets the value of the <code>m21</code> component for this <code>Matrix</code> instance.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).setM22">Matrix:setM22(m22)</a></td>
-		<td class="summary"> Sets the value of the <code>m22</code> component for this <code>Matrix</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).setM22">Matrix:setM22(m22)</a></td>
+		<td class="summary">
+
+<p>Sets the value of the <code>m22</code> component for this <code>Matrix</code> instance.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).setTx">Matrix:setTx(tx)</a></td>
-		<td class="summary"> Sets the value of the <code>tx</code> component for this <code>Matrix</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).setTx">Matrix:setTx(tx)</a></td>
+		<td class="summary">
+
+<p>Sets the value of the <code>tx</code> component for this <code>Matrix</code> instance.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Matrix.html##(Matrix).setTy">Matrix:setTy(ty)</a></td>
-		<td class="summary"> Sets the value of the <code>ty</code> component for this <code>Matrix</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Matrix).setTy">Matrix:setTy(ty)</a></td>
+		<td class="summary">
+
+<p>Sets the value of the <code>ty</code> component for this <code>Matrix</code> instance.</p>
+
+</td>
 		</tr>
 	</table>
 
@@ -156,11 +223,20 @@
 </a>
 </dt>
 <dd>
-	 Returns the elements of the matrix.
+	
+
+<p>Returns the elements of the matrix.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				 m1m1-- @return m21, m22, tx, ty
-				</p>
+				
+
+<p> m1m1-- @return m21, m22, tx, ty</p>
+
+
+
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -170,11 +246,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the value of the <code>m11</code> component for this <code>Matrix</code> instance.
+	
+
+<p>Returns the value of the <code>m11</code> component for this <code>Matrix</code> instance.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The current `m1parameter.
-				</p>
+				
+
+<p>The current `m1parameter.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -184,11 +266,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the value of the <code>m12</code> component for this <code>Matrix</code> instance.
+	
+
+<p>Returns the value of the <code>m12</code> component for this <code>Matrix</code> instance.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The current `m1-- @return parameter.
-				</p>
+				
+
+<p>The current `m1-- @return parameter.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -198,11 +286,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the value of the <code>m21</code> component for this <code>Matrix</code> instance.
+	
+
+<p>Returns the value of the <code>m21</code> component for this <code>Matrix</code> instance.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The current `m2parameter.
-				</p>
+				
+
+<p>The current `m2parameter.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -212,11 +306,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the value of the <code>m22</code> component for this <code>Matrix</code> instance.
+	
+
+<p>Returns the value of the <code>m22</code> component for this <code>Matrix</code> instance.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The current `m2-- @return parameter.
-				</p>
+				
+
+<p>The current `m2-- @return parameter.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -226,11 +326,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the value of the <code>tx</code> component for this <code>Matrix</code> instance.
+	
+
+<p>Returns the value of the <code>tx</code> component for this <code>Matrix</code> instance.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The current <code>tx</code> parameter.
-				</p>
+				
+
+<p>The current <code>tx</code> parameter.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -240,11 +346,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the value of the <code>ty</code> component for this <code>Matrix</code> instance.
+	
+
+<p>Returns the value of the <code>ty</code> component for this <code>Matrix</code> instance.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The current <code>ty</code> parameter.
-				</p>
+				
+
+<p>The current <code>ty</code> parameter.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -254,32 +366,56 @@
 </a>
 </dt>
 <dd>
-	 Creates a new Matrix object with the specified parameters.
+	
+
+<p>Creates a new Matrix object with the specified parameters.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				m11  </em></code>: (number, default = 1)
+				<li>
+				
+<p><code><em> m11 </em></code>: 
+(number, default = 1)</p>
+
 				</li>
-				<li><code><em>
-				m12  </em></code>: (number, default = 0)
+				<li>
+				
+<p><code><em> m12 </em></code>: 
+(number, default = 0)</p>
+
 				</li>
-				<li><code><em>
-				m21  </em></code>: (number, default = 0)
+				<li>
+				
+<p><code><em> m21 </em></code>: 
+(number, default = 0)</p>
+
 				</li>
-				<li><code><em>
-				m22  </em></code>: (number, default = 1)
+				<li>
+				
+<p><code><em> m22 </em></code>: 
+(number, default = 1)</p>
+
 				</li>
-				<li><code><em>
-				tx  </em></code>: (number, default = 0)
+				<li>
+				
+<p><code><em> tx </em></code>: 
+(number, default = 0)</p>
+
 				</li>
-				<li><code><em>
-				ty  </em></code>: (number, default = 0)
+				<li>
+				
+<p><code><em> ty </em></code>: 
+(number, default = 0)</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				New <code>Matrix</code> object.
-				</p>
+				
+
+<p>New <code>Matrix</code> object.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -289,26 +425,51 @@
 </a>
 </dt>
 <dd>
-	 Sets all 6 elements of the matrix.
+	
+
+<p>Sets all 6 elements of the matrix.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				m11  </em></code>: (number, default = 1)
+				<li>
+				
+<p><code><em> m11 </em></code>: 
+(number, default = 1)</p>
+
 				</li>
-				<li><code><em>
-				m12  </em></code>: (number, default = 0)
+				<li>
+				
+<p><code><em> m12 </em></code>: 
+(number, default = 0)</p>
+
 				</li>
-				<li><code><em>
-				m21  </em></code>: (number, default = 0)
+				<li>
+				
+<p><code><em> m21 </em></code>: 
+(number, default = 0)</p>
+
 				</li>
-				<li><code><em>
-				m22  </em></code>: (number, default = 1)
+				<li>
+				
+<p><code><em> m22 </em></code>: 
+(number, default = 1)</p>
+
 				</li>
-				<li><code><em>
-				tx  </em></code>: (number, default = 0)
+				<li>
+				
+<p><code><em> tx </em></code>: 
+(number, default = 0)</p>
+
 				</li>
-				<li><code><em>
-				ty  </em></code>: (number, default = 0)
+				<li>
+				
+<p><code><em> ty </em></code>: 
+(number, default = 0)</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -320,11 +481,21 @@
 </a>
 </dt>
 <dd>
-	 Sets the value of the <code>m11</code> component for this <code>Matrix</code> instance.
+	
+
+<p>Sets the value of the <code>m11</code> component for this <code>Matrix</code> instance.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				m11  </em></code>: (number)
+				<li>
+				
+<p><code><em> m11 </em></code>: 
+(number)</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -336,11 +507,21 @@
 </a>
 </dt>
 <dd>
-	 Sets the value of the <code>m12</code> component for this <code>Matrix</code> instance.
+	
+
+<p>Sets the value of the <code>m12</code> component for this <code>Matrix</code> instance.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				m12  </em></code>: (number)
+				<li>
+				
+<p><code><em> m12 </em></code>: 
+(number)</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -352,11 +533,21 @@
 </a>
 </dt>
 <dd>
-	 Sets the value of the <code>m21</code> component for this <code>Matrix</code> instance.
+	
+
+<p>Sets the value of the <code>m21</code> component for this <code>Matrix</code> instance.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				m21  </em></code>: (number)
+				<li>
+				
+<p><code><em> m21 </em></code>: 
+(number)</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -368,11 +559,21 @@
 </a>
 </dt>
 <dd>
-	 Sets the value of the <code>m22</code> component for this <code>Matrix</code> instance.
+	
+
+<p>Sets the value of the <code>m22</code> component for this <code>Matrix</code> instance.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				m22  </em></code>: (number)
+				<li>
+				
+<p><code><em> m22 </em></code>: 
+(number)</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -384,11 +585,21 @@
 </a>
 </dt>
 <dd>
-	 Sets the value of the <code>tx</code> component for this <code>Matrix</code> instance.
+	
+
+<p>Sets the value of the <code>tx</code> component for this <code>Matrix</code> instance.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				tx  </em></code>: (number)
+				<li>
+				
+<p><code><em> tx </em></code>: 
+(number)</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -400,11 +611,21 @@
 </a>
 </dt>
 <dd>
-	 Sets the value of the <code>ty</code> component for this <code>Matrix</code> instance.
+	
+
+<p>Sets the value of the <code>ty</code> component for this <code>Matrix</code> instance.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				ty  </em></code>: (number)
+				<li>
+				
+<p><code><em> ty </em></code>: 
+(number)</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>

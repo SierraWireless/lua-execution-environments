@@ -74,67 +74,119 @@
 	</div>
 	<div id="content">
    <h1>Module <code>WheelJoint</code></h1>
-    A wheel joint provides two degrees of freedom: translation along an axis fixed in bodyA and rotation in the plane.
-   <br/>You can use a 
- joint limit to restrict the range of motion and a joint motor to drive the rotation or to model rotational friction. This joint 
- is designed for vehicle suspensions.
+   
+
+<p>A wheel joint provides two degrees of freedom: translation along an axis fixed in bodyA and rotation in the plane.</p>
+
+   
+<p>You can use a 
+joint limit to restrict the range of motion and a joint motor to drive the rotation or to model rotational friction. This joint 
+is designed for vehicle suspensions.</p>
+
+
+
 			<h2><a id="#(WheelJoint)">Type <code>WheelJoint</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).Joint">WheelJoint:Joint()</a></td>
-		<td class="summary"> Returns the anchor point on bodyB in world coordinates.</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).Joint">WheelJoint:Joint()</a></td>
+		<td class="summary">
+
+<p>Returns the anchor point on bodyB in world coordinates.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).enableMotor">WheelJoint:enableMotor(flag)</a></td>
-		<td class="summary"> Enables or disables the joint motor.</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).enableMotor">WheelJoint:enableMotor(flag)</a></td>
+		<td class="summary">
+
+<p>Enables or disables the joint motor.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).getJointSpeed">WheelJoint:getJointSpeed()</a></td>
-		<td class="summary"> Returns the current joint translation speed in meters per second.</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).getJointSpeed">WheelJoint:getJointSpeed()</a></td>
+		<td class="summary">
+
+<p>Returns the current joint translation speed in meters per second.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).getJointTranslation">WheelJoint:getJointTranslation()</a></td>
-		<td class="summary"> Returns the current joint translation in meters.</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).getJointTranslation">WheelJoint:getJointTranslation()</a></td>
+		<td class="summary">
+
+<p>Returns the current joint translation in meters.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).getMaxMotorTorque">WheelJoint:getMaxMotorTorque()</a></td>
-		<td class="summary"> Returns the maximum motor torque in N-m.</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).getMaxMotorTorque">WheelJoint:getMaxMotorTorque()</a></td>
+		<td class="summary">
+
+<p>Returns the maximum motor torque in N-m.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).getMotorSpeed">WheelJoint:getMotorSpeed()</a></td>
-		<td class="summary"> Returns the motor speed in radians per second.</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).getMotorSpeed">WheelJoint:getMotorSpeed()</a></td>
+		<td class="summary">
+
+<p>Returns the motor speed in radians per second.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).getSpringDampingRatio">WheelJoint:getSpringDampingRatio()</a></td>
-		<td class="summary"> Returns the spring damping ratio.</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).getSpringDampingRatio">WheelJoint:getSpringDampingRatio()</a></td>
+		<td class="summary">
+
+<p>Returns the spring damping ratio.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).getSpringFrequencyHz">WheelJoint:getSpringFrequencyHz()</a></td>
-		<td class="summary"> Returns the spring frequency in hertz.</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).getSpringFrequencyHz">WheelJoint:getSpringFrequencyHz()</a></td>
+		<td class="summary">
+
+<p>Returns the spring frequency in hertz.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).isActive">WheelJoint:isActive()</a></td>
-		<td class="summary"> Short-cut function to determine if either body is inactive.</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).isActive">WheelJoint:isActive()</a></td>
+		<td class="summary">
+
+<p>Short-cut function to determine if either body is inactive.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).isMotorEnabled">WheelJoint:isMotorEnabled()</a></td>
-		<td class="summary"> Is the joint motor enabled?</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).isMotorEnabled">WheelJoint:isMotorEnabled()</a></td>
+		<td class="summary">
+
+<p>Is the joint motor enabled?</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).setMaxMotorTorque">WheelJoint:setMaxMotorTorque(torque)</a></td>
-		<td class="summary"> Sets the maximum motor torque in N-m.</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).setMaxMotorTorque">WheelJoint:setMaxMotorTorque(torque)</a></td>
+		<td class="summary">
+
+<p>Sets the maximum motor torque in N-m.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).setMotorSpeed">WheelJoint:setMotorSpeed(speed)</a></td>
-		<td class="summary"> Sets the motor speed in radians per second.</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).setMotorSpeed">WheelJoint:setMotorSpeed(speed)</a></td>
+		<td class="summary">
+
+<p>Sets the motor speed in radians per second.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).setSpringDampingRatio">WheelJoint:setSpringDampingRatio(damping)</a></td>
-		<td class="summary"> Sets the spring damping ratio.</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).setSpringDampingRatio">WheelJoint:setSpringDampingRatio(damping)</a></td>
+		<td class="summary">
+
+<p>Sets the spring damping ratio.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="WheelJoint.html##(WheelJoint).setSpringFrequencyHz">WheelJoint:setSpringFrequencyHz(frequency)</a></td>
-		<td class="summary"> Sets the spring frequency in hertz.</td>
+		<td class="name" nowrap="nowrap"><a href="##(WheelJoint).setSpringFrequencyHz">WheelJoint:setSpringFrequencyHz(frequency)</a></td>
+		<td class="summary">
+<p> 
+Sets the spring frequency in hertz.</p>
+</td>
 		</tr>
 	</table>
 
@@ -147,11 +199,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the anchor point on bodyB in world coordinates.
+	
+
+<p>Returns the anchor point on bodyB in world coordinates.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The x and y coordinates of the anchor point
-				</p>
+				
+
+<p>The x and y coordinates of the anchor point</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -161,11 +219,20 @@
 </a>
 </dt>
 <dd>
-	 Enables or disables the joint motor.
+	
+
+<p>Enables or disables the joint motor.</p>
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				flag  </em></code>: (boolean) enable flag of joint motor
+				<li>
+				
+<p><code><em> flag </em></code>: 
+(boolean) enable flag of joint motor</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -177,11 +244,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the current joint translation speed in meters per second.
+	
+
+<p>Returns the current joint translation speed in meters per second.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The current joint translation speed in meters per second
-				</p>
+				
+
+<p>The current joint translation speed in meters per second</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -191,11 +263,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the current joint translation in meters.
+	
+
+<p>Returns the current joint translation in meters.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The current joint translation in meters
-				</p>
+				
+
+<p>The current joint translation in meters</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -205,11 +283,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the maximum motor torque in N-m.
+	
+
+<p>Returns the maximum motor torque in N-m.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The maximum motor torque in N-m
-				</p>
+				
+
+<p>The maximum motor torque in N-m</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -219,11 +302,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the motor speed in radians per second.
+	
+
+<p>Returns the motor speed in radians per second.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The motor speed in radians per second
-				</p>
+				
+
+<p>The motor speed in radians per second</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -233,11 +321,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the spring damping ratio.
+	
+
+<p>Returns the spring damping ratio.</p>
+
 		<h3>Return value</h3>
-				<p>
-				The spring damping ratio
-				</p>
+				
+
+<p>The spring damping ratio</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -247,11 +340,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the spring frequency in hertz.
+	
+
+<p>Returns the spring frequency in hertz.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The spring frequency in hertz.
-				</p>
+				
+
+<p>The spring frequency in hertz.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -261,11 +360,16 @@
 </a>
 </dt>
 <dd>
-	 Short-cut function to determine if either body is inactive.
+	
+
+<p>Short-cut function to determine if either body is inactive.</p>
+
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if both bodyA and bodyB is active, <code>false</code> otherwise
-				</p>
+				
+
+<p><code>true</code> if both bodyA and bodyB is active, <code>false</code> otherwise</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -275,11 +379,16 @@
 </a>
 </dt>
 <dd>
-	 Is the joint motor enabled?
+	
+
+<p>Is the joint motor enabled?</p>
+
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if joint motor is enabled, <code>false</code> otherwise
-				</p>
+				
+
+<p><code>true</code> if joint motor is enabled, <code>false</code> otherwise</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -289,11 +398,20 @@
 </a>
 </dt>
 <dd>
-	 Sets the maximum motor torque in N-m.
+	
+
+<p>Sets the maximum motor torque in N-m.</p>
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				torque  </em></code>: (number) the maximum motor torque in N-m
+				<li>
+				
+<p><code><em> torque </em></code>: 
+(number) the maximum motor torque in N-m</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -305,11 +423,20 @@
 </a>
 </dt>
 <dd>
-	 Sets the motor speed in radians per second.
+	
+
+<p>Sets the motor speed in radians per second.</p>
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				speed  </em></code>: (number) motor speed in radians per second
+				<li>
+				
+<p><code><em> speed </em></code>: 
+(number) motor speed in radians per second</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -321,11 +448,20 @@
 </a>
 </dt>
 <dd>
-	 Sets the spring damping ratio.
+	
+
+<p>Sets the spring damping ratio.</p>
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				damping  </em></code>: (number) damping ratio
+				<li>
+				
+<p><code><em> damping </em></code>: 
+(number) damping ratio</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -337,12 +473,24 @@
 </a>
 </dt>
 <dd>
-	 Sets the spring frequency in hertz.
-	<br/>Setting the frequency to zero disables the spring.
+	
+<p> 
+Sets the spring frequency in hertz.</p>
+
+	
+<p>Setting the frequency to zero disables the spring.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				frequency  </em></code>: (number) spring frequency in hertz
+				<li>
+				
+<p><code><em> frequency </em></code>: 
+(number) spring frequency in hertz</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>

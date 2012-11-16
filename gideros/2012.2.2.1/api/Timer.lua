@@ -137,7 +137,7 @@
 
 -----------------------------------------------------------	
 -- 
--- **This function is obsolete. Use [Timer.pauseAll](#Timer.pauseAll) instead.**
+-- **This function is obsolete, use [Timer.pauseAll](#Timer.pauseAll) instead.**
 -- 
 -- Pause all timers. Suitable for temporarily pausing all timers when application is paused.
 -- 
@@ -147,7 +147,7 @@
 
 -----------------------------------------------------------	
 -- 
--- **This function is obsolete. Use [Timer.resumeAll](#Timer.resumeAll) instead.**
+-- **This function is obsolete, use [Timer.resumeAll](#Timer.resumeAll) instead.**
 -- 
 -- Resume all timers.
 -- 

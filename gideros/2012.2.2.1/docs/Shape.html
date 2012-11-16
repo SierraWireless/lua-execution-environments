@@ -74,229 +74,412 @@
 	</div>
 	<div id="content">
    <h1>Module <code>Shape</code></h1>
-    The <code>Shape</code> class is used create and display vector graphics.
+   
+
+<p>The <code>Shape</code> class is used create and display vector graphics.</p>
+
+   
+
+
+
 			<h2><a id="#(Shape)">Type <code>Shape</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).NONE">Shape.NONE</a></td>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).NONE">Shape.NONE</a></td>
 		<td class="summary">
 
 </td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).SOLID">Shape.SOLID</a></td>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).SOLID">Shape.SOLID</a></td>
 		<td class="summary">
 
 </td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).TEXTURE">Shape.TEXTURE</a></td>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).TEXTURE">Shape.TEXTURE</a></td>
 		<td class="summary">
 
 </td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).addChild">Shape:addChild(child)</a></td>
-		<td class="summary"> Adds a sprite as a child to this sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).addChildAt">Shape:addChildAt(child, index)</a></td>
-		<td class="summary"> Adds a sprite as a child to this sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).beginPath">Shape:beginPath(winding)</a></td>
-		<td class="summary"> Resets the current path.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).clear">Shape:clear()</a></td>
-		<td class="summary"> Clears the graphics that were drawn to this <code>Shape</code> object, and resets fill and line style settings.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).clearBlendMode">Shape:clearBlendMode()</a></td>
-		<td class="summary"> Clears the blending mode.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).closePath">Shape:closePath()</a></td>
-		<td class="summary"> Marks the current subpath as closed, and starts a new subpath with a point the same as the start and end of the newly closed subpath.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).contains">Shape:contains(child)</a></td>
-		<td class="summary"> Determines whether the specified sprite is contained in the subtree of
- this <code>Sprite</code> instance.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).endPath">Shape:endPath()</a></td>
-		<td class="summary"> Ends the current path and draws the geometry by using the specified line and fill styles.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).get">Shape:get()</a></td>
-		<td class="summary"> Returns the specified property of this sprite instance by its name.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getAlpha">Shape:getAlpha()</a></td>
-		<td class="summary"> Returns the alpha transparency of this sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getChildAt">Shape:getChildAt(index)</a></td>
-		<td class="summary"> Returns the child <code>Sprite</code> instance that exists at the specified index.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getChildIndex">Shape:getChildIndex(child)</a></td>
-		<td class="summary"> Returns the index of the specified child sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getColorTransform">Shape:getColorTransform()</a></td>
-		<td class="summary"> Returns the red, green, blue and alpha channel multipliers.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getHeight">Shape:getHeight()</a></td>
-		<td class="summary"> Returns the height of the sprite, in pixels.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getMatrix">Shape:getMatrix()</a></td>
-		<td class="summary"> Returns the transformation matrix of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getNumChildren">Shape:getNumChildren()</a></td>
-		<td class="summary"> Returns the number of children of this sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getParent">Shape:getParent()</a></td>
-		<td class="summary"> Returns the <code>Sprite</code> object that contains this <code>Sprite</code> object.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getPosition">Shape:getPosition()</a></td>
-		<td class="summary"> Returns the x and y coordinates of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getRotation">Shape:getRotation()</a></td>
-		<td class="summary"> Returns the rotation of the sprite in degrees.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getScale">Shape:getScale()</a></td>
-		<td class="summary"> Returns the horizontal and vertical scales of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getScaleX">Shape:getScaleX()</a></td>
-		<td class="summary"> Returns the horizontal scale of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getScaleY">Shape:getScaleY()</a></td>
-		<td class="summary"> Returns the vertical scale of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getWidth">Shape:getWidth()</a></td>
-		<td class="summary"> Returns the width of the sprite, in pixels.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getX">Shape:getX()</a></td>
-		<td class="summary"> Returns the x coordinate of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).getY">Shape:getY()</a></td>
-		<td class="summary"> Returns the y coordinate of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).globalToLocal">Shape:globalToLocal(x, y)</a></td>
-		<td class="summary"> Converts the x,y coordinates from the global to the sprite's (local) coordinates.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).hitTestPoint">Shape:hitTestPoint(x, y)</a></td>
-		<td class="summary"> Checks whether the given coordinates (in global coordinate system) is in bounds of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).isVisible">Shape:isVisible()</a></td>
-		<td class="summary"> Returns whether or not the sprite is visible.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).lineTo">Shape:lineTo(x, y)</a></td>
-		<td class="summary"> Adds the given point to the current subpath, connected to the previous one by a straight line.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).localToGlobal">Shape:localToGlobal(x, y)</a></td>
-		<td class="summary"> Converts the x,y coordinates from the sprites's (local) coordinates to the global coordinates.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).moveTo">Shape:moveTo(x, y)</a></td>
-		<td class="summary"> Creates a new subpath with the given point.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).new">Shape.new()</a></td>
-		<td class="summary"> Creates a new <code>Shape</code> object.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).removeChild">Shape:removeChild(child)</a></td>
-		<td class="summary"> Removes the specified child <code>Sprite</code> instance from the child list of this <code>Sprite</code> instance.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).removeChildAt">Shape:removeChildAt(index)</a></td>
-		<td class="summary"> Removes the child <code>Sprite</code> instance at the specifed index.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).removeFromParent">Shape:removeFromParent()</a></td>
-		<td class="summary"> If the sprite has a parent, removes the sprite from the child list of its parent sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).set">Shape:set(value)</a></td>
-		<td class="summary"> Sets the specified property of this sprite instance by its name.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setAlpha">Shape:setAlpha(alpha)</a></td>
-		<td class="summary"> Sets the alpha transparency of this sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setBlendMode">Shape:setBlendMode(blendMode)</a></td>
-		<td class="summary"> Sets the blend mode of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setColorTransform">Shape:setColorTransform(redMultiplier, greenMultiplier, blueMultiplier, alphaMultiplier)</a></td>
-		<td class="summary"> Sets the red, green, blue and alpha channel multipliers.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setFillStyle">Shape:setFillStyle(...)</a></td>
-		<td class="summary"> Sets the fill style that <code>Shape</code> object uses for subsequent drawings.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setLineStyle">Shape:setLineStyle(width, color, alpha)</a></td>
-		<td class="summary"> Sets the line style that <code>Shape</code> object uses for subsequent drawings.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setMatrix">Shape:setMatrix(matrix)</a></td>
-		<td class="summary"> Sets the transformation matrix of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setPosition">Shape:setPosition(x, y)</a></td>
-		<td class="summary"> Sets the x and y coordinates of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setRotation">Shape:setRotation(rotation)</a></td>
-		<td class="summary"> Sets the rotation of the sprite in degrees.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setScale">Shape:setScale(scaleX, scaleY)</a></td>
-		<td class="summary"> Sets the horizontal and vertical scales of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setScaleX">Shape:setScaleX(scaleX)</a></td>
-		<td class="summary"> Sets the horizontal scale of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setScaleY">Shape:setScaleY(scaleY)</a></td>
-		<td class="summary"> Sets the vertical scale of the sprite.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setVisible">Shape:setVisible(visible)</a></td>
-		<td class="summary"> Sets whether or not the sprite is visible.</td>
-		</tr>
-		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setX">Shape:setX(x)</a></td>
-		<td class="summary"> Sets the x coordinate of the sprite</p>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).addChild">Shape:addChild(child)</a></td>
+		<td class="summary">
 
-<p> </td>
+<p>Adds a sprite as a child to this sprite.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Shape.html##(Shape).setY">Shape:setY(y)</a></td>
-		<td class="summary"> Sets the y coordinate of the sprite.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).addChildAt">Shape:addChildAt(child, index)</a></td>
+		<td class="summary">
+
+<p>Adds a sprite as a child to this sprite.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).beginPath">Shape:beginPath(winding)</a></td>
+		<td class="summary">
+
+<p>Resets the current path.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).clear">Shape:clear()</a></td>
+		<td class="summary">
+
+<p>Clears the graphics that were drawn to this <code>Shape</code> object, and resets fill and line style settings.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).clearBlendMode">Shape:clearBlendMode()</a></td>
+		<td class="summary">
+
+<p>Clears the blending mode.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).closePath">Shape:closePath()</a></td>
+		<td class="summary">
+
+<p>Marks the current subpath as closed, and starts a new subpath with a point the same as the start and end of the newly closed subpath.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).contains">Shape:contains(child)</a></td>
+		<td class="summary">
+
+<p>Determines whether the specified sprite is contained in the subtree of
+this <code>Sprite</code> instance.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).endPath">Shape:endPath()</a></td>
+		<td class="summary">
+
+<p>Ends the current path and draws the geometry by using the specified line and fill styles.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).get">Shape:get()</a></td>
+		<td class="summary">
+
+<p>Returns the specified property of this sprite instance by its name.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getAlpha">Shape:getAlpha()</a></td>
+		<td class="summary">
+
+<p>Returns the alpha transparency of this sprite.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getChildAt">Shape:getChildAt(index)</a></td>
+		<td class="summary">
+
+<p>Returns the child <code>Sprite</code> instance that exists at the specified index.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getChildIndex">Shape:getChildIndex(child)</a></td>
+		<td class="summary">
+
+<p>Returns the index of the specified child sprite.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getColorTransform">Shape:getColorTransform()</a></td>
+		<td class="summary">
+<p>Returns the red, green, blue and alpha channel multipliers.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getHeight">Shape:getHeight()</a></td>
+		<td class="summary">
+
+<p>Returns the height of the sprite, in pixels.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getMatrix">Shape:getMatrix()</a></td>
+		<td class="summary">
+
+<p>Returns the transformation matrix of the sprite.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getNumChildren">Shape:getNumChildren()</a></td>
+		<td class="summary">
+
+<p>Returns the number of children of this sprite.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getParent">Shape:getParent()</a></td>
+		<td class="summary">
+
+<p>Returns the <code>Sprite</code> object that contains this <code>Sprite</code> object.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getPosition">Shape:getPosition()</a></td>
+		<td class="summary">
+
+<p>Returns the x and y coordinates of the sprite.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getRotation">Shape:getRotation()</a></td>
+		<td class="summary">
+
+<p>Returns the rotation of the sprite in degrees.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getScale">Shape:getScale()</a></td>
+		<td class="summary">
+
+<p>Returns the horizontal and vertical scales of the sprite.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getScaleX">Shape:getScaleX()</a></td>
+		<td class="summary">
+
+<p>Returns the horizontal scale of the sprite.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getScaleY">Shape:getScaleY()</a></td>
+		<td class="summary">
+
+<p>Returns the vertical scale of the sprite.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getWidth">Shape:getWidth()</a></td>
+		<td class="summary">
+
+<p>Returns the width of the sprite, in pixels.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getX">Shape:getX()</a></td>
+		<td class="summary">
+
+<p>Returns the x coordinate of the sprite.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).getY">Shape:getY()</a></td>
+		<td class="summary">
+
+<p>Returns the y coordinate of the sprite.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).globalToLocal">Shape:globalToLocal(x, y)</a></td>
+		<td class="summary">
+
+<p>Converts the x,y coordinates from the global to the sprite's (local) coordinates.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).hitTestPoint">Shape:hitTestPoint(x, y)</a></td>
+		<td class="summary">
+
+<p>Checks whether the given coordinates (in global coordinate system) is in bounds of the sprite.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).isVisible">Shape:isVisible()</a></td>
+		<td class="summary">
+
+<p>Returns whether or not the sprite is visible.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).lineTo">Shape:lineTo(x, y)</a></td>
+		<td class="summary">
+
+<p>Adds the given point to the current subpath, connected to the previous one by a straight line.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).localToGlobal">Shape:localToGlobal(x, y)</a></td>
+		<td class="summary">
+
+<p>Converts the x,y coordinates from the sprites's (local) coordinates to the global coordinates.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).moveTo">Shape:moveTo(x, y)</a></td>
+		<td class="summary">
+
+<p>Creates a new subpath with the given point.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).new">Shape.new()</a></td>
+		<td class="summary">
+
+<p>Creates a new <code>Shape</code> object.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).removeChild">Shape:removeChild(child)</a></td>
+		<td class="summary">
+
+<p>Removes the specified child <code>Sprite</code> instance from the child list of this <code>Sprite</code> instance.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).removeChildAt">Shape:removeChildAt(index)</a></td>
+		<td class="summary">
+
+<p>Removes the child <code>Sprite</code> instance at the specifed index.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).removeFromParent">Shape:removeFromParent()</a></td>
+		<td class="summary">
+
+<p>If the sprite has a parent, removes the sprite from the child list of its parent sprite.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).set">Shape:set(value)</a></td>
+		<td class="summary">
+
+<p>Sets the specified property of this sprite instance by its name.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setAlpha">Shape:setAlpha(alpha)</a></td>
+		<td class="summary">
+
+<p>Sets the alpha transparency of this sprite.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setBlendMode">Shape:setBlendMode(blendMode)</a></td>
+		<td class="summary">
+
+<p>Sets the blend mode of the sprite.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setColorTransform">Shape:setColorTransform(redMultiplier, greenMultiplier, blueMultiplier, alphaMultiplier)</a></td>
+		<td class="summary">
+
+<p>Sets the red, green, blue and alpha channel multipliers.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setFillStyle">Shape:setFillStyle(...)</a></td>
+		<td class="summary">
+
+<p>Sets the fill style that <code>Shape</code> object uses for subsequent drawings.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setLineStyle">Shape:setLineStyle(width, color, alpha)</a></td>
+		<td class="summary">
+
+<p>Sets the line style that <code>Shape</code> object uses for subsequent drawings.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setMatrix">Shape:setMatrix(matrix)</a></td>
+		<td class="summary">
+
+<p>Sets the transformation matrix of the sprite.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setPosition">Shape:setPosition(x, y)</a></td>
+		<td class="summary">
+
+<p>Sets the x and y coordinates of the sprite.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setRotation">Shape:setRotation(rotation)</a></td>
+		<td class="summary">
+
+<p>Sets the rotation of the sprite in degrees.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setScale">Shape:setScale(scaleX, scaleY)</a></td>
+		<td class="summary">
+
+<p>Sets the horizontal and vertical scales of the sprite.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setScaleX">Shape:setScaleX(scaleX)</a></td>
+		<td class="summary">
+
+<p>Sets the horizontal scale of the sprite.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setScaleY">Shape:setScaleY(scaleY)</a></td>
+		<td class="summary">
+
+<p>Sets the vertical scale of the sprite.</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setVisible">Shape:setVisible(visible)</a></td>
+		<td class="summary">
+
+<p>Sets whether or not the sprite is visible.</p>
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setX">Shape:setX(x)</a></td>
+		<td class="summary">
+
+<p>Sets the x coordinate of the sprite</p>
+
+</td>
+		</tr>
+		<tr>
+		<td class="name" nowrap="nowrap"><a href="##(Shape).setY">Shape:setY(y)</a></td>
+		<td class="summary">
+
+<p>Sets the y coordinate of the sprite.</p>
+
+</td>
 		</tr>
 	</table>
 
@@ -345,18 +528,30 @@
 </a>
 </dt>
 <dd>
-	 Adds a sprite as a child to this sprite.
-	<br/>The child is
- added as a last child of this <code>Sprite</code> instance.</p>
+	
 
-<p> Sprites can have only one parent. Therefore if you add a child
- object that already has a different sprite as a parent,
- the sprite is removed from the child list of the other sprite
- and then added to this sprite.
+<p>Adds a sprite as a child to this sprite.</p>
+
+	
+<p>The child is
+added as a last child of this <code>Sprite</code> instance.</p>
+
+<p>Sprites can have only one parent. Therefore if you add a child
+object that already has a different sprite as a parent,
+the sprite is removed from the child list of the other sprite
+and then added to this sprite.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				child  </em></code>: (Sprite) The child sprite to add.
+				<li>
+				
+<p><code><em> child </em></code>: 
+(Sprite) The child sprite to add.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -368,21 +563,36 @@
 </a>
 </dt>
 <dd>
-	 Adds a sprite as a child to this sprite.
-	<br/>The child is
- added at the index position specified. Indices start from 1.</p>
+	
 
-<p> Sprites can have only one parent. Therefore if you add a child
- object that already has a different sprite as a parent,
- the sprite is removed from the child list of the other sprite
- and then added to this sprite.
+<p>Adds a sprite as a child to this sprite.</p>
+
+	
+<p>The child is
+added at the index position specified. Indices start from 1.</p>
+
+<p>Sprites can have only one parent. Therefore if you add a child
+object that already has a different sprite as a parent,
+the sprite is removed from the child list of the other sprite
+and then added to this sprite.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				child  </em></code>: (Sprite) The child sprite to add.
+				<li>
+				
+<p><code><em> child </em></code>: 
+(Sprite) The child sprite to add.</p>
+
 				</li>
-				<li><code><em>
-				index  </em></code>: (number) The index position to which the child is added.
+				<li>
+				
+<p><code><em> index </em></code>: 
+(number) The index position to which the child is added.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -394,11 +604,21 @@
 </a>
 </dt>
 <dd>
-	 Resets the current path.
+	
+
+<p>Resets the current path.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				winding  </em></code>: (string, default = Shape.EVEN<em>ODD) Specifies the winding rule. It can be either Shape.EVEN</em>ODD or Shape.NON_ZERO.
+				<li>
+				
+<p><code><em> winding </em></code>: 
+(string, default = Shape.EVEN<em>ODD) Specifies the winding rule. It can be either Shape.EVEN</em>ODD or Shape.NON_ZERO.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -410,7 +630,11 @@
 </a>
 </dt>
 <dd>
-	 Clears the graphics that were drawn to this <code>Shape</code> object, and resets fill and line style settings.
+	
+
+<p>Clears the graphics that were drawn to this <code>Shape</code> object, and resets fill and line style settings.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -420,7 +644,11 @@
 </a>
 </dt>
 <dd>
-	 Clears the blending mode.
+	
+
+<p>Clears the blending mode.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -430,7 +658,11 @@
 </a>
 </dt>
 <dd>
-	 Marks the current subpath as closed, and starts a new subpath with a point the same as the start and end of the newly closed subpath.
+	
+
+<p>Marks the current subpath as closed, and starts a new subpath with a point the same as the start and end of the newly closed subpath.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -440,18 +672,27 @@
 </a>
 </dt>
 <dd>
-	 Determines whether the specified sprite is contained in the subtree of
- this <code>Sprite</code> instance.
+	
+
+<p>Determines whether the specified sprite is contained in the subtree of
+this <code>Sprite</code> instance.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				child  </em></code>: (Sprite) The child object to test.
+				<li>
+				
+<p><code><em> child </em></code>: 
+(Sprite) The child object to test.</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if the child object is contained in the subtree of this <code>Sprite</code> instance, otherwise <code>false</code>.
-				</p>
+				
+
+<p><code>true</code> if the child object is contained in the subtree of this <code>Sprite</code> instance, otherwise <code>false</code>.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -461,7 +702,10 @@
 </a>
 </dt>
 <dd>
-	 Ends the current path and draws the geometry by using the specified line and fill styles.
+	
+
+<p>Ends the current path and draws the geometry by using the specified line and fill styles.</p>
+
 </dd>
 </dl>
 		<dl class="function">
@@ -471,8 +715,11 @@
 </a>
 </dt>
 <dd>
-	 Returns the specified property of this sprite instance by its name.
-	<br/>
+	
+
+<p>Returns the specified property of this sprite instance by its name.</p>
+
+	
 <p>These names are supported:</p>
 
 <ul>
@@ -488,10 +735,13 @@
     <li><code>"alphaMultiplier"</code></li>
 </ul>
 
+
 		<h3>Return value</h3>
-				<p>
-				The value of the parameter
-				</p>
+				
+
+<p>The value of the parameter</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -501,12 +751,20 @@
 </a>
 </dt>
 <dd>
-	 Returns the alpha transparency of this sprite.
-	<br/>0 means fully transparent and 1 means fully opaque.
+	
+
+<p>Returns the alpha transparency of this sprite.</p>
+
+	
+<p>0 means fully transparent and 1 means fully opaque.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The alpha of the sprite
-				</p>
+				
+
+<p>The alpha of the sprite</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -516,18 +774,29 @@
 </a>
 </dt>
 <dd>
-	 Returns the child <code>Sprite</code> instance that exists at the specified index.
-	<br/>First child is at index 1.
+	
+
+<p>Returns the child <code>Sprite</code> instance that exists at the specified index.</p>
+
+	
+<p>First child is at index 1.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				index  </em></code>: (number) The index position of the child object.
+				<li>
+				
+<p><code><em> index </em></code>: 
+(number) The index position of the child object.</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				The child sprite at the specified index position.
-				</p>
+				
+
+<p>The child sprite at the specified index position.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -537,17 +806,26 @@
 </a>
 </dt>
 <dd>
-	 Returns the index of the specified child sprite.
+	
+
+<p>Returns the index of the specified child sprite.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				child  </em></code>: (Sprite) The child sprite to identify.
+				<li>
+				
+<p><code><em> child </em></code>: 
+(Sprite) The child sprite to identify.</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				The index of the specified child sprite.
-				</p>
+				
+
+<p>The index of the specified child sprite.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -557,11 +835,16 @@
 </a>
 </dt>
 <dd>
-	 Returns the red, green, blue and alpha channel multipliers.
+	
+<p>Returns the red, green, blue and alpha channel multipliers.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				4 values: redMultiplier, greenMultiplier, blueMultiplier and alphaMultiplier
-				</p>
+				
+
+<p>4 values: redMultiplier, greenMultiplier, blueMultiplier and alphaMultiplier</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -571,13 +854,21 @@
 </a>
 </dt>
 <dd>
-	 Returns the height of the sprite, in pixels.
-	<br/>The height is calculated based on the
- bounds of the content of the sprite.
+	
+
+<p>Returns the height of the sprite, in pixels.</p>
+
+	
+<p>The height is calculated based on the
+bounds of the content of the sprite.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				Height of the sprite.
-				</p>
+				
+
+<p>Height of the sprite.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -587,12 +878,20 @@
 </a>
 </dt>
 <dd>
-	 Returns the transformation matrix of the sprite.
-	<br/>Each invocation of this function returns a new <code>Matrix</code> object.
+	
+
+<p>Returns the transformation matrix of the sprite.</p>
+
+	
+<p>Each invocation of this function returns a new <code>Matrix</code> object.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The transformation matrix of the sprite
-				</p>
+				
+
+<p>The transformation matrix of the sprite</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -602,11 +901,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the number of children of this sprite.
+	
+
+<p>Returns the number of children of this sprite.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The number of children of this sprite.
-				</p>
+				
+
+<p>The number of children of this sprite.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -616,11 +921,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the <code>Sprite</code> object that contains this <code>Sprite</code> object.
+	
+
+<p>Returns the <code>Sprite</code> object that contains this <code>Sprite</code> object.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The parent sprite.
-				</p>
+				
+
+<p>The parent sprite.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -630,11 +941,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the x and y coordinates of the sprite.
+	
+
+<p>Returns the x and y coordinates of the sprite.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The x and y coordinates of the sprite
-				</p>
+				
+
+<p>The x and y coordinates of the sprite</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -644,11 +961,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the rotation of the sprite in degrees.
+	
+
+<p>Returns the rotation of the sprite in degrees.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				Rotation of the sprite.
-				</p>
+				
+
+<p>Rotation of the sprite.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -658,11 +981,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the horizontal and vertical scales of the sprite.
+	
+
+<p>Returns the horizontal and vertical scales of the sprite.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The horizontal and vertical scales of the sprite
-				</p>
+				
+
+<p>The horizontal and vertical scales of the sprite</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -672,11 +1001,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the horizontal scale of the sprite.
+	
+
+<p>Returns the horizontal scale of the sprite.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The horizontal scale (percentage) of the sprite.
-				</p>
+				
+
+<p>The horizontal scale (percentage) of the sprite.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -686,11 +1021,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the vertical scale of the sprite.
+	
+
+<p>Returns the vertical scale of the sprite.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The vertical scale of the object.
-				</p>
+				
+
+<p>The vertical scale of the object.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -700,13 +1041,21 @@
 </a>
 </dt>
 <dd>
-	 Returns the width of the sprite, in pixels.
-	<br/>The width is calculated based on the
- bounds of the content of the sprite.
+	
+
+<p>Returns the width of the sprite, in pixels.</p>
+
+	
+<p>The width is calculated based on the
+bounds of the content of the sprite.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				Width of the sprite.
-				</p>
+				
+
+<p>Width of the sprite.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -716,11 +1065,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the x coordinate of the sprite.
+	
+
+<p>Returns the x coordinate of the sprite.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The x coordinate of the sprite
-				</p>
+				
+
+<p>The x coordinate of the sprite</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -730,11 +1085,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the y coordinate of the sprite.
+	
+
+<p>Returns the y coordinate of the sprite.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The y coordinate of the sprite
-				</p>
+				
+
+<p>The y coordinate of the sprite</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -744,23 +1105,43 @@
 </a>
 </dt>
 <dd>
-	 Converts the x,y coordinates from the global to the sprite's (local) coordinates.
+	
+
+<p>Converts the x,y coordinates from the global to the sprite's (local) coordinates.</p>
+
+	
+
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				x  </em></code>: (number) x coordinate of the global coordinate.
+				<li>
+				
+<p><code><em> x </em></code>: 
+(number) x coordinate of the global coordinate.</p>
+
 				</li>
-				<li><code><em>
-				y  </em></code>: (number) y coordinate of the global coordinate.
+				<li>
+				
+<p><code><em> y </em></code>: 
+(number) y coordinate of the global coordinate.</p>
+
 				</li>
 		</ul>
 		<h3>Return values</h3>
 			<ol>
 				<li>
-				x coordinate relative to the display object.
+				
+
+<p>x coordinate relative to the display object.</p>
+
 				</li>
 				<li>
-				y coordinate relative to the display object.
+				
+
+<p>y coordinate relative to the display object.</p>
+
+
 				</li>
 			</ol>
 </dd>
@@ -772,20 +1153,35 @@
 </a>
 </dt>
 <dd>
-	 Checks whether the given coordinates (in global coordinate system) is in bounds of the sprite.
+	
+
+<p>Checks whether the given coordinates (in global coordinate system) is in bounds of the sprite.</p>
+
+	
+
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				x  </em></code>: (number)
+				<li>
+				
+<p><code><em> x </em></code>: 
+(number)</p>
+
 				</li>
-				<li><code><em>
-				y  </em></code>: (number)
+				<li>
+				
+<p><code><em> y </em></code>: 
+(number)</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if the given global coordinates are in bounds of the sprite, <code>false</code> otherwise.
-				</p>
+				
+
+<p><code>true</code> if the given global coordinates are in bounds of the sprite, <code>false</code> otherwise.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -795,13 +1191,21 @@
 </a>
 </dt>
 <dd>
-	 Returns whether or not the sprite is visible.
-	<br/>Child sprites that are not visible are also taken
- into consideration while calculating bounds.
+	
+
+<p>Returns whether or not the sprite is visible.</p>
+
+	
+<p>Child sprites that are not visible are also taken
+into consideration while calculating bounds.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				A value of <code>true</code> if sprite is visible; <code>false</code> otherwise.
-				</p>
+				
+
+<p>A value of <code>true</code> if sprite is visible; <code>false</code> otherwise.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -811,14 +1215,27 @@
 </a>
 </dt>
 <dd>
-	 Adds the given point to the current subpath, connected to the previous one by a straight line.
+	
+
+<p>Adds the given point to the current subpath, connected to the previous one by a straight line.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				x  </em></code>: (number) x coordinate of the point.
+				<li>
+				
+<p><code><em> x </em></code>: 
+(number) x coordinate of the point.</p>
+
 				</li>
-				<li><code><em>
-				y  </em></code>: (number) y coordinate of the point.
+				<li>
+				
+<p><code><em> y </em></code>: 
+(number) y coordinate of the point.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -830,23 +1247,40 @@
 </a>
 </dt>
 <dd>
-	 Converts the x,y coordinates from the sprites's (local) coordinates to the global coordinates.
+	
+
+<p>Converts the x,y coordinates from the sprites's (local) coordinates to the global coordinates.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				x  </em></code>: (number) x coordinate of the local coordinate.
+				<li>
+				
+<p><code><em> x </em></code>: 
+(number) x coordinate of the local coordinate.</p>
+
 				</li>
-				<li><code><em>
-				y  </em></code>: (number) y coordinate of the local coordinate.
+				<li>
+				
+<p><code><em> y </em></code>: 
+(number) y coordinate of the local coordinate.</p>
+
 				</li>
 		</ul>
 		<h3>Return values</h3>
 			<ol>
 				<li>
-				x coordinate relative to the display area.
+				
+
+<p>x coordinate relative to the display area.</p>
+
 				</li>
 				<li>
-				y coordinate relative to the display area.
+				
+
+<p>y coordinate relative to the display area.</p>
+
+
 				</li>
 			</ol>
 </dd>
@@ -858,14 +1292,27 @@
 </a>
 </dt>
 <dd>
-	 Creates a new subpath with the given point.
+	
+
+<p>Creates a new subpath with the given point.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				x  </em></code>: (number) x coordinate of the point.
+				<li>
+				
+<p><code><em> x </em></code>: 
+(number) x coordinate of the point.</p>
+
 				</li>
-				<li><code><em>
-				y  </em></code>: (number) y coordinate of the point.
+				<li>
+				
+<p><code><em> y </em></code>: 
+(number) y coordinate of the point.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -877,14 +1324,17 @@
 </a>
 </dt>
 <dd>
-	 Creates a new <code>Shape</code> object.
+	
+
+<p>Creates a new <code>Shape</code> object.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				<em><a href="##(Shape)">#Shape</a>:</em>
 				
+<p><em><a href="##(Shape)">#Shape</a>:</em></p>
 
 
-				</p>
+
 </dd>
 </dl>
 		<dl class="function">
@@ -894,11 +1344,21 @@
 </a>
 </dt>
 <dd>
-	 Removes the specified child <code>Sprite</code> instance from the child list of this <code>Sprite</code> instance.
+	
+
+<p>Removes the specified child <code>Sprite</code> instance from the child list of this <code>Sprite</code> instance.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				child  </em></code>: (Sprite) The child sprite to remove.
+				<li>
+				
+<p><code><em> child </em></code>: 
+(Sprite) The child sprite to remove.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -910,13 +1370,25 @@
 </a>
 </dt>
 <dd>
-	 Removes the child <code>Sprite</code> instance at the specifed index.
-	<br/>Index of the first child is 1
- and index of the last child can be get from <code>Sprite:getNumChildren</code> function.
+	
+
+<p>Removes the child <code>Sprite</code> instance at the specifed index.</p>
+
+	
+<p>Index of the first child is 1
+and index of the last child can be get from <code>Sprite:getNumChildren</code> function.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				index  </em></code>: (number) The child index of the sprite to remove.
+				<li>
+				
+<p><code><em> index </em></code>: 
+(number) The child index of the sprite to remove.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -928,8 +1400,11 @@
 </a>
 </dt>
 <dd>
-	 If the sprite has a parent, removes the sprite from the child list of its parent sprite.
-	<br/>
+	
+
+<p>If the sprite has a parent, removes the sprite from the child list of its parent sprite.</p>
+
+	
 <p>This function is equilavent to:</p>
 
 <pre><code>function Sprite:removeFromParent()
@@ -940,6 +1415,7 @@
 end
 </code></pre>
 
+
 </dd>
 </dl>
 		<dl class="function">
@@ -949,8 +1425,11 @@ end
 </a>
 </dt>
 <dd>
-	 Sets the specified property of this sprite instance by its name.
-	<br/>
+	
+
+<p>Sets the specified property of this sprite instance by its name.</p>
+
+	
 <p>These names are supported:</p>
 
 <ul>
@@ -967,10 +1446,17 @@ end
     <li><code>"alphaMultiplier"</code></li>
 </ul>
 
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				value  </em></code>: (number) The new value of the specified parameter
+				<li>
+				
+<p><code><em> value </em></code>: 
+(number) The new value of the specified parameter</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -982,12 +1468,24 @@ end
 </a>
 </dt>
 <dd>
-	 Sets the alpha transparency of this sprite.
-	<br/>0 means fully transparent and 1 means fully opaque.
+	
+
+<p>Sets the alpha transparency of this sprite.</p>
+
+	
+<p>0 means fully transparent and 1 means fully opaque.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				alpha  </em></code>: (number) The new alpha transparency of the sprite
+				<li>
+				
+<p><code><em> alpha </em></code>: 
+(number) The new alpha transparency of the sprite</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -999,8 +1497,12 @@ end
 </a>
 </dt>
 <dd>
-	 Sets the blend mode of the sprite.
-	<br/>Currently supported blending modes are:</p>
+	
+
+<p>Sets the blend mode of the sprite.</p>
+
+	
+<p>Currently supported blending modes are:</p>
 
 <ul>
     <li>Sprite.ALPHA = "alpha" </li>
@@ -1010,17 +1512,25 @@ end
     <li>Sprite.SCREEN = "screen"</li>
 </ul>
 
-<p> If a <code>Sprite</code> object doesn't set any blending mode, it takes the blending mode from its parent sprite.</p>
+<p>If a <code>Sprite</code> object doesn't set any blending mode, it takes the blending mode from its parent sprite.</p>
 
-<p> <strong>Note:</strong> The following two lines are completely same:</p>
+<p><strong>Note:</strong> The following two lines are completely same:</p>
 <pre><code>sprite:setBlendMode("add")
 sprite:setBlendMode(Sprite.ADD)
 </code></pre>
-<p> It's a matter of taste which one to choose.
+<p>It's a matter of taste which one to choose.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				blendMode  </em></code>: (String)
+				<li>
+				
+<p><code><em> blendMode </em></code>: 
+(String)</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -1032,22 +1542,43 @@ sprite:setBlendMode(Sprite.ADD)
 </a>
 </dt>
 <dd>
-	 Sets the red, green, blue and alpha channel multipliers.
-	<br/>This function lets you adjust the color multipliers of a display object.
- This adjustment also applies to the children of this sprite instance.
+	
+
+<p>Sets the red, green, blue and alpha channel multipliers.</p>
+
+	
+<p>This function lets you adjust the color multipliers of a display object.
+This adjustment also applies to the children of this sprite instance.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				redMultiplier  </em></code>: (number, default = 1) The red multiplier of this sprite
+				<li>
+				
+<p><code><em> redMultiplier </em></code>: 
+(number, default = 1) The red multiplier of this sprite</p>
+
 				</li>
-				<li><code><em>
-				greenMultiplier  </em></code>: (number, default = 1) The green multiplier of this sprite
+				<li>
+				
+<p><code><em> greenMultiplier </em></code>: 
+(number, default = 1) The green multiplier of this sprite</p>
+
 				</li>
-				<li><code><em>
-				blueMultiplier  </em></code>: (number, default = 1) The blue multiplier of this sprite
+				<li>
+				
+<p><code><em> blueMultiplier </em></code>: 
+(number, default = 1) The blue multiplier of this sprite</p>
+
 				</li>
-				<li><code><em>
-				alphaMultiplier  </em></code>: (number, default = 1) The alpha multiplier of this sprite
+				<li>
+				
+<p><code><em> alphaMultiplier </em></code>: 
+(number, default = 1) The alpha multiplier of this sprite</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -1059,11 +1590,15 @@ sprite:setBlendMode(Sprite.ADD)
 </a>
 </dt>
 <dd>
-	 Sets the fill style that <code>Shape</code> object uses for subsequent drawings.
-	<br/>The fill style remains in effect until you call <code>setFillStyle()</code> function with different
- parameters.</p>
+	
 
-<p> <code>type</code> parameter can be one of the following values:</p>
+<p>Sets the fill style that <code>Shape</code> object uses for subsequent drawings.</p>
+
+	
+<p>The fill style remains in effect until you call <code>setFillStyle()</code> function with different
+parameters.</p>
+
+<p><code>type</code> parameter can be one of the following values:</p>
 
 <ul>
     <li><strong>Shape.NONE:</strong> Clears the fill style.</li>
@@ -1071,11 +1606,19 @@ sprite:setBlendMode(Sprite.ADD)
     <li><strong>Shape.TEXTURE:</strong> Sets the fill style as a textured. In this mode, the parameters are texture and an optional transformation matrix.</li>
 </ul>
 
-<p> See the following example for more detailed usage of this function.
+<p>See the following example for more detailed usage of this function.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				...  </em></code>: Parameters of the fill style.
+				<li>
+				
+<p><code><em> ... </em></code>: 
+Parameters of the fill style.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -1087,19 +1630,37 @@ sprite:setBlendMode(Sprite.ADD)
 </a>
 </dt>
 <dd>
-	 Sets the line style that <code>Shape</code> object uses for subsequent drawings.
-	<br/>The line style remains in effect until you call <code>setLineStyle()</code> function with different
- parameters.
+	
+
+<p>Sets the line style that <code>Shape</code> object uses for subsequent drawings.</p>
+
+	
+<p>The line style remains in effect until you call <code>setLineStyle()</code> function with different
+parameters.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				width  </em></code>: (number) The width of the line. If this parameter is 0, line is not drawn.
+				<li>
+				
+<p><code><em> width </em></code>: 
+(number) The width of the line. If this parameter is 0, line is not drawn.</p>
+
 				</li>
-				<li><code><em>
-				color  </em></code>: (number, default = 0x000000) A hexadecimal color value of the line. For example, red is 0xFF0000, blue is 0x0000FF, and so on.
+				<li>
+				
+<p><code><em> color </em></code>: 
+(number, default = 0x000000) A hexadecimal color value of the line. For example, red is 0xFF0000, blue is 0x0000FF, and so on.</p>
+
 				</li>
-				<li><code><em>
-				alpha  </em></code>: (number, default = 1) The alpha value of the color of the line.
+				<li>
+				
+<p><code><em> alpha </em></code>: 
+(number, default = 1) The alpha value of the color of the line.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -1111,11 +1672,21 @@ sprite:setBlendMode(Sprite.ADD)
 </a>
 </dt>
 <dd>
-	 Sets the transformation matrix of the sprite.
+	
+
+<p>Sets the transformation matrix of the sprite.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				matrix  </em></code>: (Matrix)
+				<li>
+				
+<p><code><em> matrix </em></code>: 
+(Matrix)</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -1127,14 +1698,27 @@ sprite:setBlendMode(Sprite.ADD)
 </a>
 </dt>
 <dd>
-	 Sets the x and y coordinates of the sprite.
+	
+
+<p>Sets the x and y coordinates of the sprite.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				x  </em></code>: (number) The new x coordinate of the sprite
+				<li>
+				
+<p><code><em> x </em></code>: 
+(number) The new x coordinate of the sprite</p>
+
 				</li>
-				<li><code><em>
-				y  </em></code>: (number) The new y coordinate of the sprite
+				<li>
+				
+<p><code><em> y </em></code>: 
+(number) The new y coordinate of the sprite</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -1146,11 +1730,21 @@ sprite:setBlendMode(Sprite.ADD)
 </a>
 </dt>
 <dd>
-	 Sets the rotation of the sprite in degrees.
+	
+
+<p>Sets the rotation of the sprite in degrees.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				rotation  </em></code>: (number) rotation of the sprite
+				<li>
+				
+<p><code><em> rotation </em></code>: 
+(number) rotation of the sprite</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -1162,14 +1756,27 @@ sprite:setBlendMode(Sprite.ADD)
 </a>
 </dt>
 <dd>
-	 Sets the horizontal and vertical scales of the sprite.
+	
+
+<p>Sets the horizontal and vertical scales of the sprite.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				scaleX  </em></code>: (number) horizontal scale (percentage) of the object
+				<li>
+				
+<p><code><em> scaleX </em></code>: 
+(number) horizontal scale (percentage) of the object</p>
+
 				</li>
-				<li><code><em>
-				scaleY  </em></code>: (number, default = scaleX) vertical scale (percentage) of the object
+				<li>
+				
+<p><code><em> scaleY </em></code>: 
+(number, default = scaleX) vertical scale (percentage) of the object</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -1181,11 +1788,21 @@ sprite:setBlendMode(Sprite.ADD)
 </a>
 </dt>
 <dd>
-	 Sets the horizontal scale of the sprite.
+	
+
+<p>Sets the horizontal scale of the sprite.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				scaleX  </em></code>: (number) horizontal scale of the sprite
+				<li>
+				
+<p><code><em> scaleX </em></code>: 
+(number) horizontal scale of the sprite</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -1197,11 +1814,21 @@ sprite:setBlendMode(Sprite.ADD)
 </a>
 </dt>
 <dd>
-	 Sets the vertical scale of the sprite.
+	
+
+<p>Sets the vertical scale of the sprite.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				scaleY  </em></code>: (number) vertical scale (percentage) of the object
+				<li>
+				
+<p><code><em> scaleY </em></code>: 
+(number) vertical scale (percentage) of the object</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -1213,13 +1840,25 @@ sprite:setBlendMode(Sprite.ADD)
 </a>
 </dt>
 <dd>
-	 Sets whether or not the sprite is visible.
-	<br/>Sprites that are not visible are also taken
- into consideration while calculating bounds.
+	
+
+<p>Sets whether or not the sprite is visible.</p>
+
+	
+<p>Sprites that are not visible are also taken
+into consideration while calculating bounds.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				visible  </em></code>: (bool) whether or not the sprite is visible
+				<li>
+				
+<p><code><em> visible </em></code>: 
+(bool) whether or not the sprite is visible</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -1231,13 +1870,21 @@ sprite:setBlendMode(Sprite.ADD)
 </a>
 </dt>
 <dd>
-	 Sets the x coordinate of the sprite</p>
+	
 
-<p> 
+<p>Sets the x coordinate of the sprite</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				x  </em></code>: (number) The new x coordinate of the sprite
+				<li>
+				
+<p><code><em> x </em></code>: 
+(number) The new x coordinate of the sprite</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -1249,11 +1896,21 @@ sprite:setBlendMode(Sprite.ADD)
 </a>
 </dt>
 <dd>
-	 Sets the y coordinate of the sprite.
+	
+
+<p>Sets the y coordinate of the sprite.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				y  </em></code>: (number) The new y coordinate of the sprite
+				<li>
+				
+<p><code><em> y </em></code>: 
+(number) The new y coordinate of the sprite</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>

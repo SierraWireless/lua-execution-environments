@@ -74,26 +74,29 @@
 	</div>
 	<div id="content">
    <h1>Module <code>EventDispatcher</code></h1>
-    All classes that dispatch events inherit from <code>EventDispatcher</code>.
-   <br/>
+   
+
+<p>All classes that dispatch events inherit from <code>EventDispatcher</code>.</p>
+
+   
 <p>The target of
- an event is a listener function and an optional data value.
- When an event is dispatched, the registered function is called.
- If the optional data value is given, it is used as a first parameter
- while calling the listener function.</p>
+an event is a listener function and an optional data value.
+When an event is dispatched, the registered function is called.
+If the optional data value is given, it is used as a first parameter
+while calling the listener function.</p>
 
-<p> Event dispatching and event targets are the core part of the
- Gideros event model. Different event types (such as <code>Event.ENTER_FRAME</code>,
- <code>Event.TOUCHES_BEGIN</code> or <code>Event.MOUSE_DOwN</code>)
- flow through the scene tree hierarchy differently. When a touch or mouse event occurs,
- Gideros dispatches an event object into the event flow from the root of the scene tree.
- On the other hand, <code>Event.ENTER_FRAME</code> event is dispatched to all <code>Sprite</code> objects.</p>
+<p>Event dispatching and event targets are the core part of the
+Gideros event model. Different event types (such as <code>Event.ENTER_FRAME</code>,
+<code>Event.TOUCHES_BEGIN</code> or <code>Event.MOUSE_DOwN</code>)
+flow through the scene tree hierarchy differently. When a touch or mouse event occurs,
+Gideros dispatches an event object into the event flow from the root of the scene tree.
+On the other hand, <code>Event.ENTER_FRAME</code> event is dispatched to all <code>Sprite</code> objects.</p>
 
-<p> If you want to define a class that dispatches events, you can inherit your class
- from <code>EventDispatcher</code>.</p>
+<p>If you want to define a class that dispatches events, you can inherit your class
+from <code>EventDispatcher</code>.</p>
 
 
-<h2> Examples</h2>
+<h2>Examples</h2>
 
 <pre><code>-- example 1
 ClassA = Core.class(EventDispatcher)
@@ -124,24 +127,42 @@ ball = Ball.new()
 ball:addEventListener(Event.ENTER_FRAME, ball.onEnterFrame, ball)
 </code></pre>
 
+
+
+
 			<h2><a id="#(EventDispatcher)">Type <code>EventDispatcher</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="EventDispatcher.html##(EventDispatcher).addEventListener">EventDispatcher:addEventListener(listener, data)</a></td>
-		<td class="summary"> Registers a listener function and an optional data value so that the listener function is called when an event
- of a particular type occurs.</td>
+		<td class="name" nowrap="nowrap"><a href="##(EventDispatcher).addEventListener">EventDispatcher:addEventListener(listener, data)</a></td>
+		<td class="summary">
+
+<p>Registers a listener function and an optional data value so that the listener function is called when an event
+of a particular type occurs.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="EventDispatcher.html##(EventDispatcher).dispatchEvent">EventDispatcher:dispatchEvent(event)</a></td>
-		<td class="summary"> Dispatches an event to this <code>EventDispatcher</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(EventDispatcher).dispatchEvent">EventDispatcher:dispatchEvent(event)</a></td>
+		<td class="summary">
+
+<p>Dispatches an event to this <code>EventDispatcher</code> instance.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="EventDispatcher.html##(EventDispatcher).hasEventListener">EventDispatcher:hasEventListener()</a></td>
-		<td class="summary"> Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.</td>
+		<td class="name" nowrap="nowrap"><a href="##(EventDispatcher).hasEventListener">EventDispatcher:hasEventListener()</a></td>
+		<td class="summary">
+
+<p>Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="EventDispatcher.html##(EventDispatcher).removeEventListener">EventDispatcher:removeEventListener(listener, data)</a></td>
-		<td class="summary"> Removes a listener from the <code>EventDispatcher</code> object.</td>
+		<td class="name" nowrap="nowrap"><a href="##(EventDispatcher).removeEventListener">EventDispatcher:removeEventListener(listener, data)</a></td>
+		<td class="summary">
+
+<p>Removes a listener from the <code>EventDispatcher</code> object.</p>
+</td>
 		</tr>
 	</table>
 
@@ -154,15 +175,28 @@ ball:addEventListener(Event.ENTER_FRAME, ball.onEnterFrame, ball)
 </a>
 </dt>
 <dd>
-	 Registers a listener function and an optional data value so that the listener function is called when an event
- of a particular type occurs.
+	
+
+<p>Registers a listener function and an optional data value so that the listener function is called when an event
+of a particular type occurs.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				listener  </em></code>: (function) The listener function that processes the event.
+				<li>
+				
+<p><code><em> listener </em></code>: 
+(function) The listener function that processes the event.</p>
+
 				</li>
-				<li><code><em>
-				data  </em></code>: (optional) An optional data parameter that is passed as a first argument to the listener function.
+				<li>
+				
+<p><code><em> data </em></code>: 
+(optional) An optional data parameter that is passed as a first argument to the listener function.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -174,11 +208,21 @@ ball:addEventListener(Event.ENTER_FRAME, ball.onEnterFrame, ball)
 </a>
 </dt>
 <dd>
-	 Dispatches an event to this <code>EventDispatcher</code> instance.
+	
+
+<p>Dispatches an event to this <code>EventDispatcher</code> instance.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				event  </em></code>: (Event) The <code>Event</code> object to be dispatched.
+				<li>
+				
+<p><code><em> event </em></code>: 
+(Event) The <code>Event</code> object to be dispatched.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -190,11 +234,17 @@ ball:addEventListener(Event.ENTER_FRAME, ball.onEnterFrame, ball)
 </a>
 </dt>
 <dd>
-	 Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.
+	
+
+<p>Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				A value of <code>true</code> if a listener of the specified type is registered; <code>false</code> otherwise.
-				</p>
+				
+
+<p>A value of <code>true</code> if a listener of the specified type is registered; <code>false</code> otherwise.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -204,17 +254,32 @@ ball:addEventListener(Event.ENTER_FRAME, ball.onEnterFrame, ball)
 </a>
 </dt>
 <dd>
-	 Removes a listener from the <code>EventDispatcher</code> object.
-	<br/><code>removeEventListener()</code> function expects
- the same arguments with <code>addEventListener()</code> to remove the event. If there is no matching listener
- registered, a call to this function has no effect.
+	
+
+<p>Removes a listener from the <code>EventDispatcher</code> object.</p>
+
+	
+<p><code>removeEventListener()</code> function expects
+the same arguments with <code>addEventListener()</code> to remove the event. If there is no matching listener
+registered, a call to this function has no effect.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				listener  </em></code>: (function) The listener object to remove.
+				<li>
+				
+<p><code><em> listener </em></code>: 
+(function) The listener object to remove.</p>
+
 				</li>
-				<li><code><em>
-				data  </em></code>: The data parameter that is used while registering the event.
+				<li>
+				
+<p><code><em> data </em></code>: 
+The data parameter that is used while registering the event.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>

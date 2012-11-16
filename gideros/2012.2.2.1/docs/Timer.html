@@ -74,79 +74,147 @@
 	</div>
 	<div id="content">
    <h1>Module <code>Timer</code></h1>
-    The <code>Timer</code> class is used to execute a code at specified intervals.
-   <br/>The listener functions are registered
- through <code>Event.TIMER</code> and <code>Event.TIMER_COMPLETE</code> events.</p>
+   
+
+<p>The <code>Timer</code> class is used to execute a code at specified intervals.</p>
+
+   
+<p>The listener functions are registered
+through <code>Event.TIMER</code> and <code>Event.TIMER_COMPLETE</code> events.</p>
 
 
-<p> ### Timer Events
- * Event.TIMER = "timer"
- * Event.TIMER_COMPLETE = "timerComplete"
+<h3>Timer Events</h3>
+<p>* Event.TIMER = "timer"
+* Event.TIMER_COMPLETE = "timerComplete"</p>
+
+
+
 			<h2><a id="#(Timer)">Type <code>Timer</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).delayedCall">Timer.delayedCall(delay, func, data)</a></td>
-		<td class="summary"> Provides a simple way to call a function after a set amount of time.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).delayedCall">Timer.delayedCall(delay, func, data)</a></td>
+		<td class="summary">
+
+<p>Provides a simple way to call a function after a set amount of time.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).getCurrentCount">Timer:getCurrentCount()</a></td>
-		<td class="summary"> Returns the current trigger count of the timer.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).getCurrentCount">Timer:getCurrentCount()</a></td>
+		<td class="summary">
+
+<p>Returns the current trigger count of the timer.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).getDelay">Timer:getDelay()</a></td>
-		<td class="summary"> Returns the time interval between timer events in milliseconds.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).getDelay">Timer:getDelay()</a></td>
+		<td class="summary">
+
+<p>Returns the time interval between timer events in milliseconds.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).getRepeatCount">Timer:getRepeatCount()</a></td>
-		<td class="summary"> Returns the number of repetitions the timer will make.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).getRepeatCount">Timer:getRepeatCount()</a></td>
+		<td class="summary">
+
+<p>Returns the number of repetitions the timer will make.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).isRunning">Timer:isRunning()</a></td>
-		<td class="summary"> Returns the current running status of timer.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).isRunning">Timer:isRunning()</a></td>
+		<td class="summary">
+
+<p>Returns the current running status of timer.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).new">Timer.new(delay, repeatCount)</a></td>
-		<td class="summary"> Creates a new <code>Timer</code> object with the specified delay and repeatCount states.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).new">Timer.new(delay, repeatCount)</a></td>
+		<td class="summary">
+
+<p>Creates a new <code>Timer</code> object with the specified delay and repeatCount states.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).pauseAll">Timer.pauseAll()</a></td>
-		<td class="summary"> Pause all timers.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).pauseAll">Timer.pauseAll()</a></td>
+		<td class="summary">
+
+<p>Pause all timers.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).pauseAllTimers">Timer.pauseAllTimers()</a></td>
-		<td class="summary"> **This function is obsolete.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).pauseAllTimers">Timer.pauseAllTimers()</a></td>
+		<td class="summary">
+
+<p><strong>This function is obsolete, use <a href="#Timer.pauseAll">Timer.pauseAll</a> instead.</strong></p>
+
+<p>Pause all timers.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).reset">Timer:reset()</a></td>
-		<td class="summary"> Stops the timer and sets the <code>currentCount</code> property to 0.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).reset">Timer:reset()</a></td>
+		<td class="summary">
+
+<p>Stops the timer and sets the <code>currentCount</code> property to 0.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).resumeAll">Timer.resumeAll()</a></td>
-		<td class="summary"> Resume all timers.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).resumeAll">Timer.resumeAll()</a></td>
+		<td class="summary">
+
+<p>Resume all timers.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).resumeAllTimers">Timer.resumeAllTimers()</a></td>
-		<td class="summary"> **This function is obsolete.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).resumeAllTimers">Timer.resumeAllTimers()</a></td>
+		<td class="summary">
+
+<p><strong>This function is obsolete, use <a href="#Timer.resumeAll">Timer.resumeAll</a> instead.</strong></p>
+
+<p>Resume all timers.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).setDelay">Timer:setDelay(delay)</a></td>
-		<td class="summary"> Sets the time interval between timer events in milliseconds.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).setDelay">Timer:setDelay(delay)</a></td>
+		<td class="summary">
+
+<p>Sets the time interval between timer events in milliseconds.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).setRepeatCount">Timer:setRepeatCount(repeatCount)</a></td>
-		<td class="summary"> Sets the number of repetitions the timer will make.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).setRepeatCount">Timer:setRepeatCount(repeatCount)</a></td>
+		<td class="summary">
+
+<p>Sets the number of repetitions the timer will make.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).start">Timer:start()</a></td>
-		<td class="summary"> Starts the timer.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).start">Timer:start()</a></td>
+		<td class="summary">
+
+<p>Starts the timer.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).stop">Timer:stop()</a></td>
-		<td class="summary"> Stops the timer.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).stop">Timer:stop()</a></td>
+		<td class="summary">
+
+<p>Stops the timer.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Timer.html##(Timer).stopAll">Timer.stopAll()</a></td>
-		<td class="summary"> Stop all timers.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Timer).stopAll">Timer.stopAll()</a></td>
+		<td class="summary">
+
+<p>Stop all timers.</p>
+</td>
 		</tr>
 	</table>
 
@@ -159,17 +227,33 @@
 </a>
 </dt>
 <dd>
-	 Provides a simple way to call a function after a set amount of time.
+	
+
+<p>Provides a simple way to call a function after a set amount of time.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				delay  </em></code>: (number) Delay in miliseconds before the function is called
+				<li>
+				
+<p><code><em> delay </em></code>: 
+(number) Delay in miliseconds before the function is called</p>
+
 				</li>
-				<li><code><em>
-				func  </em></code>: (function) Function to call
+				<li>
+				
+<p><code><em> func </em></code>: 
+(function) Function to call</p>
+
 				</li>
-				<li><code><em>
-				data  </em></code>: (optional) An optional data parameter that is passed as a first argument to the function
+				<li>
+				
+<p><code><em> data </em></code>: 
+(optional) An optional data parameter that is passed as a first argument to the function</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -181,12 +265,20 @@
 </a>
 </dt>
 <dd>
-	 Returns the current trigger count of the timer.
-	<br/>It starts with 0 and if it reaches <code>repeatCount</code> value, timer stops.
+	
+
+<p>Returns the current trigger count of the timer.</p>
+
+	
+<p>It starts with 0 and if it reaches <code>repeatCount</code> value, timer stops.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The current trigger count.
-				</p>
+				
+
+<p>The current trigger count.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -196,11 +288,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the time interval between timer events in milliseconds.
+	
+
+<p>Returns the time interval between timer events in milliseconds.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The time interval between timer events in milliseconds.
-				</p>
+				
+
+<p>The time interval between timer events in milliseconds.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -210,12 +308,20 @@
 </a>
 </dt>
 <dd>
-	 Returns the number of repetitions the timer will make.
-	<br/>A value of 0 means the timer runs infinitely. If nonzero, the timer runs the specified number of times and then stops.
+	
+
+<p>Returns the number of repetitions the timer will make.</p>
+
+	
+<p>A value of 0 means the timer runs infinitely. If nonzero, the timer runs the specified number of times and then stops.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The number of repetitions.
-				</p>
+				
+
+<p>The number of repetitions.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -225,11 +331,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the current running status of timer.
+	
+
+<p>Returns the current running status of timer.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if the timer is running, <code>false</code> otherwise.
-				</p>
+				
+
+<p><code>true</code> if the timer is running, <code>false</code> otherwise.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -239,23 +351,32 @@
 </a>
 </dt>
 <dd>
-	 Creates a new <code>Timer</code> object with the specified delay and repeatCount states.
+	
+
+<p>Creates a new <code>Timer</code> object with the specified delay and repeatCount states.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				delay  </em></code>: The time interval between timer events in milliseconds.
+				<li>
+				
+<p><code><em> delay </em></code>: 
+The time interval between timer events in milliseconds.</p>
+
 				</li>
-				<li><code><em>
-				repeatCount  </em></code>: (default = 0) The number of repetitions. A value of 0 runs the timer infinitely. If nonzero, the timer runs the specified number of times and then stops.
+				<li>
+				
+<p><code><em> repeatCount </em></code>: 
+(default = 0) The number of repetitions. A value of 0 runs the timer infinitely. If nonzero, the timer runs the specified number of times and then stops.</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				<em><a href="##(Timer)">#Timer</a>:</em>
 				
+<p><em><a href="##(Timer)">#Timer</a>:</em></p>
 
 
-				</p>
+
 </dd>
 </dl>
 		<dl class="function">
@@ -265,8 +386,14 @@
 </a>
 </dt>
 <dd>
-	 Pause all timers.
-	<br/>Suitable for temporarily pausing all timers when application is paused.
+	
+
+<p>Pause all timers.</p>
+
+	
+<p>Suitable for temporarily pausing all timers when application is paused.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -276,10 +403,16 @@
 </a>
 </dt>
 <dd>
-	 **This function is obsolete.
-	<br/>Use <a href="#Timer.pauseAll">Timer.pauseAll</a> instead.**</p>
+	
 
-<p> Pause all timers. Suitable for temporarily pausing all timers when application is paused.
+<p><strong>This function is obsolete, use <a href="#Timer.pauseAll">Timer.pauseAll</a> instead.</strong></p>
+
+<p>Pause all timers.</p>
+
+	
+<p>Suitable for temporarily pausing all timers when application is paused.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -289,7 +422,11 @@
 </a>
 </dt>
 <dd>
-	 Stops the timer and sets the <code>currentCount</code> property to 0.
+	
+
+<p>Stops the timer and sets the <code>currentCount</code> property to 0.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -299,7 +436,11 @@
 </a>
 </dt>
 <dd>
-	 Resume all timers.
+	
+
+<p>Resume all timers.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -309,10 +450,13 @@
 </a>
 </dt>
 <dd>
-	 **This function is obsolete.
-	<br/>Use <a href="#Timer.resumeAll">Timer.resumeAll</a> instead.**</p>
+	
 
-<p> Resume all timers.
+<p><strong>This function is obsolete, use <a href="#Timer.resumeAll">Timer.resumeAll</a> instead.</strong></p>
+
+<p>Resume all timers.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -322,11 +466,21 @@
 </a>
 </dt>
 <dd>
-	 Sets the time interval between timer events in milliseconds.
+	
+
+<p>Sets the time interval between timer events in milliseconds.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				delay  </em></code>: (number) The time interval between timer events in milliseconds.
+				<li>
+				
+<p><code><em> delay </em></code>: 
+(number) The time interval between timer events in milliseconds.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -338,12 +492,24 @@
 </a>
 </dt>
 <dd>
-	 Sets the number of repetitions the timer will make.
-	<br/>A value of 0 means the timer runs infinitely. If nonzero, the timer runs the specified number of times and then stops.
+	
+
+<p>Sets the number of repetitions the timer will make.</p>
+
+	
+<p>A value of 0 means the timer runs infinitely. If nonzero, the timer runs the specified number of times and then stops.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				repeatCount  </em></code>: (number) the number of repetitions the timer will make
+				<li>
+				
+<p><code><em> repeatCount </em></code>: 
+(number) the number of repetitions the timer will make</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -355,7 +521,11 @@
 </a>
 </dt>
 <dd>
-	 Starts the timer.
+	
+
+<p>Starts the timer.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -365,8 +535,14 @@
 </a>
 </dt>
 <dd>
-	 Stops the timer.
-	<br/>This function doesn't change the <code>currentCount</code> property.
+	
+
+<p>Stops the timer.</p>
+
+	
+<p>This function doesn't change the <code>currentCount</code> property.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -376,7 +552,10 @@
 </a>
 </dt>
 <dd>
-	 Stop all timers.
+	
+
+<p>Stop all timers.</p>
+
 </dd>
 </dl>
 

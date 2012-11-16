@@ -17,13 +17,16 @@
 -- Opens the given URL (Universal Resource Locator) in the appropriate application. URL can be one of the `http:`, `https:`, `tel:`, or `mailto:` schemes.
 -- 
 -- The following example opens a web page in the browser:
+-- 
 -- 	application:openUrl("http://www.giderosmobile.com")
 -- 
 -- If `mailto:` scheme is specified, the user's e-mail client will be used to open a composer window containing the options specified in the URL.
 -- For example, the following URL contains a recipient (user@foo.com), a subject (Test), and a message body (Just a test):
+-- 
 -- 	application:openUrl("mailto:user@foo.com?subject=Test&body=Just a test")
 -- 
 -- Or to call a number:
+-- 
 -- 	application:openUrl("tel:555-123-4567")
 -- 
 -- @function [parent=#Application] openUrl
@@ -33,7 +36,7 @@
 
 -----------------------------------------------------------	
 -- 
--- **This function is obsolete. Use [Accelerometer](#Accelerometer) class instead.**
+-- **This function is obsolete, use [Accelerometer](#Accelerometer) class instead.**
 -- 
 -- Returns the x, y, z coordinates of the accelerometer.
 -- 
@@ -43,10 +46,6 @@
 -- @return y coordinate of the accelerometer
 -- @return z coordinate of the accelerometer
 
--- 
--- 
--- 
-
 -----------------------------------------------------------	
 -- 
 -- Returns the logical width of the application that is specified at the project properties.
@@ -55,9 +54,6 @@
 -- @param self
 -- @return The logical width of the application
 
--- 
--- 
--- 
 
 -----------------------------------------------------------	
 -- 

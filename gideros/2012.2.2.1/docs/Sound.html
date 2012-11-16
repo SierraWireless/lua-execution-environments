@@ -74,13 +74,16 @@
 	</div>
 	<div id="content">
    <h1>Module <code>Sound</code></h1>
-    The <code>Sound</code> class lets you load and play WAV or MP3 sound files.
-   <br/>
+   
+
+<p>The <code>Sound</code> class lets you load and play WAV or MP3 sound files.</p>
+
+   
 <p>Control of the playing sound is performed through the <code>SoundChannel</code>
- object.</p>
+object.</p>
 
 
-<h2> Examples</h2>
+<h2>Examples</h2>
 
 <pre><code>local sound = Sound.new("music.mp3")
 
@@ -91,19 +94,32 @@ local channel = sound:play()
 channel:stop()
 </code></pre>
 
+
+
 			<h2><a id="#(Sound)">Type <code>Sound</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Sound.html##(Sound).getLength">Sound:getLength()</a></td>
-		<td class="summary"> Returns the duration of the sound in miliseconds.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Sound).getLength">Sound:getLength()</a></td>
+		<td class="summary">
+
+<p>Returns the duration of the sound in miliseconds.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Sound.html##(Sound).new">Sound.new(filename)</a></td>
-		<td class="summary"> Creates a new <code>Sound</code> object.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Sound).new">Sound.new(filename)</a></td>
+		<td class="summary">
+
+<p>Creates a new <code>Sound</code> object.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Sound.html##(Sound).play">Sound:play(startTime, loops)</a></td>
-		<td class="summary"> Creates a new <code>SoundChannel</code> object to play the sound.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Sound).play">Sound:play(startTime, loops)</a></td>
+		<td class="summary">
+
+<p>Creates a new <code>SoundChannel</code> object to play the sound.</p>
+</td>
 		</tr>
 	</table>
 
@@ -116,11 +132,17 @@ channel:stop()
 </a>
 </dt>
 <dd>
-	 Returns the duration of the sound in miliseconds.
+	
+
+<p>Returns the duration of the sound in miliseconds.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The duration of the sound in miliseconds.
-				</p>
+				
+
+<p>The duration of the sound in miliseconds.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -130,20 +152,26 @@ channel:stop()
 </a>
 </dt>
 <dd>
-	 Creates a new <code>Sound</code> object.
+	
+
+<p>Creates a new <code>Sound</code> object.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				filename  </em></code>: (string) The name of the sound file to be loaded.
+				<li>
+				
+<p><code><em> filename </em></code>: 
+(string) The name of the sound file to be loaded.</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				<em><a href="##(Sound)">#Sound</a>:</em>
 				
+<p><em><a href="##(Sound)">#Sound</a>:</em></p>
 
 
-				</p>
+
 </dd>
 </dl>
 		<dl class="function">
@@ -153,22 +181,36 @@ channel:stop()
 </a>
 </dt>
 <dd>
-	 Creates a new <code>SoundChannel</code> object to play the sound.
-	<br/>By using the retured <code>SoundChannel</code> object,
- you can stop the sound and monitor the position.
+	
+
+<p>Creates a new <code>SoundChannel</code> object to play the sound.</p>
+
+	
+<p>By using the retured <code>SoundChannel</code> object,
+you can stop the sound and monitor the position.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				startTime  </em></code>: (number, default = 0) The initial position in milliseconds at which playback should start.
+				<li>
+				
+<p><code><em> startTime </em></code>: 
+(number, default = 0) The initial position in milliseconds at which playback should start.</p>
+
 				</li>
-				<li><code><em>
-				loops  </em></code>: (number, default = 0) Defines the number of times a sound play to the begining before the sound channel stops playback. For example, a value of 0 and 1 will play once, 2 will play twice and so on.
+				<li>
+				
+<p><code><em> loops </em></code>: 
+(number, default = 0) Defines the number of times a sound play to the begining before the sound channel stops playback. For example, a value of 0 and 1 will play once, 2 will play twice and so on.</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				A <code>SoundChannel</code> object, which you use to control the sound. This function returns <code>nil</code> if you run out of available sound channels.
-				</p>
+				
+
+<p>A <code>SoundChannel</code> object, which you use to control the sound. This function returns <code>nil</code> if you run out of available sound channels.</p>
+
+
 </dd>
 </dl>
 

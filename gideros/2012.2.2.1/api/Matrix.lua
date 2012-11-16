@@ -7,7 +7,7 @@
 -- 
 -- A 2D transformation matrix is a 3 x 3 matrix in homogenous coordinate system:
 -- 
--- ![Matrix Properties](images/matrix_props.png "Matrix Properties")
+-- ![Matrix Properties](http://www.giderosmobile.com/documentation/images/matrix_props.png "Matrix Properties")
 -- 
 -- You can get and set the values of all six of the properties in a
 -- Matrix object: `m11`, `m12`, `m21`, `m22`, `tx`, and `ty`.

@@ -74,74 +74,136 @@
 	</div>
 	<div id="content">
    <h1>Module <code>World</code></h1>
-    The <code>b2.World</code> class inherits from the following class: <code>EventDispatcher</code>.
-   <br/>The <code>b2.World</code> class manages all physics entities and dynamic simulation. It is possible to create and manage more than one <code>b2.World</code> instance.
+   
+<p>The <code>b2.World</code> class inherits from the following class: <code>EventDispatcher</code>.</p>
+
+   
+
+<p>The <code>b2.World</code> class manages all physics entities and dynamic simulation. It is possible to create and manage more than one <code>b2.World</code> instance.</p>
+
+
+
 			<h2><a id="#(World)">Type <code>World</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).addEventListener">World:addEventListener(listener, data)</a></td>
-		<td class="summary"> Registers a listener function and an optional data value so that the listener function is called when an event
- of a particular type occurs.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).addEventListener">World:addEventListener(listener, data)</a></td>
+		<td class="summary">
+
+<p>Registers a listener function and an optional data value so that the listener function is called when an event
+of a particular type occurs.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).clearForces">World:clearForces()</a></td>
-		<td class="summary"> Call this after you are done with time steps to clear the forces.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).clearForces">World:clearForces()</a></td>
+		<td class="summary">
+
+<p>Call this after you are done with time steps to clear the forces.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).createBody">World:createBody(bodyDef)</a></td>
-		<td class="summary"> Creates a rigid body given a definition.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).createBody">World:createBody(bodyDef)</a></td>
+		<td class="summary">
+
+<p>Creates a rigid body given a definition.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).createJoint">World:createJoint(jointDef)</a></td>
-		<td class="summary"> Creates a joint given a definition.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).createJoint">World:createJoint(jointDef)</a></td>
+		<td class="summary">
+
+<p>Creates a joint given a definition.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).destroyBody">World:destroyBody(body)</a></td>
-		<td class="summary"> Destroys a rigid body.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).destroyBody">World:destroyBody(body)</a></td>
+		<td class="summary">
+
+<p>Destroys a rigid body.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).destroyJoint">World:destroyJoint(joint)</a></td>
-		<td class="summary"> Destroy a joint.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).destroyJoint">World:destroyJoint(joint)</a></td>
+		<td class="summary">
+
+<p>Destroy a joint.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).dispatchEvent">World:dispatchEvent(event)</a></td>
-		<td class="summary"> Dispatches an event to this <code>EventDispatcher</code> instance.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).dispatchEvent">World:dispatchEvent(event)</a></td>
+		<td class="summary">
+
+<p>Dispatches an event to this <code>EventDispatcher</code> instance.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).getGravity">World:getGravity()</a></td>
-		<td class="summary"> Returns the gravity vector.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).getGravity">World:getGravity()</a></td>
+		<td class="summary">
+
+<p>Returns the gravity vector.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).hasEventListener">World:hasEventListener()</a></td>
-		<td class="summary"> Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).hasEventListener">World:hasEventListener()</a></td>
+		<td class="summary">
+
+<p>Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).new">World.new(gravityx, gravityy, doSleep)</a></td>
-		<td class="summary"> Creates a new <code>b2.World</code> object.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).new">World.new(gravityx, gravityy, doSleep)</a></td>
+		<td class="summary">
+
+<p>Creates a new <code>b2.World</code> object.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).queryAABB">World:queryAABB(lowerx, lowery, upperx, uppery)</a></td>
-		<td class="summary"> Query the world for all fixtures that potentially overlap the provided AABB.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).queryAABB">World:queryAABB(lowerx, lowery, upperx, uppery)</a></td>
+		<td class="summary">
+
+<p>Query the world for all fixtures that potentially overlap the provided AABB.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).rayCast">World:rayCast(x1, y1, x2, y2, listener, data)</a></td>
-		<td class="summary"> Ray-cast the world for all fixtures in the path of the ray.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).rayCast">World:rayCast(x1, y1, x2, y2, listener, data)</a></td>
+		<td class="summary">
+
+<p>Ray-cast the world for all fixtures in the path of the ray.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).removeEventListener">World:removeEventListener(listener, data)</a></td>
-		<td class="summary"> Removes a listener from the <code>EventDispatcher</code> object.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).removeEventListener">World:removeEventListener(listener, data)</a></td>
+		<td class="summary">
+
+<p>Removes a listener from the <code>EventDispatcher</code> object.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).setDebugDraw">World:setDebugDraw()</a></td>
-		<td class="summary"> Registers a b2.DebugDraw instance for debug drawing.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).setDebugDraw">World:setDebugDraw()</a></td>
+		<td class="summary">
+
+<p>Registers a b2.DebugDraw instance for debug drawing.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).setGravity">World:setGravity(gravityx, gravityy)</a></td>
-		<td class="summary"> Sets the gravity vector.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).setGravity">World:setGravity(gravityx, gravityy)</a></td>
+		<td class="summary">
+
+<p>Sets the gravity vector.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="World.html##(World).step">World:step(timeStep, velocityIterations, positionIterations)</a></td>
-		<td class="summary"> Take a time step.</td>
+		<td class="name" nowrap="nowrap"><a href="##(World).step">World:step(timeStep, velocityIterations, positionIterations)</a></td>
+		<td class="summary">
+
+<p>Take a time step.</p>
+</td>
 		</tr>
 	</table>
 
@@ -154,15 +216,28 @@
 </a>
 </dt>
 <dd>
-	 Registers a listener function and an optional data value so that the listener function is called when an event
- of a particular type occurs.
+	
+
+<p>Registers a listener function and an optional data value so that the listener function is called when an event
+of a particular type occurs.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				listener  </em></code>: (function) The listener function that processes the event.
+				<li>
+				
+<p><code><em> listener </em></code>: 
+(function) The listener function that processes the event.</p>
+
 				</li>
-				<li><code><em>
-				data  </em></code>: (optional) An optional data parameter that is passed as a first argument to the listener function.
+				<li>
+				
+<p><code><em> data </em></code>: 
+(optional) An optional data parameter that is passed as a first argument to the listener function.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -174,9 +249,15 @@
 </a>
 </dt>
 <dd>
-	 Call this after you are done with time steps to clear the forces.
-	<br/>You normally call this after each call to <code>b2.World:step</code>,
- unless you are performing sub-steps. By default, forces will be automatically cleared, so you don't need to call this function.
+	
+
+<p>Call this after you are done with time steps to clear the forces.</p>
+
+	
+<p>You normally call this after each call to <code>b2.World:step</code>,
+unless you are performing sub-steps. By default, forces will be automatically cleared, so you don't need to call this function.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -186,8 +267,12 @@
 </a>
 </dt>
 <dd>
-	 Creates a rigid body given a definition.
-	<br/>The body definition is given as an ordinary table. The fields of the body definition table are:</p>
+	
+
+<p>Creates a rigid body given a definition.</p>
+
+	
+<p>The body definition is given as an ordinary table. The fields of the body definition table are:</p>
 
 <ul>
     <li><strong>type</strong>: (number) The body type: <code>b2.STATIC_BODY</code>, <code>b2.KINEMATIC_BODY</code>, or <code>b2.DYNAMIC_BODY</code>. Note: if a dynamic body would have zero mass, the mass is set to one.</li>
@@ -205,20 +290,26 @@
     <li><strong>gravityScale</strong>: (number) Scale the gravity applied to this body.</li>
 </ul>
 
-<p> The unset fields gets default values.</p>
+<p>The unset fields gets default values.</p>
 
-<p> <strong>Warning:</strong> This function is locked during callbacks.
+<p><strong>Warning:</strong> This function is locked during callbacks.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				bodyDef  </em></code>: (table)
+				<li>
+				
+<p><code><em> bodyDef </em></code>: 
+(table)</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				<em><a href="Body.html##(Body)">Body#Body</a>:</em>
-				The created <code>b2.Body</code> instance.
-				</p>
+				
+<p><em><a href="Body.html##(Body)">Body#Body</a>:</em>
+The created <code>b2.Body</code> instance.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -228,24 +319,27 @@
 </a>
 </dt>
 <dd>
-	 Creates a joint given a definition.
-	<br/>
+	
+
+<p>Creates a joint given a definition.</p>
+
+	
 <p>All 9 types of joints is created by using this function:</p>
 
 
-<p> ### Revolute Joint</p>
+<h3>Revolute Joint</h3>
 
-<p> Revolute joint definition. This requires defining an anchor point where the bodies are joined. The definition uses
- local anchor points so that the initial configuration can violate the constraint slightly. You also need to specify the
- initial relative angle for joint limits. This helps when saving and loading a game. The local anchor points are measured from
- the body's origin rather than the center of mass because:</p>
+<p>Revolute joint definition. This requires defining an anchor point where the bodies are joined. The definition uses
+local anchor points so that the initial configuration can violate the constraint slightly. You also need to specify the
+initial relative angle for joint limits. This helps when saving and loading a game. The local anchor points are measured from
+the body's origin rather than the center of mass because:</p>
 
 <ol>
     <li>you might not know where the center of mass will be.</li>
     <li>if you add/remove shapes from a body</li>
 </ol>
 
-<p> and recompute the mass, the joints will be broken.</p>
+<p>and recompute the mass, the joints will be broken.</p>
 
 <ul>
     <li><strong>type</strong>: (number) b2.REVOLUTE_JOINT</li>
@@ -263,14 +357,14 @@
     <li><strong>maxMotorTorque</strong>: (number) The maximum motor torque used to achieve the desired motor speed. Usually in N-m.</li>
 </ul>
 
-<p> Also, you can use <a href="#b2.createRevoluteJointDef">b2.createRevoluteJointDef</a> function to create a revolute joint definiton table easier.</p>
+<p>Also, you can use <a href="#b2.createRevoluteJointDef">b2.createRevoluteJointDef</a> function to create a revolute joint definiton table easier.</p>
 
 
-<p> ### Prismatic Joint</p>
+<h3>Prismatic Joint</h3>
 
-<p> Prismatic joint definition. This requires defining a line of motion using an axis and an anchor point. The definition uses
- local anchor points and a local axis so that the initial configuration can violate the constraint slightly. The joint translation is
- zero when the local anchor points coincide in world space. Using local anchors and a local axis helps when saving and loading a game.</p>
+<p>Prismatic joint definition. This requires defining a line of motion using an axis and an anchor point. The definition uses
+local anchor points and a local axis so that the initial configuration can violate the constraint slightly. The joint translation is
+zero when the local anchor points coincide in world space. Using local anchors and a local axis helps when saving and loading a game.</p>
 
 <ul>
     <li><strong>type</strong>: (number) b2.PRISMATIC_JOINT</li>
@@ -289,14 +383,14 @@
     <li><strong>motorSpeed</strong>: (number) The desired motor speed in radians per second.</li>
 </ul>
 
-<p> Also, you can use <a href="#b2.createPrismaticJointDef">b2.createPrismaticJointDef</a> function to create a prismatic joint definiton table easier.</p>
+<p>Also, you can use <a href="#b2.createPrismaticJointDef">b2.createPrismaticJointDef</a> function to create a prismatic joint definiton table easier.</p>
 
 
-<p> ### Distance Joint</p>
+<h3>Distance Joint</h3>
 
-<p> Distance joint definition. This requires defining an anchor point on both bodies and the non-zero length of the distance joint.
- The definition uses local anchor points so that the initial configuration can violate the constraint slightly.
- This helps when saving and loading a game.</p>
+<p>Distance joint definition. This requires defining an anchor point on both bodies and the non-zero length of the distance joint.
+The definition uses local anchor points so that the initial configuration can violate the constraint slightly.
+This helps when saving and loading a game.</p>
 
 <ul>
     <li><strong>type</strong>: (number) b2.DISTANCE_JOINT</li>
@@ -310,12 +404,12 @@
     <li><strong>dampingRatio</strong>: (number) The damping ratio. 0 = no damping, 1 = critical damping.</li>
 </ul>
 
-<p> Also, you can use <a href="#b2.createDistanceJointDef">b2.createDistanceJointDef</a> function to create a distance joint definiton table easier.</p>
+<p>Also, you can use <a href="#b2.createDistanceJointDef">b2.createDistanceJointDef</a> function to create a distance joint definiton table easier.</p>
 
 
-<p> ### Pulley Joint</p>
+<h3>Pulley Joint</h3>
 
-<p> Pulley joint definition. This requires two ground anchors, two dynamic body anchor points, max lengths for each side, and a pulley ratio.</p>
+<p>Pulley joint definition. This requires two ground anchors, two dynamic body anchor points, max lengths for each side, and a pulley ratio.</p>
 
 <ul>
     <li><strong>type</strong>: (number) b2.PULLEY_JOINT</li>
@@ -331,12 +425,12 @@
     <li><strong>ratio</strong>: (number) The pulley ratio, used to simulate a block-and-tackle.</li>
 </ul>
 
-<p> Also, you can use <a href="#b2.createPulleyJointDef">b2.createPulleyJointDef</a> function to create a pulley joint definiton table easier.</p>
+<p>Also, you can use <a href="#b2.createPulleyJointDef">b2.createPulleyJointDef</a> function to create a pulley joint definiton table easier.</p>
 
 
-<p> ### Mouse Joint</p>
+<h3>Mouse Joint</h3>
 
-<p> Mouse joint definition. This requires a world target point, tuning parameters, and the time step.</p>
+<p>Mouse joint definition. This requires a world target point, tuning parameters, and the time step.</p>
 
 <ul>
     <li><strong>type</strong>: (number) b2.MOUSE_JOINT</li>
@@ -349,12 +443,12 @@
     <li><strong>dampingRatio</strong>: (number) The damping ratio. 0 = no damping, 1 = critical damping.</li>
 </ul>
 
-<p> Also, you can use <a href="#b2.createMouseJointDef">b2.createMouseJointDef</a> function to create a mouse joint definiton table easier.</p>
+<p>Also, you can use <a href="#b2.createMouseJointDef">b2.createMouseJointDef</a> function to create a mouse joint definiton table easier.</p>
 
-<p> ### Gear Joint</p>
+<h3>Gear Joint</h3>
 
-<p> Gear joint definition. This definition requires two existing revolute or prismatic joints (any combination will work). The provided joints
- must attach a dynamic body to a static body.</p>
+<p>Gear joint definition. This definition requires two existing revolute or prismatic joints (any combination will work). The provided joints
+must attach a dynamic body to a static body.</p>
 
 <ul>
     <li><strong>type</strong>: (number) b2.GEAR_JOINT</li>
@@ -366,14 +460,14 @@
     <li><strong>ratio</strong>: (number) The gear ratio.</li>
 </ul>
 
-<p> Also, you can use <a href="#b2.createGearJointDef">b2.createGearJointDef</a> function to create a gear joint definiton table easier.</p>
+<p>Also, you can use <a href="#b2.createGearJointDef">b2.createGearJointDef</a> function to create a gear joint definiton table easier.</p>
 
-<p> ### Wheel Joint</p>
+<h3>Wheel Joint</h3>
 
-<p> Wheel joint definition. This requires defining a line of motion using an axis and an anchor point. 
- The definition uses local anchor points and a local axis so that the initial configuration can violate 
- the constraint slightly. The joint translation is zero when the local anchor points coincide in world space. 
- Using local anchors and a local axis helps when saving and loading a game.</p>
+<p>Wheel joint definition. This requires defining a line of motion using an axis and an anchor point. 
+The definition uses local anchor points and a local axis so that the initial configuration can violate 
+the constraint slightly. The joint translation is zero when the local anchor points coincide in world space. 
+Using local anchors and a local axis helps when saving and loading a game.</p>
 
 <ul>
     <li><strong>type</strong>: (number) b2.WHEEL_JOINT</li>
@@ -390,12 +484,12 @@
     <li><strong>dampingRatio</strong>: (number) Suspension damping ratio, one indicates critical damping. </li>
 </ul>
 
-<p> Also, you can use <a href="#b2.createWheelJointDef">b2.createWheelJointDef</a> function to create a wheel joint definiton table easier.</p>
+<p>Also, you can use <a href="#b2.createWheelJointDef">b2.createWheelJointDef</a> function to create a wheel joint definiton table easier.</p>
 
-<p> ### Weld Joint</p>
+<h3>Weld Joint</h3>
 
-<p> Weld joint definition. You need to specify local anchor points where they are attached and the relative
- body angle. The position of the anchor points is important for computing the reaction torque.</p>
+<p>Weld joint definition. You need to specify local anchor points where they are attached and the relative
+body angle. The position of the anchor points is important for computing the reaction torque.</p>
 
 <ul>
     <li><strong>type</strong>: (number) b2.WELD_JOINT</li>
@@ -407,11 +501,11 @@
     <li><strong>referenceAngle</strong>: (number) The bodyB angle minus bodyA angle in the reference state (radians).</li>
 </ul>
 
-<p> Also, you can use <a href="#b2.createWeldJointDef">b2.createWeldJointDef</a> function to create a weld joint definiton table easier.</p>
+<p>Also, you can use <a href="#b2.createWeldJointDef">b2.createWeldJointDef</a> function to create a weld joint definiton table easier.</p>
 
-<p> ### Friction Joint</p>
+<h3>Friction Joint</h3>
 
-<p> Friction joint definition.</p>
+<p>Friction joint definition.</p>
 
 <ul>
     <li><strong>type</strong>: (number) b2.LINE_JOINT</li>
@@ -424,16 +518,22 @@
     <li><strong>maxTorque</strong>: (number) The maximum friction torque in N-m.</li>
 </ul>
 
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				jointDef  </em></code>: (table)
+				<li>
+				
+<p><code><em> jointDef </em></code>: 
+(table)</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				The created joint instance.
-				</p>
+				
+
+<p>The created joint instance.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -443,21 +543,31 @@
 </a>
 </dt>
 <dd>
-	 Destroys a rigid body.
-	<br/>
+	
+
+<p>Destroys a rigid body.</p>
+
+	
 <p>This function is locked during callbacks.</p>
 
-<p> <strong>Warning:</strong></p>
+<p><strong>Warning:</strong></p>
 
 <ul>
     <li>This automatically deletes all associated shapes and joints.</li>
     <li>This function is locked during callbacks.</li>
 </ul>
 
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				body  </em></code>: (b2.Body) body to be destroyed
+				<li>
+				
+<p><code><em> body </em></code>: 
+(b2.Body) body to be destroyed</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -469,14 +579,26 @@
 </a>
 </dt>
 <dd>
-	 Destroy a joint.
-	<br/>This may cause the connected bodies to begin colliding. </p>
+	
 
-<p> <strong>Warning:</strong> This function is locked during callbacks.
+<p>Destroy a joint.</p>
+
+	
+<p>This may cause the connected bodies to begin colliding. </p>
+
+<p><strong>Warning:</strong> This function is locked during callbacks.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				joint  </em></code>: (b2.Joint) joint to be destroyed
+				<li>
+				
+<p><code><em> joint </em></code>: 
+(b2.Joint) joint to be destroyed</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -488,11 +610,21 @@
 </a>
 </dt>
 <dd>
-	 Dispatches an event to this <code>EventDispatcher</code> instance.
+	
+
+<p>Dispatches an event to this <code>EventDispatcher</code> instance.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				event  </em></code>: (Event) The <code>Event</code> object to be dispatched.
+				<li>
+				
+<p><code><em> event </em></code>: 
+(Event) The <code>Event</code> object to be dispatched.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -504,11 +636,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the gravity vector.
+	
+
+<p>Returns the gravity vector.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				x and y component of gravity vector.
-				</p>
+				
+
+<p>x and y component of gravity vector.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -518,11 +656,17 @@
 </a>
 </dt>
 <dd>
-	 Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.
+	
+
+<p>Checks if the <code>EventDispatcher</code> object has a event listener registered for the specified type of event.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				A value of <code>true</code> if a listener of the specified type is registered; <code>false</code> otherwise.
-				</p>
+				
+
+<p>A value of <code>true</code> if a listener of the specified type is registered; <code>false</code> otherwise.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -532,25 +676,41 @@
 </a>
 </dt>
 <dd>
-	 Creates a new <code>b2.World</code> object.
-	<br/>You can create more then one <code>b2.World</code> object to manage independent worlds.
+	
+
+<p>Creates a new <code>b2.World</code> object.</p>
+
+	
+<p>You can create more then one <code>b2.World</code> object to manage independent worlds.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				gravityx  </em></code>: (number) the x component the gravity
+				<li>
+				
+<p><code><em> gravityx </em></code>: 
+(number) the x component the gravity</p>
+
 				</li>
-				<li><code><em>
-				gravityy  </em></code>: (number) the y component the gravity
+				<li>
+				
+<p><code><em> gravityy </em></code>: 
+(number) the y component the gravity</p>
+
 				</li>
-				<li><code><em>
-				doSleep  </em></code>: (boolean, default = true) improve performance by not simulating inactive bodies
+				<li>
+				
+<p><code><em> doSleep </em></code>: 
+(boolean, default = true) improve performance by not simulating inactive bodies</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				<em><a href="##(World)">#World</a>:</em>
-				A new <code>b2.World</code> object.
-				</p>
+				
+<p><em><a href="##(World)">#World</a>:</em>
+A new <code>b2.World</code> object.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -560,26 +720,44 @@
 </a>
 </dt>
 <dd>
-	 Query the world for all fixtures that potentially overlap the provided AABB.
+	
+
+<p>Query the world for all fixtures that potentially overlap the provided AABB.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				lowerx  </em></code>: (number) the lower x coordinate of the query box
+				<li>
+				
+<p><code><em> lowerx </em></code>: 
+(number) the lower x coordinate of the query box</p>
+
 				</li>
-				<li><code><em>
-				lowery  </em></code>: (number) the lower y coordinate of the query box
+				<li>
+				
+<p><code><em> lowery </em></code>: 
+(number) the lower y coordinate of the query box</p>
+
 				</li>
-				<li><code><em>
-				upperx  </em></code>: (number) the upper x coordinate of the query box
+				<li>
+				
+<p><code><em> upperx </em></code>: 
+(number) the upper x coordinate of the query box</p>
+
 				</li>
-				<li><code><em>
-				uppery  </em></code>: (number) the upper y coordinate of the query box
+				<li>
+				
+<p><code><em> uppery </em></code>: 
+(number) the upper y coordinate of the query box</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				Array of fixtures that potentially overlaps the provided AABB
-				</p>
+				
+
+<p>Array of fixtures that potentially overlaps the provided AABB</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -589,11 +767,14 @@
 </a>
 </dt>
 <dd>
-	 Ray-cast the world for all fixtures in the path of the ray.
-	<br/>
+	
+
+<p>Ray-cast the world for all fixtures in the path of the ray.</p>
+
+	
 <p>Your callback controls whether you get the closest point, any point, or n-points. The ray-cast ignores shapes that contain the starting point. </p>
 
-<p> Listener function is called for each fixture found in the query and accepts 6 parameters (7 if data parameter is provided):</p>
+<p>Listener function is called for each fixture found in the query and accepts 6 parameters (7 if data parameter is provided):</p>
 
 <ol>
     <li>the fixture hit by the ray</li>
@@ -604,34 +785,57 @@
     <li>fraction</li>
 </ol>
 
-<p> You control how the ray cast proceeds by returning a number:</p>
+<p>You control how the ray cast proceeds by returning a number:</p>
 
 <ul>
     <li>return no value or -1: ignore this fixture and continue</li>
     <li>return 0: terminate the ray cast</li>
     <li>return fraction: clip the ray to this point</li>
-    <li>return 1: don't clip the ray and continue</li>
+    <li>return 1: don't clip the ray and continue </li>
 </ul>
+
+
 
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				x1  </em></code>: (number) the x coordinate of the ray starting point
+				<li>
+				
+<p><code><em> x1 </em></code>: 
+(number) the x coordinate of the ray starting point</p>
+
 				</li>
-				<li><code><em>
-				y1  </em></code>: (number) the y coordinate of the ray starting point
+				<li>
+				
+<p><code><em> y1 </em></code>: 
+(number) the y coordinate of the ray starting point</p>
+
 				</li>
-				<li><code><em>
-				x2  </em></code>: (number) the x coordinate of the ray ending point
+				<li>
+				
+<p><code><em> x2 </em></code>: 
+(number) the x coordinate of the ray ending point</p>
+
 				</li>
-				<li><code><em>
-				y2  </em></code>: (number) the y coordinate of the ray ending point
+				<li>
+				
+<p><code><em> y2 </em></code>: 
+(number) the y coordinate of the ray ending point</p>
+
 				</li>
-				<li><code><em>
-				listener  </em></code>: (function) the listener function that processes the results
+				<li>
+				
+<p><code><em> listener </em></code>: 
+(function) the listener function that processes the results</p>
+
 				</li>
-				<li><code><em>
-				data  </em></code>: (optional) an optional data parameter that is passed as a first argument to the listener function
+				<li>
+				
+<p><code><em> data </em></code>: 
+(optional) an optional data parameter that is passed as a first argument to the listener function</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -643,17 +847,32 @@
 </a>
 </dt>
 <dd>
-	 Removes a listener from the <code>EventDispatcher</code> object.
-	<br/><code>removeEventListener()</code> function expects
- the same arguments with <code>addEventListener()</code> to remove the event. If there is no matching listener
- registered, a call to this function has no effect.
+	
+
+<p>Removes a listener from the <code>EventDispatcher</code> object.</p>
+
+	
+<p><code>removeEventListener()</code> function expects
+the same arguments with <code>addEventListener()</code> to remove the event. If there is no matching listener
+registered, a call to this function has no effect.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				listener  </em></code>: (function) The listener object to remove.
+				<li>
+				
+<p><code><em> listener </em></code>: 
+(function) The listener object to remove.</p>
+
 				</li>
-				<li><code><em>
-				data  </em></code>: The data parameter that is used while registering the event.
+				<li>
+				
+<p><code><em> data </em></code>: 
+The data parameter that is used while registering the event.</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -665,7 +884,11 @@
 </a>
 </dt>
 <dd>
-	 Registers a b2.DebugDraw instance for debug drawing.
+	
+
+<p>Registers a b2.DebugDraw instance for debug drawing.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -675,14 +898,27 @@
 </a>
 </dt>
 <dd>
-	 Sets the gravity vector.
+	
+
+<p>Sets the gravity vector.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				gravityx  </em></code>: (number) the x component the gravity
+				<li>
+				
+<p><code><em> gravityx </em></code>: 
+(number) the x component the gravity</p>
+
 				</li>
-				<li><code><em>
-				gravityy  </em></code>: (number) the y component the gravity
+				<li>
+				
+<p><code><em> gravityy </em></code>: 
+(number) the y component the gravity</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -694,18 +930,36 @@
 </a>
 </dt>
 <dd>
-	 Take a time step.
-	<br/>This performs collision detection, integration, and constraint solution.
+	
+
+<p>Take a time step.</p>
+
+	
+<p>This performs collision detection, integration, and constraint solution.</p>
+
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				timeStep  </em></code>: (number) the amount of time to simulate, this should not vary
+				<li>
+				
+<p><code><em> timeStep </em></code>: 
+(number) the amount of time to simulate, this should not vary</p>
+
 				</li>
-				<li><code><em>
-				velocityIterations  </em></code>: (number) for the velocity constraint solver
+				<li>
+				
+<p><code><em> velocityIterations </em></code>: 
+(number) for the velocity constraint solver</p>
+
 				</li>
-				<li><code><em>
-				positionIterations  </em></code>: (number) for the position constraint solver
+				<li>
+				
+<p><code><em> positionIterations </em></code>: 
+(number) for the position constraint solver</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>

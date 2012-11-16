@@ -74,31 +74,56 @@
 	</div>
 	<div id="content">
    <h1>Module <code>Fixture</code></h1>
-    A fixture is used to attach a shape to a body for collision detection.
-   <br/>A fixture inherits its
- transform from its parent. Fixtures hold additional non-geometric data such as friction, collision filters, etc.
- Fixtures are created via <a href="#b2.Body:createFixture">b2.Body:createFixture</a>.
+   
+
+<p>A fixture is used to attach a shape to a body for collision detection.</p>
+
+   
+<p>A fixture inherits its
+transform from its parent. Fixtures hold additional non-geometric data such as friction, collision filters, etc.
+Fixtures are created via <a href="#b2.Body:createFixture">b2.Body:createFixture</a>.</p>
+
+
+
 			<h2><a id="#(Fixture)">Type <code>Fixture</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Fixture.html##(Fixture).getBody">Fixture:getBody()</a></td>
-		<td class="summary"> Returns the parent body of this fixture.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Fixture).getBody">Fixture:getBody()</a></td>
+		<td class="summary">
+
+<p>Returns the parent body of this fixture.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Fixture.html##(Fixture).getFilterData">Fixture:getFilterData()</a></td>
-		<td class="summary"> Returns the contact filtering data.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Fixture).getFilterData">Fixture:getFilterData()</a></td>
+		<td class="summary">
+
+<p>Returns the contact filtering data.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Fixture.html##(Fixture).isSensor">Fixture:isSensor()</a></td>
-		<td class="summary"> Is this fixture a sensor (non-solid)?</td>
+		<td class="name" nowrap="nowrap"><a href="##(Fixture).isSensor">Fixture:isSensor()</a></td>
+		<td class="summary">
+
+<p>Is this fixture a sensor (non-solid)?</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Fixture.html##(Fixture).setFilterData">Fixture:setFilterData(filterData)</a></td>
-		<td class="summary"> Sets the contact filtering data.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Fixture).setFilterData">Fixture:setFilterData(filterData)</a></td>
+		<td class="summary">
+
+<p>Sets the contact filtering data.</p>
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Fixture.html##(Fixture).setSensor">Fixture:setSensor(sensor)</a></td>
-		<td class="summary"> Sets if this fixture is a sensor.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Fixture).setSensor">Fixture:setSensor(sensor)</a></td>
+		<td class="summary">
+
+<p>Sets if this fixture is a sensor.</p>
+
+</td>
 		</tr>
 	</table>
 
@@ -111,12 +136,20 @@
 </a>
 </dt>
 <dd>
-	 Returns the parent body of this fixture.
-	<br/>This is <code>nil</code> if the fixture is not attached.
+	
+
+<p>Returns the parent body of this fixture.</p>
+
+	
+<p>This is <code>nil</code> if the fixture is not attached.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				The parent body.
-				</p>
+				
+
+<p>The parent body.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -126,11 +159,17 @@
 </a>
 </dt>
 <dd>
-	 Returns the contact filtering data.
+	
+
+<p>Returns the contact filtering data.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				contact filtering data table
-				</p>
+				
+
+<p>contact filtering data table</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -140,11 +179,17 @@
 </a>
 </dt>
 <dd>
-	 Is this fixture a sensor (non-solid)?
+	
+
+<p>Is this fixture a sensor (non-solid)?</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if the shape is a sensor, <code>false</code> otherwise.
-				</p>
+				
+
+<p><code>true</code> if the shape is a sensor, <code>false</code> otherwise.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -154,11 +199,14 @@
 </a>
 </dt>
 <dd>
-	 Sets the contact filtering data.
-	<br/>
+	
+
+<p>Sets the contact filtering data.</p>
+
+	
 <p>This will not update contacts until the next time step
- when either parent body is active and awake. The filter data definition is given
- as a ordinary table. The fields of the filter data table are:</p>
+when either parent body is active and awake. The filter data definition is given
+as a ordinary table. The fields of the filter data table are:</p>
 
 <ul>
     <li><strong>categoryBits</strong>: (number) The collision category bits. Normally you would just set one bit.</li>
@@ -166,10 +214,17 @@
     <li><strong>groupIndex</strong>: (number) Collision groups allow a certain group of objects to never collide (negative) or always collide (positive). Zero means no collision group. Non-zero group filtering always wins against the mask bits.</li>
 </ul>
 
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				filterData  </em></code>: (table)
+				<li>
+				
+<p><code><em> filterData </em></code>: 
+(table)</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>
@@ -181,11 +236,21 @@
 </a>
 </dt>
 <dd>
-	 Sets if this fixture is a sensor.
+	
+
+<p>Sets if this fixture is a sensor.</p>
+
+
 		<h3>Parameter</h3>
 		<ul>
-				<li><code><em>
-				sensor  </em></code>: (boolean)
+				<li>
+				
+<p><code><em> sensor </em></code>: 
+(boolean)</p>
+
+
+
+
 				</li>
 		</ul>
 </dd>

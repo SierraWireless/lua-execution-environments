@@ -74,14 +74,18 @@
 	</div>
 	<div id="content">
    <h1>Module <code>Accelerometer</code></h1>
-    The <code>Accelerometer</code> class is used to access accelerometer data.
-   <br/>
+   
+
+<p>The <code>Accelerometer</code> class is used to access accelerometer data.</p>
+
+   
+
 <p>The <code>Accelerometer</code> class is defined in module "accelerometer". Therefore, you need to call
- <code>require "accelerometer"</code> before using it. Loading the "accelerometer" module 
- also creates a global variable <code>accelerometer</code> of type <code>Accelerometer</code> for direct use. </p>
+<code>require "accelerometer"</code> before using it. Loading the "accelerometer" module 
+also creates a global variable <code>accelerometer</code> of type <code>Accelerometer</code> for direct use. </p>
 
 
-<h2> Examples</h2>
+<h2>Examples</h2>
 
 <pre><code>require "accelerometer"
 
@@ -91,23 +95,41 @@ local x, y, z = accelerometer:getAcceleration()
 print(x, y, z)
 </code></pre>
 
+
+
 			<h2><a id="#(Accelerometer)">Type <code>Accelerometer</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Accelerometer.html##(Accelerometer).getAcceleration">Accelerometer:getAcceleration()</a></td>
-		<td class="summary"> Returns the 3-axis acceleration measured by the accelerometer.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Accelerometer).getAcceleration">Accelerometer:getAcceleration()</a></td>
+		<td class="summary">
+
+<p>Returns the 3-axis acceleration measured by the accelerometer.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Accelerometer.html##(Accelerometer).isAvailable">Accelerometer:isAvailable()</a></td>
-		<td class="summary"> Returns <code>true</code> if accelerometer is available for this platform, <code>false</code> otherwise.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Accelerometer).isAvailable">Accelerometer:isAvailable()</a></td>
+		<td class="summary">
+
+<p>Returns <code>true</code> if accelerometer is available for this platform, <code>false</code> otherwise.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Accelerometer.html##(Accelerometer).start">Accelerometer:start()</a></td>
-		<td class="summary"> Starts the generation of accelerometer samples.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Accelerometer).start">Accelerometer:start()</a></td>
+		<td class="summary">
+
+<p>Starts the generation of accelerometer samples.</p>
+
+</td>
 		</tr>
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="Accelerometer.html##(Accelerometer).stop">Accelerometer:stop()</a></td>
-		<td class="summary"> Stops the generation of accelerometer samples.</td>
+		<td class="name" nowrap="nowrap"><a href="##(Accelerometer).stop">Accelerometer:stop()</a></td>
+		<td class="summary">
+
+<p>Stops the generation of accelerometer samples.</p>
+
+</td>
 		</tr>
 	</table>
 
@@ -120,11 +142,17 @@ print(x, y, z)
 </a>
 </dt>
 <dd>
-	 Returns the 3-axis acceleration measured by the accelerometer.
+	
+
+<p>Returns the 3-axis acceleration measured by the accelerometer.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				3 values as x-axis, y-axis and z-axis acceleration in G's
-				</p>
+				
+
+<p>3 values as x-axis, y-axis and z-axis acceleration in G's</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -134,11 +162,17 @@ print(x, y, z)
 </a>
 </dt>
 <dd>
-	 Returns <code>true</code> if accelerometer is available for this platform, <code>false</code> otherwise.
+	
+
+<p>Returns <code>true</code> if accelerometer is available for this platform, <code>false</code> otherwise.</p>
+
+
 		<h3>Return value</h3>
-				<p>
-				<code>true</code> if accelerometer is available for this platform, <code>false</code> otherwise.
-				</p>
+				
+
+<p><code>true</code> if accelerometer is available for this platform, <code>false</code> otherwise.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -148,7 +182,11 @@ print(x, y, z)
 </a>
 </dt>
 <dd>
-	 Starts the generation of accelerometer samples.
+	
+
+<p>Starts the generation of accelerometer samples.</p>
+
+
 </dd>
 </dl>
 		<dl class="function">
@@ -158,7 +196,11 @@ print(x, y, z)
 </a>
 </dt>
 <dd>
-	 Stops the generation of accelerometer samples.
+	
+
+<p>Stops the generation of accelerometer samples.</p>
+
+
 </dd>
 </dl>
 

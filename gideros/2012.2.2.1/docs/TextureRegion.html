@@ -74,13 +74,16 @@
 	</div>
 	<div id="content">
    <h1>Module <code>TextureRegion</code></h1>
-    The <code>TextureRegion</code> class specifies a texture and a rectangular region in it.
-   <br/>
+   
+
+<p>The <code>TextureRegion</code> class specifies a texture and a rectangular region in it.</p>
+
+   
 <p>It is used to define independent texture regions
- within a texture atlas which is a large image, which contains many smaller sub-images.</p>
+within a texture atlas which is a large image, which contains many smaller sub-images.</p>
 
 
-<h2> Examples</h2>
+<h2>Examples</h2>
 
 <pre><code>local texture = Texture.new("atlas.png")
 
@@ -102,11 +105,16 @@ stage:addChild(bitmap3)
 stage:addChild(bitmap4)
 </code></pre>
 
+
+
 			<h2><a id="#(TextureRegion)">Type <code>TextureRegion</code></a></h2>
 				<table class="function_list">
 		<tr>
-		<td class="name" nowrap="nowrap"><a href="TextureRegion.html##(TextureRegion).new">TextureRegion.new(texture, x, y, width, height)</a></td>
-		<td class="summary"> Creates a new TextureRegion object.</td>
+		<td class="name" nowrap="nowrap"><a href="##(TextureRegion).new">TextureRegion.new(texture, x, y, width, height)</a></td>
+		<td class="summary">
+
+<p>Creates a new TextureRegion object.</p>
+</td>
 		</tr>
 	</table>
 
@@ -119,38 +127,57 @@ stage:addChild(bitmap4)
 </a>
 </dt>
 <dd>
-	 Creates a new TextureRegion object.
-	<br/>
+	
+
+<p>Creates a new TextureRegion object.</p>
+
+	
+
 <ul>
     <li>If TextureRegion object is created with 1 parameter (texture), it specifies the whole texture.</li>
     <li>If TextureRegion object is created with 5 parameters (texture, x, y, width, height), if specifies a rectangular region within texture.</li>
 </ul>
 
+
 		<h3>Parameters</h3>
 		<ul>
-				<li><code><em>
-				texture  </em></code>: (TextureBase) texture object
+				<li>
+				
+<p><code><em> texture </em></code>: 
+(TextureBase) texture object</p>
+
 				</li>
-				<li><code><em>
-				x  </em></code>: (number) left coordinate of the region
+				<li>
+				
+<p><code><em> x </em></code>: 
+(number) left coordinate of the region</p>
+
 				</li>
-				<li><code><em>
-				y  </em></code>: (number) top coordinate of the region
+				<li>
+				
+<p><code><em> y </em></code>: 
+(number) top coordinate of the region</p>
+
 				</li>
-				<li><code><em>
-				width  </em></code>: (number) width of the region
+				<li>
+				
+<p><code><em> width </em></code>: 
+(number) width of the region</p>
+
 				</li>
-				<li><code><em>
-				height  </em></code>: (number) height of the region
+				<li>
+				
+<p><code><em> height </em></code>: 
+(number) height of the region</p>
+
 				</li>
 		</ul>
 		<h3>Return value</h3>
-				<p>
-				<em><a href="##(TextureRegion)">#TextureRegion</a>:</em>
 				
+<p><em><a href="##(TextureRegion)">#TextureRegion</a>:</em></p>
 
 
-				</p>
+
 </dd>
 </dl>
 
